@@ -1,0 +1,12 @@
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.deps.json
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.pdb
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.AssemblyInfoInputs.cache
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.AssemblyInfo.cs
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.csproj.CoreCompileInputs.cache
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.sourcelink.json
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\refint\TeamProject.Services.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.pdb
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\ref\TeamProject.Services.dll

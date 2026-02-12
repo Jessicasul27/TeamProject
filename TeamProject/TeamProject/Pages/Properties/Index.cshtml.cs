@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using TeamProject.DataAccess;
-using TeamProject.Models;
+using TeamProject.DataAccess.DataAccess;
+using TeamProject.Models.Models;
+
+
 
 namespace TeamProject.Pages.Properties
 {
