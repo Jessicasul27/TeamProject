@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\migrations\\20260212161937_version1.0.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\migrations\\20260212161937_version1.0.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -74,24 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20260212161937_Version1.0.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.Designer.cs",
-              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.Designer.cs",
-              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.Designer.cs",
-              "RelativeToolTip": "TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.Designer.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T16:20:00.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "20260212161937_Version1.0.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
               "RelativeDocumentMoniker": "TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
@@ -104,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "20260212161809_Version1.0.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
               "RelativeDocumentMoniker": "TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
@@ -117,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Error.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Error.cshtml.cs",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Error.cshtml.cs",
@@ -130,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "TeamProject.Models",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
               "RelativeDocumentMoniker": "TeamProject.Models\\TeamProject.Models.csproj",
@@ -143,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Customer.cs",
@@ -156,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Booking.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Booking.cs",
@@ -169,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "LandLord.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\LandLord.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\LandLord.cs",
@@ -182,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
               "RelativeDocumentMoniker": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
@@ -195,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Property.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Property.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Property.cs",
@@ -208,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Properties\\Index.cshtml.cs",
@@ -221,20 +204,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
               "RelativeDocumentMoniker": "TeamProject\\Program.cs",
               "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
               "RelativeToolTip": "TeamProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-23T10:54:52.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
@@ -246,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Properties\\Index.cshtml",
@@ -258,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\appsettings.json",
               "RelativeDocumentMoniker": "TeamProject\\appsettings.json",
@@ -270,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "TeamProject.csproj",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\TeamProject.csproj",
               "RelativeDocumentMoniker": "TeamProject\\TeamProject.csproj",
