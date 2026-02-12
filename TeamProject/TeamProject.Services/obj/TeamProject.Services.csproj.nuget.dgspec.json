@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj": {}
+    "C:\\Users\\YurongGuo-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj": {
+    "C:\\Users\\YurongGuo-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj",
+        "projectUniqueName": "C:\\Users\\YurongGuo-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj",
         "projectName": "TeamProject.Services",
-        "projectPath": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj",
-        "packagesPath": "C:\\Users\\RyanTurner-STUDENT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\obj\\",
+        "projectPath": "C:\\Users\\YurongGuo-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj",
+        "packagesPath": "C:\\Users\\YurongGuo-STUDENT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\YurongGuo-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\RyanTurner-STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YurongGuo-STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

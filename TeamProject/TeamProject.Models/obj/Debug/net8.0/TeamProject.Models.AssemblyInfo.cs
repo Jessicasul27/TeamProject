@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamProject.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5d61196e0962993d2f2cb13fbb59d68bd2699c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60d1e2385a4758363a2d11be04c95f5d85dc3f09")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamProject.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamProject.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
