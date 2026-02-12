@@ -3,39 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\pages\\properties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\properties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppDB/True/SqlTable/dbo.Properties.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Migrations\\20260123111557_PropertyAddedToNav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TeamProject\\Migrations\\20260123111557_PropertyAddedToNav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\pages\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Migrations\\20260123111117_Version1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TeamProject\\Migrations\\20260123111117_Version1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject.models\\teamproject.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\teamproject.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\landlord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\landlord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\pages\\properties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\properties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\ryanturner-student\\desktop\\teamproject\\teamproject\\teamproject\\teamproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -53,53 +70,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Properties [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppDB/True/SqlTable/dbo.Properties.sql",
-              "ToolTip": "dbo.Properties [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-01-23T11:16:50.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20260123111557_PropertyAddedToNav.cs",
-              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Migrations\\20260123111557_PropertyAddedToNav.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Migrations\\20260123111557_PropertyAddedToNav.cs",
-              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Migrations\\20260123111557_PropertyAddedToNav.cs",
-              "RelativeToolTip": "TeamProject\\Migrations\\20260123111557_PropertyAddedToNav.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20260212161937_Version1.0.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T11:15:58.147Z",
+              "WhenOpened": "2026-02-12T16:19:37.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T11:14:27.866Z",
+              "Title": "20260212161809_Version1.0.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T16:18:09.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Error.cshtml.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Error.cshtml.cs",
+              "RelativeToolTip": "TeamProject\\Pages\\Error.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T16:16:44.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeamProject.Models",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
+              "RelativeDocumentMoniker": "TeamProject.Models\\TeamProject.Models.csproj",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
+              "RelativeToolTip": "TeamProject.Models\\TeamProject.Models.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-12T16:14:06.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
+              "RelativeToolTip": "TeamProject.Models\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:59:11.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Booking.cs",
+              "RelativeToolTip": "TeamProject.Models\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:59:04.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LandLord.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\LandLord.cs",
+              "RelativeDocumentMoniker": "TeamProject.Models\\Models\\LandLord.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\LandLord.cs",
+              "RelativeToolTip": "TeamProject.Models\\Models\\LandLord.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:58:56.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:56:35.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Property.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Property.cs",
+              "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Property.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Property.cs",
+              "RelativeToolTip": "TeamProject.Models\\Models\\Property.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T15:55:57.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Properties\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml.cs",
               "RelativeToolTip": "TeamProject\\Pages\\Properties\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-23T11:12:26.115Z",
               "EditorCaption": ""
@@ -107,6 +205,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
+              "RelativeDocumentMoniker": "TeamProject\\Program.cs",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
+              "RelativeToolTip": "TeamProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T10:54:52.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T11:14:27.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Properties\\Index.cshtml",
@@ -114,38 +237,11 @@
               "RelativeToolTip": "TeamProject\\Pages\\Properties\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T11:12:22.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T11:12:22.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20260123111117_Version1.cs",
-              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Migrations\\20260123111117_Version1.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Migrations\\20260123111117_Version1.cs",
-              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Migrations\\20260123111117_Version1.cs",
-              "RelativeToolTip": "TeamProject\\Migrations\\20260123111117_Version1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T11:11:17.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Program.cs",
-              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
-              "RelativeToolTip": "TeamProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T10:54:52.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\appsettings.json",
               "RelativeDocumentMoniker": "TeamProject\\appsettings.json",
@@ -153,44 +249,17 @@
               "RelativeToolTip": "TeamProject\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-23T10:41:58.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T10:41:58.697Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\DataAccess\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "TeamProject\\DataAccess\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\DataAccess\\AppDbContext.cs",
-              "RelativeToolTip": "TeamProject\\DataAccess\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T10:45:18.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Property.cs",
-              "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Models\\Property.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Models\\Property.cs",
-              "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Models\\Property.cs",
-              "RelativeToolTip": "TeamProject\\Models\\Property.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T10:45:06.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TeamProject",
+              "DocumentIndex": 13,
+              "Title": "TeamProject.csproj",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\TeamProject.csproj",
               "RelativeDocumentMoniker": "TeamProject\\TeamProject.csproj",
               "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject\\TeamProject.csproj",
               "RelativeToolTip": "TeamProject\\TeamProject.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-01-23T10:42:04.544Z",
               "EditorCaption": ""

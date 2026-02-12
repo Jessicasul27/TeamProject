@@ -137,3 +137,11 @@ C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\obj\Debu
 C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\obj\Debug\net8.0\TeamProject.pdb
 C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\obj\Debug\net8.0\TeamProject.genruntimeconfig.cache
 C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\obj\Debug\net8.0\ref\TeamProject.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\obj\Debug\net8.0\TeamProject.sourcelink.json
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\TeamProject.DataAccess.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\TeamProject.Models.dll
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\TeamProject.DataAccess.pdb
+C:\Users\RyanTurner-STUDENT\Desktop\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\TeamProject.Models.pdb
