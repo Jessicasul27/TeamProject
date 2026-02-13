@@ -1,75 +1,91 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\",
+  "WorkspaceRootPath": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\properties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\properties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\ipropertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\ipropertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject\\wwwroot\\css\\bootswatchtheme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject\\wwwroot\\css\\bootswatchtheme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\wwwroot\\css\\bootswatchtheme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\JessicaSuleiman-STUD\\Downloads\\bootstrap.min (6).css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject.models\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject.models\\models\\landlord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\landlord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\landlord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject.models\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject.dataaccess\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject.models\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject\\pages\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject.models\\teamproject.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.models\\teamproject.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\teamproject.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject.models\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject\\pages\\properties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\properties\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject\\teamproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject\\teamproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\teamproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\jessicasuleiman-stud\\onedrive - atlantic tu\\bacon\\teamproject\\teamproject\\teamproject.dataaccess\\migrations\\20260212161937_version1.0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\jessicasuleiman-stud\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\migrations\\20260212161937_version1.0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\migrations\\20260212161937_version1.0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -80,87 +96,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PropertyRepo.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T10:33:58.27Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPropertyRepo.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\IPropertyRepo.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\IPropertyRepo.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\IPropertyRepo.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\IPropertyRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T10:33:48.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
+              "RelativeDocumentMoniker": "TeamProject\\Program.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
+              "RelativeToolTip": "TeamProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T10:54:52.403Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Properties\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Properties\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Properties\\Index.cshtml.cs",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Properties\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T11:12:26.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Properties\\Index.cshtml",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Properties\\Index.cshtml",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Properties\\Index.cshtml",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Properties\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T11:12:22.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\Repository.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\Repository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T10:26:51.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\IRepository.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\IRepository.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T10:26:44.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-23T11:14:27.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "bootswatchTheme.css",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\css\\bootswatchTheme.css",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\css\\bootswatchTheme.css",
               "RelativeDocumentMoniker": "TeamProject\\wwwroot\\css\\bootswatchTheme.css",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\css\\bootswatchTheme.css",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\css\\bootswatchTheme.css",
               "RelativeToolTip": "TeamProject\\wwwroot\\css\\bootswatchTheme.css",
               "ViewState": "AgIAAD00AAAAAAAAAAAYwGw0AAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-02-12T21:02:36.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T21:02:36.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "bootstrap.min (6).css",
               "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Downloads\\bootstrap.min (6).css",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\bootstrap.min (6).css",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\bootstrap.min (6).css",
               "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Downloads\\bootstrap.min (6).css",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\bootstrap.min (6).css",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\bootstrap.min (6).css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-02-12T21:02:39.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T21:02:39.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Admin.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Admin.cs",
               "RelativeToolTip": "TeamProject.Models\\Models\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T16:34:20.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T16:34:20.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "20260212161809_Version1.0.cs",
               "DocumentMoniker": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
               "ToolTip": "C:\\Users\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\RyanTurner-STUDENT\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161809_Version1.0.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-12T16:18:09.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Error.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Pages\\Error.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Error.cshtml.cs",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Error.cshtml.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Pages\\Error.cshtml.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Error.cshtml.cs",
               "RelativeToolTip": "TeamProject\\Pages\\Error.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,11 +264,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "TeamProject.Models.csproj",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
               "RelativeDocumentMoniker": "TeamProject.Models\\TeamProject.Models.csproj",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
               "RelativeToolTip": "TeamProject.Models\\TeamProject.Models.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -180,11 +276,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
               "RelativeToolTip": "TeamProject.Models\\Models\\Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -192,11 +288,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Booking.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Booking.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Booking.cs",
               "RelativeToolTip": "TeamProject.Models\\Models\\Booking.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -204,11 +300,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "LandLord.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\LandLord.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\LandLord.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\LandLord.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\LandLord.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\LandLord.cs",
               "RelativeToolTip": "TeamProject.Models\\Models\\LandLord.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -216,11 +312,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
               "RelativeDocumentMoniker": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
               "RelativeToolTip": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -228,11 +324,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Property.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Property.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Property.cs",
               "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Property.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Property.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Property.cs",
               "RelativeToolTip": "TeamProject.Models\\Models\\Property.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -240,35 +336,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Properties\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml.cs",
-              "RelativeToolTip": "TeamProject\\Pages\\Properties\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T11:12:26.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Program.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Program.cs",
-              "RelativeToolTip": "TeamProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T10:54:52.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "20260212161937_Version1.0.cs",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
               "RelativeDocumentMoniker": "TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
               "RelativeToolTip": "TeamProject.DataAccess\\Migrations\\20260212161937_Version1.0.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -276,23 +348,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Properties\\Index.cshtml",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\Pages\\Properties\\Index.cshtml",
-              "RelativeToolTip": "TeamProject\\Pages\\Properties\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T11:12:22.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\appsettings.json",
               "RelativeDocumentMoniker": "TeamProject\\appsettings.json",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\appsettings.json",
               "RelativeToolTip": "TeamProject\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -300,11 +360,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "TeamProject.csproj",
-              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\TeamProject.csproj",
+              "DocumentMoniker": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\TeamProject.csproj",
               "RelativeDocumentMoniker": "TeamProject\\TeamProject.csproj",
-              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\TeamProject.csproj",
+              "ToolTip": "C:\\Users\\JessicaSuleiman-STUD\\Desktop\\TeamProject\\TeamProject\\TeamProject\\TeamProject.csproj",
               "RelativeToolTip": "TeamProject\\TeamProject.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

@@ -16,8 +16,4 @@
     <ProjectReference Include="..\TeamProject.Models\TeamProject.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\" />
-  </ItemGroup>
-
 </Project>

@@ -20,8 +20,4 @@
     <ProjectReference Include="..\TeamProject.DataAccess\TeamProject.DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\Admin\" />
-  </ItemGroup>
-
 </Project>
