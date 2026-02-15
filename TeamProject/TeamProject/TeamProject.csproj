@@ -18,6 +18,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TeamProject.DataAccess\TeamProject.DataAccess.csproj" />
+    <ProjectReference Include="..\TeamProject.Models\TeamProject.Models.csproj" />
+    <ProjectReference Include="..\TeamProject.Services\TeamProject.Services.csproj" />
   </ItemGroup>
 
 </Project>

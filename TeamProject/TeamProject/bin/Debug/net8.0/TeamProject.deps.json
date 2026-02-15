@@ -12,7 +12,9 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "8.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0",
-          "TeamProject.DataAccess": "1.0.0"
+          "TeamProject.DataAccess": "1.0.0",
+          "TeamProject.Models": "1.0.0",
+          "TeamProject.Services": "1.0.0"
         },
         "runtime": {
           "TeamProject.dll": {}
@@ -895,7 +897,7 @@
         },
         "runtime": {
           "TeamProject.DataAccess.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -903,7 +905,18 @@
       "TeamProject.Models/1.0.0": {
         "runtime": {
           "TeamProject.Models.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TeamProject.Services/1.0.0": {
+        "dependencies": {
+          "TeamProject.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "TeamProject.Services.dll": {
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1468,6 +1481,11 @@
       "sha512": ""
     },
     "TeamProject.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeamProject.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

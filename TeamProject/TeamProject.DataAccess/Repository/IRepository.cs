@@ -15,7 +15,7 @@ namespace TeamProject.DataAccess.Repository
 
         IEnumerable<T> GetAll();
 
-        T Get(int id);
+        T? Get(int id);
         
     }
 }

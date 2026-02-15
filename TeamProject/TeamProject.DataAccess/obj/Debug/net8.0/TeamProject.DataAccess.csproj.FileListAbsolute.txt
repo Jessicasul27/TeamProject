@@ -46,3 +46,19 @@ C:\Users\JessicaSuleiman-STUD\Desktop\TeamProject\TeamProject\TeamProject.DataAc
 C:\Users\JessicaSuleiman-STUD\Desktop\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\refint\TeamProject.DataAccess.dll
 C:\Users\JessicaSuleiman-STUD\Desktop\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.pdb
 C:\Users\JessicaSuleiman-STUD\Desktop\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\ref\TeamProject.DataAccess.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\bin\Debug\net8.0\TeamProject.DataAccess.deps.json
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\bin\Debug\net8.0\TeamProject.DataAccess.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\bin\Debug\net8.0\TeamProject.DataAccess.pdb
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\bin\Debug\net8.0\TeamProject.Models.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\bin\Debug\net8.0\TeamProject.Models.pdb
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.csproj.AssemblyReference.cache
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.AssemblyInfoInputs.cache
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.AssemblyInfo.cs
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.sourcelink.json
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProj.5EE98591.Up2Date
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\refint\TeamProject.DataAccess.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\TeamProject.DataAccess.pdb
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.DataAccess\obj\Debug\net8.0\ref\TeamProject.DataAccess.dll
