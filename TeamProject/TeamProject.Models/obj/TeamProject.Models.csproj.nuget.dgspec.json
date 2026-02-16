@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Recordings\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj": {}
+    "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Recordings\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj": {
+    "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Recordings\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
+        "projectUniqueName": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
         "projectName": "TeamProject.Models",
-        "projectPath": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Recordings\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
-        "packagesPath": "C:\\Users\\JessicaSuleiman-STUD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Recordings\\TeamProject\\TeamProject\\TeamProject.Models\\obj\\",
+        "projectPath": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
+        "packagesPath": "C:\\Users\\yuron\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\JessicaSuleiman-STUD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yuron\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

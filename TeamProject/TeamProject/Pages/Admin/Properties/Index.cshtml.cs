@@ -20,7 +20,7 @@ namespace TeamProject.Pages.Admin.Properties
             }
             public void OnGet()
             {
-                Properties = _unitOfWork.PropertyRepo.GetAll();
+                Properties = _unitOfWork.CustomerRepo.GetAll();
             }
     }
     
