@@ -12,12 +12,12 @@ namespace TeamProject.Services
     {
         private readonly AppDbContext _dbContext;
 
-        public IPropertyRepo PropertyRepo { get; private set; }
+        public ICustomerRepo CustomerRepo { get; private set; }
 
         public UnitOfWork(AppDbContext dbContext)
         {
             _dbContext = dbContext;
-            PropertyRepo = new PropertyRepo(_dbContext);
+            CustomerRepo = new CustomerRepo(_dbContext);
         }
 
         public void Save()
