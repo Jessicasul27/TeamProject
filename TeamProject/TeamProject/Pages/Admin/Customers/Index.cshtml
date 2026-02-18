@@ -1,5 +1,43 @@
 ﻿@page
-@model TeamProject.Pages.Admin.Customer.IndexModel
+@model TeamProject.Pages.Admin.Customers.IndexModel
 @{
 }
 
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h3 class="text-primary">Customer Index</h3>
+        </div>
+        <div class="col-6">
+            <a asp-page="Create" class="btn btn-primary">
+                Create Customer
+            </a>
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+<br />
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th> Customer List</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.Customers)
+        {
+            <tr>
+                <td width="50%">@obj.Name</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@obj.CustomerId">Edit</a>
+                </td>
+                <td>
+                    <a asp-page="Delete" asp-route-id="@obj.CustomerId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

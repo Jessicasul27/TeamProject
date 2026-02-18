@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Services;
 using TeamProject.Models.Models;
 
+
 namespace TeamProject.Pages.Admin.Customers
 {
     public class DeleteModel : PageModel
@@ -12,20 +13,43 @@ namespace TeamProject.Pages.Admin.Customers
         {
             _unitOfWork = unitOfWork;
         }
-        public Models.Models.Customer Customer { get; set; }
+        [BindProperty]
+        public Customer Customer { get; set; }
+
         public void OnGet(int id)
         {
             Customer = _unitOfWork.CustomerRepo.Get(id);
         }
-        public IActionResult OnPost(Models.Models.Customer customer)
+
+        public IActionResult OnPost()
         {
-            if (ModelState.IsValid)
+            var customerFromDb = _unitOfWork.CustomerRepo.Get(Customer.CustomerId);
+
+            if (customerFromDb == null)
             {
-                _unitOfWork.CustomerRepo.Delete(customer);
-                _unitOfWork.Save();
+                return NotFound();
             }
+
+            _unitOfWork.CustomerRepo.Delete(customerFromDb);
+            _unitOfWork.Save();
+
             return RedirectToPage("Index");
         }
+
+        //public Customer Customer { get; set; }
+        //public void OnGet(int id)
+        //{
+        //    Customer = _unitOfWork.CustomerRepo.Get(id);
+        //}
+        //public IActionResult OnPost(Customer customer)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _unitOfWork.CustomerRepo.Delete(customer);
+        //        _unitOfWork.Save();
+        //    }
+        //    return RedirectToPage("Index");
+        //}
     }
 }
 

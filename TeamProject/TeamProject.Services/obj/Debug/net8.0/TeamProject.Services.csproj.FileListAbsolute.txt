@@ -52,3 +52,21 @@ C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\Team
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\refint\TeamProject.Services.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.pdb
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\ref\TeamProject.Services.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.deps.json
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.pdb
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.DataAccess.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Models.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.DataAccess.pdb
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Models.pdb
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.csproj.AssemblyReference.cache
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.AssemblyInfoInputs.cache
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.AssemblyInfo.cs
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.csproj.CoreCompileInputs.cache
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.sourcelink.json
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProj.3D3E00BA.Up2Date
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\refint\TeamProject.Services.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.pdb
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\ref\TeamProject.Services.dll

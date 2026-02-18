@@ -9,7 +9,6 @@ namespace TeamProject.DataAccess.Repository
 {
     public interface IPropertyRepo : IRepository<Property>
     {
-        void Add(Customer customer);
         void SaveAll();
     }
 }

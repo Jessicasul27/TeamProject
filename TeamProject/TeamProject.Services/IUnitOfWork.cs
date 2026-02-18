@@ -10,7 +10,7 @@ namespace TeamProject.Services
     public interface IUnitOfWork : IDisposable
     {
         ICustomerRepo CustomerRepo { get; }
-
+        IPropertyRepo PropertyRepo { get; }
         void Save();
     }
 }
