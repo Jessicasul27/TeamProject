@@ -3,56 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.models\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2842F24C-606D-4AF7-B7CC-AFE25E55108E}|TeamProject.Models\\TeamProject.Models.csproj|solutionrelative:teamproject.models\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06CE7F4-ECF3-404F-BAF8-7CDEA7CE7A29}|TeamProject.Services\\TeamProject.Services.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.services\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06CE7F4-ECF3-404F-BAF8-7CDEA7CE7A29}|TeamProject.Services\\TeamProject.Services.csproj|solutionrelative:teamproject.services\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F06CE7F4-ECF3-404F-BAF8-7CDEA7CE7A29}|TeamProject.Services\\TeamProject.Services.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.services\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,16 +23,56 @@
       "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\icustomerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\icustomerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\properties\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06CE7F4-ECF3-404F-BAF8-7CDEA7CE7A29}|TeamProject.Services\\TeamProject.Services.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.services\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06CE7F4-ECF3-404F-BAF8-7CDEA7CE7A29}|TeamProject.Services\\TeamProject.Services.csproj|solutionrelative:teamproject.services\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\icustomerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\icustomerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject\\pages\\admin\\customers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE17DD7A-6411-4FD6-BECA-E90988A4D764}|TeamProject\\TeamProject.csproj|solutionrelative:teamproject\\pages\\admin\\customers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\repository\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|solutionrelative:teamproject.dataaccess\\repository\\propertyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D973BBA8-5E2B-45FE-86C2-73ECD7CA52C8}|TeamProject.DataAccess\\TeamProject.DataAccess.csproj|c:\\users\\yuron\\onedrive\\desktop\\teamproject\\teamproject\\teamproject.dataaccess\\dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 513,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,163 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAB0AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-18T19:29:33.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Create.cshtml.cs",
-              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Create.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:44:22.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml.cs",
-              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:57:07.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Create.cshtml",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Create.cshtml",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Create.cshtml",
-              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Create.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAAC4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-18T18:49:02.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
-              "RelativeToolTip": "TeamProject.Models\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:44:09.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml",
-              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-18T18:49:42.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml",
-              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-18T18:57:45.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml.cs",
-              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T19:09:16.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Index.cshtml",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Index.cshtml",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Index.cshtml",
-              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-18T18:57:49.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CustomerRepo.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\CustomerRepo.cs",
-              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\CustomerRepo.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\CustomerRepo.cs",
-              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\CustomerRepo.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBcAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:43:15.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "TeamProject.Services\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\UnitOfWork.cs",
-              "RelativeToolTip": "TeamProject.Services\\UnitOfWork.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAowBEAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:43:59.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Index.cshtml.cs",
-              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T19:10:23.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Properties\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Properties\\Index.cshtml.cs",
@@ -295,46 +139,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "TeamProject.Services\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\IUnitOfWork.cs",
-              "RelativeToolTip": "TeamProject.Services\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:44:04.038Z",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-18T18:57:45.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\Repository.cs",
-              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T19:05:35.969Z",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-18T18:49:42.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PropertyRepo.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
-              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
-              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T19:15:22.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
               "Title": "ICustomerRepo.cs",
               "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\ICustomerRepo.cs",
               "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\ICustomerRepo.cs",
@@ -347,20 +178,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
-              "RelativeToolTip": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\Repository.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\Repository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T19:05:07.024Z",
+              "WhenOpened": "2026-02-18T19:05:35.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml.cs",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T18:57:07.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "TeamProject.Models\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Models\\Models\\Customer.cs",
+              "RelativeToolTip": "TeamProject.Models\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T18:44:09.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "TeamProject.Services\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\IUnitOfWork.cs",
+              "RelativeToolTip": "TeamProject.Services\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T18:44:04.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\CustomerRepo.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\CustomerRepo.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\CustomerRepo.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\CustomerRepo.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T18:43:15.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "TeamProject.Services\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\UnitOfWork.cs",
+              "RelativeToolTip": "TeamProject.Services\\UnitOfWork.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T18:43:59.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\IRepository.cs",
               "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\IRepository.cs",
@@ -373,6 +269,103 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TeamProject\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAB0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-18T19:29:33.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml.cs",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T19:09:16.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Create.cshtml",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Create.cshtml",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Create.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAC4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-18T18:49:02.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Create.cshtml.cs",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T18:44:22.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Index.cshtml",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Index.cshtml",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-18T18:57:49.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "TeamProject\\Pages\\Admin\\Customers\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject\\Pages\\Admin\\Customers\\Index.cshtml.cs",
+              "RelativeToolTip": "TeamProject\\Pages\\Admin\\Customers\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T19:10:23.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PropertyRepo.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\Repository\\PropertyRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T19:15:22.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "RelativeToolTip": "TeamProject.DataAccess\\DataAccess\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T19:05:07.024Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 19,
               "Title": "IPropertyRepo.cs",
               "DocumentMoniker": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\Repository\\IPropertyRepo.cs",
@@ -381,8 +374,7 @@
               "RelativeToolTip": "TeamProject.DataAccess\\Repository\\IPropertyRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:43:37.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T18:43:37.455Z"
             },
             {
               "$type": "Document",
@@ -394,8 +386,7 @@
               "RelativeToolTip": "TeamProject\\Pages\\Admin\\Properties\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-18T18:57:23.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T18:57:23.971Z"
             },
             {
               "$type": "Document",
@@ -407,8 +398,7 @@
               "RelativeToolTip": "TeamProject\\Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-18T18:57:02.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T18:57:02.065Z"
             },
             {
               "$type": "Document",
@@ -420,8 +410,7 @@
               "RelativeToolTip": "TeamProject\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:56:41.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T18:56:41.01Z"
             },
             {
               "$type": "Document",
@@ -433,8 +422,7 @@
               "RelativeToolTip": "TeamProject.Models\\Models\\LandLord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:44:50.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T18:44:50.421Z"
             }
           ]
         },

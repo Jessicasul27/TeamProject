@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamProject.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c97c2e56aad5941c4c62031f48b252c8c0b62921")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2385003dbd1b66457a10346c6098cb96ff550f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamProject.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamProject.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
