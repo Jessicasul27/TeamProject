@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TeamProject.DataAccess.DataAccess;
+﻿using TeamProject.DataAccess.DataAccess;
 using TeamProject.Models.Models;
 
 namespace TeamProject.DataAccess.Repository
@@ -18,7 +13,7 @@ namespace TeamProject.DataAccess.Repository
 
         public void SaveAll()
         {
-            throw new NotImplementedException();
+            _dbContext.SaveChanges();
         }
 
         public void Update(Customer customer)

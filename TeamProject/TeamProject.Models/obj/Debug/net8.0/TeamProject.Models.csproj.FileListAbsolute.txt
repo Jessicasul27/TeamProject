@@ -46,3 +46,15 @@ C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\Team
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\refint\TeamProject.Models.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\TeamProject.Models.pdb
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\Recordings\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\ref\TeamProject.Models.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\bin\Debug\net8.0\TeamProject.Models.deps.json
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\bin\Debug\net8.0\TeamProject.Models.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\bin\Debug\net8.0\TeamProject.Models.pdb
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\TeamProject.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\TeamProject.Models.AssemblyInfoInputs.cache
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\TeamProject.Models.AssemblyInfo.cs
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\TeamProject.Models.csproj.CoreCompileInputs.cache
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\TeamProject.Models.sourcelink.json
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\TeamProject.Models.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\refint\TeamProject.Models.dll
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\TeamProject.Models.pdb
+C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Models\obj\Debug\net8.0\ref\TeamProject.Models.dll

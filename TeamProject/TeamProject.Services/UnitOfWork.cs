@@ -13,6 +13,7 @@ namespace TeamProject.Services
         private readonly AppDbContext _dbContext;
 
         public ICustomerRepo CustomerRepo { get; private set; }
+        public IPropertyRepo PropertyRepo { get; private set; }
 
         public UnitOfWork(AppDbContext dbContext)
         {

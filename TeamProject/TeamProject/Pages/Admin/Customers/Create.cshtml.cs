@@ -12,12 +12,12 @@ namespace TeamProject.Pages.Admin.Customers
         {
             _unitOfWork = unitOfWork;
         }
-        public Models.Models.Customer Customer { get; set; }
+        public Customer Customer { get; set; }
         public void OnGet()
         {
         }
 
-        public IActionResult OnPost(Models.Models.Customer customer)
+        public IActionResult OnPost(Customer customer)
         {
             if (!ModelState.IsValid)
             {
