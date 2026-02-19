@@ -739,3 +739,5 @@ C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject\obj\Debug\ne
 C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject\obj\Debug\net8.0\TeamProj.4DCBAE7B.Up2Date
 C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject\obj\Debug\net8.0\TeamProject.genruntimeconfig.cache
 C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject\obj\Debug\net8.0\ref\TeamProject.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\TeamProject.Services.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject\bin\Debug\net8.0\TeamProject.Services.pdb

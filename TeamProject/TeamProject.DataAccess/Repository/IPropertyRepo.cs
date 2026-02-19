@@ -10,5 +10,8 @@ namespace TeamProject.DataAccess.Repository
     public interface IPropertyRepo : IRepository<Property>
     {
         void SaveAll();
+
+        public void Update(Property property);
+        
     }
 }

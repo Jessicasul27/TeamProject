@@ -19,6 +19,7 @@ namespace TeamProject.Services
         {
             _dbContext = dbContext;
             CustomerRepo = new CustomerRepo(_dbContext);
+            PropertyRepo = new PropertyRepo(_dbContext);
         }
 
         public void Save()

@@ -70,3 +70,9 @@ C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj
 C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\refint\TeamProject.Services.dll
 C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.pdb
 C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\ref\TeamProject.Services.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.DataAccess.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Models.dll
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.DataAccess.pdb
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Models.pdb
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.csproj.AssemblyReference.cache
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProj.3D3E00BA.Up2Date
