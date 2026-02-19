@@ -1,6 +1,13 @@
 wwwroot\css\bootswatchTheme.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Images\Properties\348322d7-1680-430a-a90e-4df643c394f6.webp
+wwwroot\Images\Properties\4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp
+wwwroot\Images\Properties\98bef8af-88e9-4799-a773-74534248209d.jpg
+wwwroot\Images\Properties\apartment.jpg
+wwwroot\Images\Properties\b2f561da-6c61-4cc0-a138-af631d60acbd.jpg
+wwwroot\Images\Properties\beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg
+wwwroot\Images\Properties\house.webp
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
