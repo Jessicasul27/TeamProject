@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o3aCTjgf1lKwBNWf59ulm+M1tWVcWoqPRzUqXfD7Vws=",
+  "Hash": "eKHNyIW0NJa8hDaEiHFL7E/XBvibBw72L/gcWa1CQCc=",
   "Source": "TeamProject",
   "BasePath": "_content/TeamProject",
   "Mode": "Default",
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp",
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\beachsidevilla.jpg",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
       "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd#[.{fingerprint}]?.webp",
+      "RelativePath": "Images/Properties/beachsidevilla#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -136,19 +136,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "meo69xd53z",
-      "Integrity": "Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=",
+      "Fingerprint": "rruk0nzecu",
+      "Integrity": "ObtBittMl6Df5qZTIj11U1z2SVo0G7jNSHVizzA5TmM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp"
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\beachsidevilla.jpg"
     },
     {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\348322d7-1680-430a-a90e-4df643c394f6.webp",
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\bearview.jpg",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
       "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/348322d7-1680-430a-a90e-4df643c394f6#[.{fingerprint}]?.webp",
+      "RelativePath": "Images/Properties/bearview#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -157,19 +157,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "meo69xd53z",
-      "Integrity": "Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=",
+      "Fingerprint": "el4echr3c3",
+      "Integrity": "PhGUFUIJV0q18nnCv6ee5f6FgNY+RCv0t5SV6yyMOBU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\348322d7-1680-430a-a90e-4df643c394f6.webp"
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\bearview.jpg"
     },
     {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg",
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\citycenterhouse.jpg",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
       "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee#[.{fingerprint}]?.jpg",
+      "RelativePath": "Images/Properties/citycenterhouse#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -178,19 +178,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wuk3vxm5e9",
-      "Integrity": "qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=",
+      "Fingerprint": "5q6624eckj",
+      "Integrity": "c+a/SSomixCLNgIjO66umlMCI+JsCHWmIszYSSO2hI8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\citycenterhouse.jpg"
     },
     {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp",
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\cozycottage.jpg",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
       "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/4ee13375-5b0c-4e8c-a897-e5ba4e749d71#[.{fingerprint}]?.webp",
+      "RelativePath": "Images/Properties/cozycottage#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -199,19 +199,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "meo69xd53z",
-      "Integrity": "Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=",
+      "Fingerprint": "5pvq6wv7nu",
+      "Integrity": "+RiXExaUmRsKfwoTUzJ8dgBfkR2/fjfg0OE/+m523Sk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp"
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\cozycottage.jpg"
     },
     {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\98bef8af-88e9-4799-a773-74534248209d.jpg",
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\lakefrontcabin.jpg",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
       "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/98bef8af-88e9-4799-a773-74534248209d#[.{fingerprint}]?.jpg",
+      "RelativePath": "Images/Properties/lakefrontcabin#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -220,19 +220,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wuk3vxm5e9",
-      "Integrity": "qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=",
+      "Fingerprint": "ta97pc67i3",
+      "Integrity": "K0zujabqacW2yXa92UIvhPxaoziXzekAJilbK8VwX90=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\98bef8af-88e9-4799-a773-74534248209d.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\lakefrontcabin.jpg"
     },
     {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg",
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\luxurypenthouse.jpg",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
       "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f#[.{fingerprint}]?.jpg",
+      "RelativePath": "Images/Properties/luxurypenthouse#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -241,19 +241,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wuk3vxm5e9",
-      "Integrity": "qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=",
+      "Fingerprint": "ky3yijgukw",
+      "Integrity": "jEbAdGcTdEotrfQT7mbf+w0ljH8/xsrLHj+/dZuJJT4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\luxurypenthouse.jpg"
     },
     {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\apartment.jpg",
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\moderntownhouse.jpg",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
       "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/apartment#[.{fingerprint}]?.jpg",
+      "RelativePath": "Images/Properties/moderntownhouse#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -262,19 +262,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wuk3vxm5e9",
-      "Integrity": "qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=",
+      "Fingerprint": "m3ddbg1pp4",
+      "Integrity": "bgFmXzAt+qrxpRmUvto7DrtnaSr/NUeUemkIQHohAtE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\apartment.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\moderntownhouse.jpg"
     },
     {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\b2f561da-6c61-4cc0-a138-af631d60acbd.jpg",
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\seaview.jpg",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
       "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/b2f561da-6c61-4cc0-a138-af631d60acbd#[.{fingerprint}]?.jpg",
+      "RelativePath": "Images/Properties/seaview#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -283,53 +283,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wuk3vxm5e9",
-      "Integrity": "qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=",
+      "Fingerprint": "qh2wvhk186",
+      "Integrity": "YkiOfBVV7ZPG59FyUU/CiN/Y6b2kjjAfjzM8i7iPfts=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\b2f561da-6c61-4cc0-a138-af631d60acbd.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg",
-      "SourceId": "TeamProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
-      "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/beb231ba-da4a-4ae4-831f-f13ced74a9d7#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "wuk3vxm5e9",
-      "Integrity": "qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\house.webp",
-      "SourceId": "TeamProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
-      "BasePath": "_content/TeamProject",
-      "RelativePath": "Images/Properties/house#[.{fingerprint}]?.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "meo69xd53z",
-      "Integrity": "Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Properties\\house.webp"
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\seaview.jpg"
     },
     {
       "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\js\\site.js",
@@ -1574,7 +1532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 11:19:51 GMT"
+          "Value": "Thu, 19 Feb 2026 21:02:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1611,7 +1569,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 11:19:51 GMT"
+          "Value": "Thu, 19 Feb 2026 21:02:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1798,8 +1756,8 @@
       ]
     },
     {
-      "Route": "Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd.meo69xd53z.webp",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp",
+      "Route": "Images/Properties/beachsidevilla.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\beachsidevilla.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1808,64 +1766,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16082"
+          "Value": "68885"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
+          "Value": "\"ObtBittMl6Df5qZTIj11U1z2SVo0G7jNSHVizzA5TmM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:47:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "meo69xd53z"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16082"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:47:38 GMT"
+          "Value": "Thu, 19 Feb 2026 21:37:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1875,13 +1788,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
+          "Value": "sha256-ObtBittMl6Df5qZTIj11U1z2SVo0G7jNSHVizzA5TmM="
         }
       ]
     },
     {
-      "Route": "Images/Properties/348322d7-1680-430a-a90e-4df643c394f6.meo69xd53z.webp",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\348322d7-1680-430a-a90e-4df643c394f6.webp",
+      "Route": "Images/Properties/beachsidevilla.rruk0nzecu.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\beachsidevilla.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1890,19 +1803,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16082"
+          "Value": "68885"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
+          "Value": "\"ObtBittMl6Df5qZTIj11U1z2SVo0G7jNSHVizzA5TmM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:43:39 GMT"
+          "Value": "Thu, 19 Feb 2026 21:37:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1912,21 +1825,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "meo69xd53z"
+          "Value": "rruk0nzecu"
         },
         {
           "Name": "label",
-          "Value": "Images/Properties/348322d7-1680-430a-a90e-4df643c394f6.webp"
+          "Value": "Images/Properties/beachsidevilla.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
+          "Value": "sha256-ObtBittMl6Df5qZTIj11U1z2SVo0G7jNSHVizzA5TmM="
         }
       ]
     },
     {
-      "Route": "Images/Properties/348322d7-1680-430a-a90e-4df643c394f6.webp",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\348322d7-1680-430a-a90e-4df643c394f6.webp",
+      "Route": "Images/Properties/bearview.el4echr3c3.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\bearview.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1935,44 +1848,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16082"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:43:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "1361494"
         },
         {
           "Name": "Content-Type",
@@ -1980,48 +1856,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"PhGUFUIJV0q18nnCv6ee5f6FgNY+RCv0t5SV6yyMOBU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 19:16:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee.wuk3vxm5e9.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1559713"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 19:16:59 GMT"
+          "Value": "Thu, 19 Feb 2026 21:28:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2031,21 +1870,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wuk3vxm5e9"
+          "Value": "el4echr3c3"
         },
         {
           "Name": "label",
-          "Value": "Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee.jpg"
+          "Value": "Images/Properties/bearview.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-PhGUFUIJV0q18nnCv6ee5f6FgNY+RCv0t5SV6yyMOBU="
         }
       ]
     },
     {
-      "Route": "Images/Properties/4ee13375-5b0c-4e8c-a897-e5ba4e749d71.meo69xd53z.webp",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp",
+      "Route": "Images/Properties/bearview.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\bearview.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2054,64 +1893,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16082"
+          "Value": "1361494"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
+          "Value": "\"PhGUFUIJV0q18nnCv6ee5f6FgNY+RCv0t5SV6yyMOBU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:44:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "meo69xd53z"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Properties/4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Properties/4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16082"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:44:38 GMT"
+          "Value": "Thu, 19 Feb 2026 21:28:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2121,13 +1915,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
+          "Value": "sha256-PhGUFUIJV0q18nnCv6ee5f6FgNY+RCv0t5SV6yyMOBU="
         }
       ]
     },
     {
-      "Route": "Images/Properties/98bef8af-88e9-4799-a773-74534248209d.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\98bef8af-88e9-4799-a773-74534248209d.jpg",
+      "Route": "Images/Properties/citycenterhouse.5q6624eckj.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\citycenterhouse.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2136,7 +1930,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "253235"
         },
         {
           "Name": "Content-Type",
@@ -2144,48 +1938,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"c+a/SSomixCLNgIjO66umlMCI+JsCHWmIszYSSO2hI8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:42:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Properties/98bef8af-88e9-4799-a773-74534248209d.wuk3vxm5e9.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\98bef8af-88e9-4799-a773-74534248209d.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1559713"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:42:58 GMT"
+          "Value": "Thu, 19 Feb 2026 21:38:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2195,21 +1952,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wuk3vxm5e9"
+          "Value": "5q6624eckj"
         },
         {
           "Name": "label",
-          "Value": "Images/Properties/98bef8af-88e9-4799-a773-74534248209d.jpg"
+          "Value": "Images/Properties/citycenterhouse.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-c+a/SSomixCLNgIjO66umlMCI+JsCHWmIszYSSO2hI8="
         }
       ]
     },
     {
-      "Route": "Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg",
+      "Route": "Images/Properties/citycenterhouse.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\citycenterhouse.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2218,7 +1975,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "253235"
         },
         {
           "Name": "Content-Type",
@@ -2226,11 +1983,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"c+a/SSomixCLNgIjO66umlMCI+JsCHWmIszYSSO2hI8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 15:28:37 GMT"
+          "Value": "Thu, 19 Feb 2026 21:38:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2240,13 +1997,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-c+a/SSomixCLNgIjO66umlMCI+JsCHWmIszYSSO2hI8="
         }
       ]
     },
     {
-      "Route": "Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f.wuk3vxm5e9.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg",
+      "Route": "Images/Properties/cozycottage.5pvq6wv7nu.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\cozycottage.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2255,7 +2012,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "259360"
         },
         {
           "Name": "Content-Type",
@@ -2263,11 +2020,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"+RiXExaUmRsKfwoTUzJ8dgBfkR2/fjfg0OE/+m523Sk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 15:28:37 GMT"
+          "Value": "Thu, 19 Feb 2026 21:33:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2277,21 +2034,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wuk3vxm5e9"
+          "Value": "5pvq6wv7nu"
         },
         {
           "Name": "label",
-          "Value": "Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg"
+          "Value": "Images/Properties/cozycottage.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-+RiXExaUmRsKfwoTUzJ8dgBfkR2/fjfg0OE/+m523Sk="
         }
       ]
     },
     {
-      "Route": "Images/Properties/apartment.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\apartment.jpg",
+      "Route": "Images/Properties/cozycottage.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\cozycottage.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2300,7 +2057,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "259360"
         },
         {
           "Name": "Content-Type",
@@ -2308,11 +2065,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"+RiXExaUmRsKfwoTUzJ8dgBfkR2/fjfg0OE/+m523Sk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 12:21:41 GMT"
+          "Value": "Thu, 19 Feb 2026 21:33:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2322,13 +2079,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-+RiXExaUmRsKfwoTUzJ8dgBfkR2/fjfg0OE/+m523Sk="
         }
       ]
     },
     {
-      "Route": "Images/Properties/apartment.wuk3vxm5e9.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\apartment.jpg",
+      "Route": "Images/Properties/lakefrontcabin.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\lakefrontcabin.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2337,7 +2094,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "460134"
         },
         {
           "Name": "Content-Type",
@@ -2345,56 +2102,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"K0zujabqacW2yXa92UIvhPxaoziXzekAJilbK8VwX90=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 12:21:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wuk3vxm5e9"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Properties/apartment.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Properties/b2f561da-6c61-4cc0-a138-af631d60acbd.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\b2f561da-6c61-4cc0-a138-af631d60acbd.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1559713"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:40:47 GMT"
+          "Value": "Thu, 19 Feb 2026 21:35:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2404,13 +2116,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-K0zujabqacW2yXa92UIvhPxaoziXzekAJilbK8VwX90="
         }
       ]
     },
     {
-      "Route": "Images/Properties/b2f561da-6c61-4cc0-a138-af631d60acbd.wuk3vxm5e9.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\b2f561da-6c61-4cc0-a138-af631d60acbd.jpg",
+      "Route": "Images/Properties/lakefrontcabin.ta97pc67i3.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\lakefrontcabin.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2419,7 +2131,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "460134"
         },
         {
           "Name": "Content-Type",
@@ -2427,11 +2139,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"K0zujabqacW2yXa92UIvhPxaoziXzekAJilbK8VwX90=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:40:47 GMT"
+          "Value": "Thu, 19 Feb 2026 21:35:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2441,21 +2153,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wuk3vxm5e9"
+          "Value": "ta97pc67i3"
         },
         {
           "Name": "label",
-          "Value": "Images/Properties/b2f561da-6c61-4cc0-a138-af631d60acbd.jpg"
+          "Value": "Images/Properties/lakefrontcabin.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-K0zujabqacW2yXa92UIvhPxaoziXzekAJilbK8VwX90="
         }
       ]
     },
     {
-      "Route": "Images/Properties/beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg",
+      "Route": "Images/Properties/luxurypenthouse.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\luxurypenthouse.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2464,7 +2176,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "51155"
         },
         {
           "Name": "Content-Type",
@@ -2472,11 +2184,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"jEbAdGcTdEotrfQT7mbf+w0ljH8/xsrLHj+/dZuJJT4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:41:26 GMT"
+          "Value": "Thu, 19 Feb 2026 21:32:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2486,13 +2198,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-jEbAdGcTdEotrfQT7mbf+w0ljH8/xsrLHj+/dZuJJT4="
         }
       ]
     },
     {
-      "Route": "Images/Properties/beb231ba-da4a-4ae4-831f-f13ced74a9d7.wuk3vxm5e9.jpg",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg",
+      "Route": "Images/Properties/luxurypenthouse.ky3yijgukw.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\luxurypenthouse.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2501,7 +2213,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1559713"
+          "Value": "51155"
         },
         {
           "Name": "Content-Type",
@@ -2509,11 +2221,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+          "Value": "\"jEbAdGcTdEotrfQT7mbf+w0ljH8/xsrLHj+/dZuJJT4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:41:26 GMT"
+          "Value": "Thu, 19 Feb 2026 21:32:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2523,21 +2235,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wuk3vxm5e9"
+          "Value": "ky3yijgukw"
         },
         {
           "Name": "label",
-          "Value": "Images/Properties/beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg"
+          "Value": "Images/Properties/luxurypenthouse.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+          "Value": "sha256-jEbAdGcTdEotrfQT7mbf+w0ljH8/xsrLHj+/dZuJJT4="
         }
       ]
     },
     {
-      "Route": "Images/Properties/house.meo69xd53z.webp",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\house.webp",
+      "Route": "Images/Properties/moderntownhouse.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\moderntownhouse.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2546,64 +2258,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16082"
+          "Value": "176411"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
+          "Value": "\"bgFmXzAt+qrxpRmUvto7DrtnaSr/NUeUemkIQHohAtE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:42:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "meo69xd53z"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Properties/house.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Properties/house.webp",
-      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\house.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16082"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Feb 2026 14:42:22 GMT"
+          "Value": "Thu, 19 Feb 2026 21:34:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2613,7 +2280,134 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
+          "Value": "sha256-bgFmXzAt+qrxpRmUvto7DrtnaSr/NUeUemkIQHohAtE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Properties/moderntownhouse.m3ddbg1pp4.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\moderntownhouse.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176411"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bgFmXzAt+qrxpRmUvto7DrtnaSr/NUeUemkIQHohAtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 21:34:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m3ddbg1pp4"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Properties/moderntownhouse.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bgFmXzAt+qrxpRmUvto7DrtnaSr/NUeUemkIQHohAtE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Properties/seaview.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\seaview.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "334531"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YkiOfBVV7ZPG59FyUU/CiN/Y6b2kjjAfjzM8i7iPfts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 21:28:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YkiOfBVV7ZPG59FyUU/CiN/Y6b2kjjAfjzM8i7iPfts="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Properties/seaview.qh2wvhk186.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\seaview.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "334531"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YkiOfBVV7ZPG59FyUU/CiN/Y6b2kjjAfjzM8i7iPfts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 21:28:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qh2wvhk186"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Properties/seaview.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YkiOfBVV7ZPG59FyUU/CiN/Y6b2kjjAfjzM8i7iPfts="
         }
       ]
     },

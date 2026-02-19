@@ -54,185 +54,149 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\beachsidevilla.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TeamProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp</RelativePath>
+      <RelativePath>Images/Properties/beachsidevilla.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>meo69xd53z</Fingerprint>
-      <Integrity>Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=</Integrity>
+      <Fingerprint>rruk0nzecu</Fingerprint>
+      <Integrity>ObtBittMl6Df5qZTIj11U1z2SVo0G7jNSHVizzA5TmM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\beachsidevilla.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\348322d7-1680-430a-a90e-4df643c394f6.webp'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\bearview.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TeamProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/348322d7-1680-430a-a90e-4df643c394f6.webp</RelativePath>
+      <RelativePath>Images/Properties/bearview.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>meo69xd53z</Fingerprint>
-      <Integrity>Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=</Integrity>
+      <Fingerprint>el4echr3c3</Fingerprint>
+      <Integrity>PhGUFUIJV0q18nnCv6ee5f6FgNY+RCv0t5SV6yyMOBU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\348322d7-1680-430a-a90e-4df643c394f6.webp'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\bearview.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\citycenterhouse.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TeamProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee.jpg</RelativePath>
+      <RelativePath>Images/Properties/citycenterhouse.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wuk3vxm5e9</Fingerprint>
-      <Integrity>qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=</Integrity>
+      <Fingerprint>5q6624eckj</Fingerprint>
+      <Integrity>c+a/SSomixCLNgIjO66umlMCI+JsCHWmIszYSSO2hI8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\citycenterhouse.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\cozycottage.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TeamProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp</RelativePath>
+      <RelativePath>Images/Properties/cozycottage.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>meo69xd53z</Fingerprint>
-      <Integrity>Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=</Integrity>
+      <Fingerprint>5pvq6wv7nu</Fingerprint>
+      <Integrity>+RiXExaUmRsKfwoTUzJ8dgBfkR2/fjfg0OE/+m523Sk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\cozycottage.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\98bef8af-88e9-4799-a773-74534248209d.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\lakefrontcabin.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TeamProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/98bef8af-88e9-4799-a773-74534248209d.jpg</RelativePath>
+      <RelativePath>Images/Properties/lakefrontcabin.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wuk3vxm5e9</Fingerprint>
-      <Integrity>qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=</Integrity>
+      <Fingerprint>ta97pc67i3</Fingerprint>
+      <Integrity>K0zujabqacW2yXa92UIvhPxaoziXzekAJilbK8VwX90=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\98bef8af-88e9-4799-a773-74534248209d.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\lakefrontcabin.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\luxurypenthouse.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TeamProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg</RelativePath>
+      <RelativePath>Images/Properties/luxurypenthouse.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wuk3vxm5e9</Fingerprint>
-      <Integrity>qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=</Integrity>
+      <Fingerprint>ky3yijgukw</Fingerprint>
+      <Integrity>jEbAdGcTdEotrfQT7mbf+w0ljH8/xsrLHj+/dZuJJT4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\luxurypenthouse.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\apartment.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\moderntownhouse.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TeamProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/apartment.jpg</RelativePath>
+      <RelativePath>Images/Properties/moderntownhouse.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wuk3vxm5e9</Fingerprint>
-      <Integrity>qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=</Integrity>
+      <Fingerprint>m3ddbg1pp4</Fingerprint>
+      <Integrity>bgFmXzAt+qrxpRmUvto7DrtnaSr/NUeUemkIQHohAtE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\apartment.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\moderntownhouse.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\b2f561da-6c61-4cc0-a138-af631d60acbd.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\seaview.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TeamProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/b2f561da-6c61-4cc0-a138-af631d60acbd.jpg</RelativePath>
+      <RelativePath>Images/Properties/seaview.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wuk3vxm5e9</Fingerprint>
-      <Integrity>qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=</Integrity>
+      <Fingerprint>qh2wvhk186</Fingerprint>
+      <Integrity>YkiOfBVV7ZPG59FyUU/CiN/Y6b2kjjAfjzM8i7iPfts=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\b2f561da-6c61-4cc0-a138-af631d60acbd.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>TeamProject</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wuk3vxm5e9</Fingerprint>
-      <Integrity>qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\beb231ba-da4a-4ae4-831f-f13ced74a9d7.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\house.webp'))">
-      <SourceType>Package</SourceType>
-      <SourceId>TeamProject</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/TeamProject</BasePath>
-      <RelativePath>Images/Properties/house.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>meo69xd53z</Fingerprint>
-      <Integrity>Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\house.webp'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Properties\seaview.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>

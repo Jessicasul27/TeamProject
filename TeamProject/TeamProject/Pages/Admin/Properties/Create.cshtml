@@ -40,12 +40,12 @@
             </div>
             <div>
                 <label asp-for="@Model.Property.FullDescription"></label>
-                <input asp-for="@Model.Property.FullDescription" class="form-control" />
+                <textarea asp-for="@Model.Property.FullDescription" class="form-control"> </textarea>
                 <span asp-validation-for="@Model.Property.FullDescription" class="text-danger"></span>
             </div>
             <div>
                 <label asp-for="@Model.Property.DescDescription"></label>
-                <input asp-for="@Model.Property.DescDescription" class="form-control" />
+                <textarea asp-for="@Model.Property.DescDescription" class="form-control"></textarea>
                 <span asp-validation-for="@Model.Property.DescDescription" class="text-danger"></span>
             </div>
             <div>
