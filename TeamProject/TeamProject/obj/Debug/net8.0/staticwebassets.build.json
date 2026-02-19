@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HtF+1u4IjqJdMG7oAT4Xhzu7VDsEdbO3TDYSKxW+spo=",
+  "Hash": "dk97EC+Ayd3I6alXUzff6RbsUgQfv6d5f7Wx6uGJ7cA=",
   "Source": "TeamProject",
   "BasePath": "_content/TeamProject",
   "Mode": "Default",
@@ -122,6 +122,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp",
+      "SourceId": "TeamProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
+      "BasePath": "_content/TeamProject",
+      "RelativePath": "Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "meo69xd53z",
+      "Integrity": "Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp"
+    },
+    {
       "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\348322d7-1680-430a-a90e-4df643c394f6.webp",
       "SourceId": "TeamProject",
       "SourceType": "Discovered",
@@ -183,6 +204,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Properties\\98bef8af-88e9-4799-a773-74534248209d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg",
+      "SourceId": "TeamProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
+      "BasePath": "_content/TeamProject",
+      "RelativePath": "Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wuk3vxm5e9",
+      "Integrity": "qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg"
     },
     {
       "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\apartment.jpg",
@@ -1735,6 +1777,88 @@
       ]
     },
     {
+      "Route": "Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd.meo69xd53z.webp",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16082"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 14:47:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "meo69xd53z"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Properties/1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\1fbc067d-77ba-4091-9a0b-7b26716d20fd.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16082"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 14:47:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
+        }
+      ]
+    },
+    {
       "Route": "Images/Properties/348322d7-1680-430a-a90e-4df643c394f6.meo69xd53z.webp",
       "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\348322d7-1680-430a-a90e-4df643c394f6.webp",
       "Selectors": [],
@@ -1973,6 +2097,88 @@
         {
           "Name": "label",
           "Value": "Images/Properties/98bef8af-88e9-4799-a773-74534248209d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 15:28:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f.wuk3vxm5e9.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 15:28:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wuk3vxm5e9"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Properties/9a3ac838-fcf7-45bd-a71f-f1d53967496f.jpg"
         },
         {
           "Name": "integrity",
