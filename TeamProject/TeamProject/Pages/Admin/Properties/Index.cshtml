@@ -36,6 +36,7 @@
                 <th>Price Per Night</th>
                 <th>Max Guests</th>
                 <th>Status</th>
+                <th>Actions</th>
 
             </tr>
         </thead>
@@ -43,12 +44,12 @@
             @foreach (var obj in Model.Properties)
             {
                         <tr>
-                            <td width="50%">@obj.Title</td>
-                            <td width="50%">@obj.Location</td>
-                                <td width="50%">@obj.PropertyType</td>
-                                <td width="50%">@obj.PricePerNight</td>
-                                    <td width="50%">@obj.MaxGuests</td>
-                                        <td width="50%">@obj.status</td>
+                                <td>@obj.Title</td>
+                                <td>@obj.Location</td>
+                                <td>@obj.PropertyType</td>
+                                <td>€@obj.PricePerNight</td>
+                                <td>@obj.MaxGuests</td>
+                                <td>@(obj.status ? "Active" : "Inactive")</td>
                             <td>
                                 <a asp-page="Edit" asp-route-id="@obj.PropertyId" class="btn btn-success btn-sm mx-1">Edit</a>
                                 <a asp-page="Delete" asp-route-id="@obj.PropertyId" class="btn btn-danger btn-sm mx-1">Delete</a>

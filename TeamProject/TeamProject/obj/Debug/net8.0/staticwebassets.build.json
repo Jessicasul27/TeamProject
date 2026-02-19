@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dk97EC+Ayd3I6alXUzff6RbsUgQfv6d5f7Wx6uGJ7cA=",
+  "Hash": "o3aCTjgf1lKwBNWf59ulm+M1tWVcWoqPRzUqXfD7Vws=",
   "Source": "TeamProject",
   "BasePath": "_content/TeamProject",
   "Mode": "Default",
@@ -162,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Properties\\348322d7-1680-430a-a90e-4df643c394f6.webp"
+    },
+    {
+      "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg",
+      "SourceId": "TeamProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\",
+      "BasePath": "_content/TeamProject",
+      "RelativePath": "Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wuk3vxm5e9",
+      "Integrity": "qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Properties\\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg"
     },
     {
       "Identity": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\4ee13375-5b0c-4e8c-a897-e5ba4e749d71.webp",
@@ -1937,6 +1958,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Dp4EH8XzR0ZKxTeHQsrwLeXg206qO0vkopabnFqKrWE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 19:16:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee.wuk3vxm5e9.jpg",
+      "AssetFile": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject\\wwwroot\\Images\\Properties\\3e89908f-d744-406b-98f9-a1afaaede1ee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Feb 2026 19:16:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wuk3vxm5e9"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Properties/3e89908f-d744-406b-98f9-a1afaaede1ee.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qDBv2BWNIiWZDd666+AskOtHU61BInhHdfCwUanexWY="
         }
       ]
     },
