@@ -1,0 +1,67 @@
+﻿@page
+@model TeamProject.Pages.Customers.Home.IndexModel
+@{
+}
+
+<div class="container pb-3 backgroundWhite">
+   
+
+    @foreach (var propertyType in Model.listOfProperties.GroupBy(p => p.PropertyType))
+    {
+        <h2 class="text-success pl-1">
+            <b>@propertyType.Key</b>
+        </h2>
+
+        <div class="row">
+            @foreach (var property in propertyType)
+            {
+                <div class="col-lg-4 col-md-6 pb-4 filter">
+                    <div class="card bg-white rounded shadow-sm" style="border:1px solid #222">
+
+                        <div class="card-body pb-1 row">
+                            <div class="col-8 h5">@property.Title</div>
+                            <div class="col-4 text-end">
+                                <span class="text-info h4">
+                                    €@property.PricePerNight (Per Night)
+                                </span>
+                            </div>
+                        </div>
+
+                        <img class="card-img-top img-fluid d-block mx-auto mb-3"
+                             src="@property.Image"
+                             alt="menuitem image">
+
+                        <div class="card-body p-1 px-3 row">
+                            <div class="col-6">
+                                <span class="badge p-2 border w-100 text-dark bg-warning">
+                                    @property.PropertyType
+                                </span>
+                            </div>
+
+                            <div class="col-6 border-0">
+                                <span class="badge p-2 border w-100 bg-info">
+                                    @property.Title
+                                </span>
+                            </div>
+
+                            <div class="col-12 pt-2" style="font-size:13px; text-align:justify">
+                                <p>@property.DescDescription</p>
+                            </div>
+
+                            <div class="col-12 p-1">
+                                <a asp-page="Details"
+                                   asp-route-id="@property.PropertyId"
+                                   class="btn btn-dark form-control btn-sm p-2"
+                                   style="height:40px">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+</div>
