@@ -19,7 +19,5 @@ namespace TeamProject.Models.Models
         public DateTime? ExpiryDate { get; set; }
 
         public int? CVC {  get; set; }
-
-        public int? NumBooking { get; set; }
     }   
 }
