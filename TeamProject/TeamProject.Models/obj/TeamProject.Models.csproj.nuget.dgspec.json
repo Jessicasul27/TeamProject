@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Meetings\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj": {}
+    "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Meetings\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj": {
+    "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Meetings\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
+        "projectUniqueName": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
         "projectName": "TeamProject.Models",
-        "projectPath": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Meetings\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
-        "packagesPath": "C:\\Users\\JessicaSuleiman-STUD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JessicaSuleiman-STUD\\OneDrive - Atlantic TU\\Meetings\\TeamProject\\TeamProject\\TeamProject.Models\\obj\\",
+        "projectPath": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\TeamProject.Models.csproj",
+        "packagesPath": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\JessicaSuleiman-STUD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

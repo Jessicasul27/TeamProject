@@ -1,9 +1,17 @@
-﻿@page
+﻿@page "{SearchString?}"
 @model TeamProject.Pages.Customers.Home.IndexModel
 @{
 }
 
 <div class="container pb-3 backgroundWhite">
+
+    <p>
+        <form class="d-flex" class="col-3">
+            <input type="text" placeholder="Enter Location of property you would like to view..." class="form-control me-sm-2" asp-for="SearchString" />
+            <input type="submit" value="Search" class="btn btn-outline" class="form-control align-content-end" />
+            <a asp-rote-Products="" asp-route-SearchString="" class="btn btn-outline-secondary ms-2">Clear</a>
+        </form>
+    </p>
    
 
     @foreach (var propertyType in Model.listOfProperties.GroupBy(p => p.PropertyType))
@@ -22,7 +30,7 @@
                             <div class="col-8 h5">@property.Title</div>
                             <div class="col-4 text-end">
                                 <span class="text-info h4">
-                                    €@property.PricePerNight (Per Night)
+                                    €@property.PricePerNight
                                 </span>
                             </div>
                         </div>
@@ -37,6 +45,7 @@
                                     @property.PropertyType
                                 </span>
                             </div>
+
 
                             <div class="col-6 border-0">
                                 <span class="badge p-2 border w-100 bg-info">
