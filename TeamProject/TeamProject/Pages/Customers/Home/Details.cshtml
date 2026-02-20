@@ -1,0 +1,70 @@
+﻿@page
+@model TeamProject.Pages.Customers.Home.DetailsModel
+@{
+}
+<div class="">
+    <form method="post">
+
+        <div class="container backgroundWhite">
+            <div class="card">
+                <div class="card-header">
+                    <div class="text-light ml-0 row ">
+                        <div class="col-12 col-md-6 pt-2">
+                            <h1 class="text-primary">@Model.Property.Title</h1>
+                        </div>
+                        <div class="col-12 col-md-6 text-end pt-2">
+                            <h1 class="text-muted">€@Model.Property.PricePerNight</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="container rounded p-2">
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <h3 class="text-success"></h3>
+
+                                        <p class="text-secondary">@Model.Property.FullDescription</p>
+                                        <p class="text-secondary">@Model.Property.PropertyType</p>
+                                        <div class="form-floating my-2">
+                                            <input class="form-control" aria-required="true" />
+                                            <label> Max Guests: @Model.Property.MaxGuests</label>
+                                        </div>
+                                        <div class="form-floating my-2">
+                                            <input class="form-control" aria-required="true" />
+                                            <label> Location: @Model.Property.Location</label>
+                                        </div>
+                                        <div class="form-floating my-2">
+                                            <input class="form-control" aria-required="true" />
+                                            <label>€@Model.Property.PricePerNight per night</label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 p-1 text-center">
+                                <img src="@Model.Property.Image" width="100%" class="rounded" />
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-12 col-md-6 pb-1 ">
+                            <a asp-page="Index" class="btn btn-success btn-square form-control" style="height:50px;">Back to List</a>
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <a asp-page="Booking" button type="submit" class="btn btn-primary btn-square form-control" style="height:50px;">Book now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
