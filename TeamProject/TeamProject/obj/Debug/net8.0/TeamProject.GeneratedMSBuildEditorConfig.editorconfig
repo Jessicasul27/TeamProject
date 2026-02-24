@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TeamProject
 build_property.RootNamespace = TeamProject
-build_property.ProjectDir = C:\Users\JessicaSuleiman-STUD.AzureAD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject\
+build_property.ProjectDir = C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\JessicaSuleiman-STUD.AzureAD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject
+build_property.MSBuildProjectDirectory = C:\Users\yuron\OneDrive\Desktop\TeamProject\TeamProject\TeamProject
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Admin/Customers/Create.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Admin/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Admin/Customers/Delete.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Admin/Customers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Admin/Customers/Edit.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Admin/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3VzdG9tZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Admin/Customers/Index.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Admin/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Admin/Properties/Create.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Admin/Properties/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvcGVydGllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Admin/Properties/Delete.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Admin/Properties/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvcGVydGllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Admin/Properties/Edit.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Admin/Properties/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvcGVydGllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Admin/Properties/Index.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Admin/Properties/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvcGVydGllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Customers/Home/Details.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Customers/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXEhvbWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Customers/Home/Index.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Customers/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Error.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Index.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Privacy.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/_ViewImports.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/_ViewStart.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JessicaSuleiman-STUD.AzureAD/OneDrive - Atlantic TU/bacon/TeamProject/TeamProject/TeamProject/Pages/Shared/_Layout.cshtml]
+[C:/Users/yuron/OneDrive/Desktop/TeamProject/TeamProject/TeamProject/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-atsbt1758z

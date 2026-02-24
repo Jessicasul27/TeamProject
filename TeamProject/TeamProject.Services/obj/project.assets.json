@@ -2696,23 +2696,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\.nuget\\packages\\": {},
+    "C:\\Users\\yuron\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj",
+      "projectUniqueName": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj",
       "projectName": "TeamProject.Services",
-      "projectPath": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj",
-      "packagesPath": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.Services\\obj\\",
+      "projectPath": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\TeamProject.Services.csproj",
+      "packagesPath": "C:\\Users\\yuron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yuron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2721,15 +2721,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.DataAccess\\TeamProject.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\JessicaSuleiman-STUD.AzureAD\\OneDrive - Atlantic TU\\bacon\\TeamProject\\TeamProject\\TeamProject.DataAccess\\TeamProject.DataAccess.csproj"
+            "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\TeamProject.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\yuron\\OneDrive\\Desktop\\TeamProject\\TeamProject\\TeamProject.DataAccess\\TeamProject.DataAccess.csproj"
             }
           }
         }
@@ -2765,7 +2764,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
