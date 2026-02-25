@@ -112,3 +112,21 @@ C:\Users\JessicaSuleiman-STUD.AzureAD\OneDrive - Atlantic TU\bacon\TeamProject\T
 C:\Users\JessicaSuleiman-STUD.AzureAD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\refint\TeamProject.Services.dll
 C:\Users\JessicaSuleiman-STUD.AzureAD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.pdb
 C:\Users\JessicaSuleiman-STUD.AzureAD\OneDrive - Atlantic TU\bacon\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\ref\TeamProject.Services.dll
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.csproj.AssemblyReference.cache
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.AssemblyInfoInputs.cache
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.AssemblyInfo.cs
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.csproj.CoreCompileInputs.cache
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.sourcelink.json
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.dll
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\refint\TeamProject.Services.dll
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProject.Services.pdb
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.deps.json
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.dll
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Services.pdb
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.DataAccess.dll
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Models.dll
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.DataAccess.pdb
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\bin\Debug\net8.0\TeamProject.Models.pdb
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\TeamProj.3D3E00BA.Up2Date
+C:\Users\ryant\Desktop\TeamProject\TeamProject\TeamProject.Services\obj\Debug\net8.0\ref\TeamProject.Services.dll
