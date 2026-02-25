@@ -11,6 +11,8 @@ namespace TeamProject.Services
     {
         ICustomerRepo CustomerRepo { get; }
         IPropertyRepo PropertyRepo { get; }
+        ILandLordRepo LandLordRepo { get; }
+
         void Save();
     }
 }
