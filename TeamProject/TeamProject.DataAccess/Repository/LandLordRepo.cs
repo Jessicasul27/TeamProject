@@ -10,7 +10,6 @@ namespace TeamProject.DataAccess.Repository
         {
             _dbContext = dbContext;
         }
-
         public void SaveAll()
         {
             _dbContext.SaveChanges();

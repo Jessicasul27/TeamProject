@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Services;
 using TeamProject.Models.Models;
 
-
 namespace TeamProject.Pages.Admin.Landlords
 {
+    [BindProperties]
     public class DeleteModel : PageModel
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -13,17 +13,23 @@ namespace TeamProject.Pages.Admin.Landlords
         {
             _unitOfWork = unitOfWork;
         }
-        [BindProperty]
-        public LandLord landlord { get; set; }
+       
+        public LandLord LandLords { get; set; }
 
         public void OnGet(int id)
         {
-            landlord = _unitOfWork.LandLordRepo.Get(id);
+            LandLords = _unitOfWork.LandLordRepo.Get(id);
         }
 
         public IActionResult OnPost()
         {
-            var landlordFromDB = _unitOfWork.LandLordRepo.Get(landlord.LandLordId);
+            
+            if (LandLords == null || LandLords.LandLordId == 0)
+            {
+                return BadRequest();
+            }
+
+            var landlordFromDB = _unitOfWork.LandLordRepo.Get(LandLords.LandLordId);
 
             if (landlordFromDB == null)
             {
