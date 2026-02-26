@@ -1,3 +1,10 @@
 ﻿# code editor config/local files
 .idea/
 .vs/
+
+# emit compiled binaries and build artifacts
+bin/
+obj/
+
+# visual studio user-specific project configuration
+*.csproj.user
