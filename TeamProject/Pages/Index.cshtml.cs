@@ -1,19 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TeamProject.Models.Models;
+using TeamProject.Services;
 
 namespace TeamProject.Pages;
 
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public IndexModel(IUnitOfWork unitOfWork)
     {
-        _logger = logger;
+        _unitOfWork = unitOfWork;
     }
 
-    public IActionResult OnGet()
+    public IEnumerable<Property> listOfProperties { get; set; }
+
+    [BindProperty(SupportsGet = true)]
+    public string SearchString { get; set; }
+
+    public void OnGet()
     {
-        return RedirectToPage("Customers/Home/Index");
+        listOfProperties = _unitOfWork.PropertyRepo.GetAll().Where(p => p.status);
+
+        if (!string.IsNullOrEmpty(SearchString))
+            listOfProperties = listOfProperties.Where(p =>
+                p.Location != null && p.Location.Contains(SearchString, StringComparison.OrdinalIgnoreCase));
     }
 }
