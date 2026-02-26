@@ -6,5 +6,5 @@
 bin/
 obj/
 
-# visual studio user-specific project configuration
-*.csproj.user
+# user-specific project configuration
+*.user
