@@ -1,0 +1,3 @@
+﻿# emit compiled binaries and build artifacts
+bin/
+obj/
