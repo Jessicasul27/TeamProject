@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TeamProject.DataAccess.Repository;
+﻿using TeamProject.DataAccess.Repository;
 
-namespace TeamProject.Services
+namespace TeamProject.Services;
+
+public interface IUnitOfWork : IDisposable
 {
-    public interface IUnitOfWork : IDisposable
-    {
-        ICustomerRepo CustomerRepo { get; }
-        IPropertyRepo PropertyRepo { get; }
-        ILandLordRepo LandLordRepo { get; }
+    IAdminRepo AdminRepo { get; }
+    ICustomerRepo CustomerRepo { get; }
+    ILandlordRepo LandlordRepo { get; }
+    IPropertyRepo PropertyRepo { get; }
 
-        void Save();
-    }
+    void Save();
 }

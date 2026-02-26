@@ -6,44 +6,45 @@
 <form method="post">
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary pl-3">Enter LandLords Details</h2>
+            <h2 class="text-primary pl-3">Enter Landlords Details</h2>
         </div>
         <div class="mb-3">
-            <label asp-for="@Model.LandLords.Name"></label>
-            <input asp-for="@Model.LandLords.Name" class="form-control"/>
-            <span asp-validation-for="@Model.LandLords.Name" class="text-danger"></span>
+            <label asp-for="@Model.Landlords.Name"></label>
+            <input asp-for="@Model.Landlords.Name" class="form-control"/>
+            <span asp-validation-for="@Model.Landlords.Name" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="@Model.LandLords.Email"></label>
-            <input asp-for="@Model.LandLords.Email" class="form-control" />
-            <span asp-validation-for="@Model.LandLords.Email" class="text-danger"></span>
+            <label asp-for="@Model.Landlords.Email"></label>
+            <input asp-for="@Model.Landlords.Email" class="form-control"/>
+            <span asp-validation-for="@Model.Landlords.Email" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="@Model.LandLords.PhoneNo"></label>
-            <input asp-for="@Model.LandLords.PhoneNo" class="form-control" />
-            <span asp-validation-for="@Model.LandLords.PhoneNo" class="text-danger"></span>
+            <label asp-for="@Model.Landlords.PhoneNo"></label>
+            <input asp-for="@Model.Landlords.PhoneNo" class="form-control"/>
+            <span asp-validation-for="@Model.Landlords.PhoneNo" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="@Model.LandLords.LandLordShare"></label>
-            <input asp-for="@Model.LandLords.LandLordShare" class="form-control" />
-            <span asp-validation-for="@Model.LandLords.LandLordShare" class="text-danger"></span>
+            <label asp-for="@Model.Landlords.LandlordShare"></label>
+            <input asp-for="@Model.Landlords.LandlordShare" class="form-control"/>
+            <span asp-validation-for="@Model.Landlords.LandlordShare" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="@Model.LandLords.Income"></label>
-            <input asp-for="@Model.LandLords.Income" class="form-control" />
-            <span asp-validation-for="@Model.LandLords.Income" class="text-danger"></span>
+            <label asp-for="@Model.Landlords.Income"></label>
+            <input asp-for="@Model.Landlords.Income" class="form-control"/>
+            <span asp-validation-for="@Model.Landlords.Income" class="text-danger"></span>
         </div>
 
- 
+
         <button type="submit" class="btn btn-primary">Create</button>
     </div>
 </form>
+
 @section Scripts {
     @{
-        <partial name="_validationScriptsPartial" />
+        <partial name="_validationScriptsPartial"/>
     }
 }

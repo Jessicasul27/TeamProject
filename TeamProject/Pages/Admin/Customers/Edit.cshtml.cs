@@ -3,28 +3,32 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Services;
 using TeamProject.Models.Models;
 
-namespace TeamProject.Pages.Admin.Customers
+namespace TeamProject.Pages.Admin.Customers;
+
+public class EditModel : PageModel
 {
-    public class EditModel : PageModel
+    private readonly IUnitOfWork _unitOfWork;
+
+    public EditModel(IUnitOfWork unitOfWork)
     {
-        private readonly IUnitOfWork _unitOfWork;
-        public EditModel(IUnitOfWork unitOfWork)
+        _unitOfWork = unitOfWork;
+    }
+
+    public Customer Customer { get; set; }
+
+    public void OnGet(int id)
+    {
+        Customer = _unitOfWork.CustomerRepo.Get(id);
+    }
+
+    public IActionResult OnPost(Customer customer)
+    {
+        if (ModelState.IsValid)
         {
-            _unitOfWork = unitOfWork;
+            _unitOfWork.CustomerRepo.Update(customer);
+            _unitOfWork.Save();
         }
-        public Customer Customer { get; set; }
-        public void OnGet(int id)
-        {
-            Customer = _unitOfWork.CustomerRepo.Get(id);
-        }
-        public IActionResult OnPost(Customer customer)
-        {
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.CustomerRepo.Update(customer);
-                _unitOfWork.Save();
-            }
-            return RedirectToPage("Index");
-        }
+
+        return RedirectToPage("Index");
     }
 }

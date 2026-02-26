@@ -3,29 +3,28 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Models.Models;
 using TeamProject.Services;
 
-namespace TeamProject.Pages.Customers.Home
+namespace TeamProject.Pages.Customers.Home;
+
+public class IndexModel : PageModel
 {
-    public class IndexModel : PageModel
+    private readonly IUnitOfWork _unitOfWork;
+
+    public IndexModel(IUnitOfWork unitOfWork)
     {
-        private readonly IUnitOfWork _unitOfWork;
+        _unitOfWork = unitOfWork;
+    }
 
-        public IndexModel(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
+    public IEnumerable<Property> listOfProperties { get; set; }
 
-        public IEnumerable<Property> listOfProperties { get; set; }
-        [BindProperty(SupportsGet = true)]
-        public string SearchString { get; set; }
-        public void OnGet()
-        {
-            listOfProperties = _unitOfWork.PropertyRepo.GetAll().Where(p => p.status == true);
-            if (!string.IsNullOrEmpty(SearchString))
-                {
-                    listOfProperties = listOfProperties.Where(p => p.Location != null && p.Location.Contains(SearchString, StringComparison.OrdinalIgnoreCase));
-                    
-                   
-            }
-        }
+    [BindProperty(SupportsGet = true)]
+    public string SearchString { get; set; }
+
+    public void OnGet()
+    {
+        listOfProperties = _unitOfWork.PropertyRepo.GetAll().Where(p => p.status);
+
+        if (!string.IsNullOrEmpty(SearchString))
+            listOfProperties = listOfProperties.Where(p =>
+                p.Location != null && p.Location.Contains(SearchString, StringComparison.OrdinalIgnoreCase));
     }
 }

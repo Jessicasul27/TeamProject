@@ -4,15 +4,14 @@
 }
 
 <div class="container pb-3 backgroundWhite">
-
     <p>
-        <form class="d-flex" class="col-3">
-            <input type="text" placeholder="Enter Location of property you would like to view..." class="form-control me-sm-2" asp-for="SearchString" />
-            <input type="submit" value="Search" class="btn btn-outline" class="form-control align-content-end" />
-            <a asp-rote-Products="" asp-route-SearchString="" class="btn btn-outline-secondary ms-2">Clear</a>
-        </form>
+    <form class="d-flex col-3">
+        <input type="text" placeholder="Enter Location of property you would like to view..."
+               class="form-control me-sm-2" asp-for="SearchString"/>
+        <input type="submit" value="Search" class="btn btn-outline form-control align-content-end"/>
+        <a asp-rote-Products="" asp-route-SearchString="" class="btn btn-outline-secondary ms-2">Clear</a>
+    </form>
     </p>
-   
 
     @foreach (var propertyType in Model.listOfProperties.GroupBy(p => p.PropertyType))
     {
@@ -24,7 +23,7 @@
             @foreach (var property in propertyType)
             {
                 <div class="col-lg-4 col-md-6 pb-4 filter">
-                    <div class="card bg-white rounded shadow-sm" style="border:1px solid #222">
+                    <div class="card bg-white rounded shadow-sm" style="border: 1px solid #222">
 
                         <div class="card-body pb-1 row">
                             <div class="col-8 h5">@property.Title</div>
@@ -46,7 +45,6 @@
                                 </span>
                             </div>
 
-
                             <div class="col-6 border-0">
                                 <span class="badge p-2 border w-100 bg-info">
                                     @property.Title
@@ -61,16 +59,14 @@
                                 <a asp-page="Details"
                                    asp-route-id="@property.PropertyId"
                                    class="btn btn-dark form-control btn-sm p-2"
-                                   style="height:40px">
+                                   style="height: 40px">
                                     View Details
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             }
         </div>
     }
-
 </div>

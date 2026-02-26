@@ -2,7 +2,7 @@
 
 namespace TeamProject.DataAccess.Repository;
 
-public interface ICustomerRepo : IRepository<Customer>
+public interface ILandlordRepo : IRepository<Landlord>
 {
     void SaveAll();
 }

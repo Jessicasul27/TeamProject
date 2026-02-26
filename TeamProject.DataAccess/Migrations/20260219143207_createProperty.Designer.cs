@@ -84,13 +84,13 @@ namespace TeamProject.DataAccess.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("TeamProject.Models.Models.LandLord", b =>
+            modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
                 {
-                    b.Property<int>("LandLordId")
+                    b.Property<int>("LandlordId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LandLordId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LandlordId"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -99,7 +99,7 @@ namespace TeamProject.DataAccess.Migrations
                     b.Property<double>("Income")
                         .HasColumnType("float");
 
-                    b.Property<double>("LandLordShare")
+                    b.Property<double>("LandlordShare")
                         .HasColumnType("float");
 
                     b.Property<string>("Name")
@@ -113,11 +113,11 @@ namespace TeamProject.DataAccess.Migrations
                     b.Property<int?>("PropertyId")
                         .HasColumnType("int");
 
-                    b.HasKey("LandLordId");
+                    b.HasKey("LandlordId");
 
                     b.HasIndex("PropertyId");
 
-                    b.ToTable("LandLords");
+                    b.ToTable("Landlords");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.Property", b =>
@@ -139,7 +139,7 @@ namespace TeamProject.DataAccess.Migrations
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("LandLordId")
+                    b.Property<int?>("LandlordId")
                         .HasColumnType("int");
 
                     b.Property<string>("Location")
@@ -164,12 +164,12 @@ namespace TeamProject.DataAccess.Migrations
 
                     b.HasKey("PropertyId");
 
-                    b.HasIndex("LandLordId");
+                    b.HasIndex("LandlordId");
 
                     b.ToTable("Properties");
                 });
 
-            modelBuilder.Entity("TeamProject.Models.Models.LandLord", b =>
+            modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
                 {
                     b.HasOne("TeamProject.Models.Models.Property", "Property")
                         .WithMany()
@@ -180,12 +180,12 @@ namespace TeamProject.DataAccess.Migrations
 
             modelBuilder.Entity("TeamProject.Models.Models.Property", b =>
                 {
-                    b.HasOne("TeamProject.Models.Models.LandLord", null)
+                    b.HasOne("TeamProject.Models.Models.Landlord", null)
                         .WithMany("Properties")
-                        .HasForeignKey("LandLordId");
+                        .HasForeignKey("LandlordId");
                 });
 
-            modelBuilder.Entity("TeamProject.Models.Models.LandLord", b =>
+            modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
                 {
                     b.Navigation("Properties");
                 });

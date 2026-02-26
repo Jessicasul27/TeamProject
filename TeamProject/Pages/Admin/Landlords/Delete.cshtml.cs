@@ -3,44 +3,36 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Services;
 using TeamProject.Models.Models;
 
-namespace TeamProject.Pages.Admin.Landlords
+namespace TeamProject.Pages.Admin.Landlords;
+
+[BindProperties]
+public class DeleteModel : PageModel
 {
-    [BindProperties]
-    public class DeleteModel : PageModel
+    private readonly IUnitOfWork _unitOfWork;
+
+    public DeleteModel(IUnitOfWork unitOfWork)
     {
-        private readonly IUnitOfWork _unitOfWork;
-        public DeleteModel(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
-       
-        public LandLord LandLords { get; set; }
+        _unitOfWork = unitOfWork;
+    }
 
-        public void OnGet(int id)
-        {
-            LandLords = _unitOfWork.LandLordRepo.Get(id);
-        }
+    public Landlord Landlords { get; set; }
 
-        public IActionResult OnPost()
-        {
-            
-            if (LandLords == null || LandLords.LandLordId == 0)
-            {
-                return BadRequest();
-            }
+    public void OnGet(int id)
+    {
+        Landlords = _unitOfWork.LandlordRepo.Get(id);
+    }
 
-            var landlordFromDB = _unitOfWork.LandLordRepo.Get(LandLords.LandLordId);
+    public IActionResult OnPost()
+    {
+        if (Landlords == null || Landlords.LandlordId == 0) return BadRequest();
 
-            if (landlordFromDB == null)
-            {
-                return NotFound();
-            }
+        var landlordFromDB = _unitOfWork.LandlordRepo.Get(Landlords.LandlordId);
 
-            _unitOfWork.LandLordRepo.Delete(landlordFromDB);
-            _unitOfWork.Save();
+        if (landlordFromDB == null) return NotFound();
 
-            return RedirectToPage("Index");
-        }
+        _unitOfWork.LandlordRepo.Delete(landlordFromDB);
+        _unitOfWork.Save();
+
+        return RedirectToPage("Index");
     }
 }
-

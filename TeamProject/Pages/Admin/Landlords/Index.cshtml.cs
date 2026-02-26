@@ -2,19 +2,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Services;
 using TeamProject.Models.Models;
 
-namespace TeamProject.Pages.Admin.Landlords
+namespace TeamProject.Pages.Admin.Landlords;
+
+public class IndexModel : PageModel
 {
-    public class IndexModel : PageModel
+    private readonly IUnitOfWork _unitOfWork;
+    public IEnumerable<Landlord> Landlords;
+
+    public IndexModel(IUnitOfWork unitOfWork)
     {
-        private readonly IUnitOfWork _unitOfWork;
-        public IEnumerable<LandLord> LandLords;
-        public IndexModel(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
-        public void OnGet()
-        {
-            LandLords = _unitOfWork.LandLordRepo.GetAll();
-        }
+        _unitOfWork = unitOfWork;
+    }
+
+    public void OnGet()
+    {
+        Landlords = _unitOfWork.LandlordRepo.GetAll();
     }
 }

@@ -3,31 +3,33 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Services;
 using TeamProject.Models.Models;
 
-namespace TeamProject.Pages.Admin.Landlords
+namespace TeamProject.Pages.Admin.Landlords;
+
+[BindProperties]
+public class EditModel : PageModel
 {
-    [BindProperties]
-    public class EditModel : PageModel
+    private readonly IUnitOfWork _unitOfWork;
+
+    public EditModel(IUnitOfWork unitOfWork)
     {
-       
-        private readonly IUnitOfWork _unitOfWork;
-        public EditModel(IUnitOfWork unitOfWork)
+        _unitOfWork = unitOfWork;
+    }
+
+    public Landlord Landlords { get; set; }
+
+    public void OnGet(int id)
+    {
+        Landlords = _unitOfWork.LandlordRepo.Get(id);
+    }
+
+    public IActionResult OnPost()
+    {
+        if (ModelState.IsValid)
         {
-            _unitOfWork = unitOfWork;
+            _unitOfWork.LandlordRepo.Update(Landlords);
+            _unitOfWork.Save();
         }
-       
-        public LandLord LandLords { get; set; }
-        public void OnGet(int id)
-        {
-            LandLords = _unitOfWork.LandLordRepo.Get(id);
-        }
-        public IActionResult OnPost()
-        {
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.LandLordRepo.Update(LandLords);
-                _unitOfWork.Save();
-            }
-            return RedirectToPage("Index");
-        }
+
+        return RedirectToPage("Index");
     }
 }

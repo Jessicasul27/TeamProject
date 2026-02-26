@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace TeamProject.DataAccess.Repository;
 
-namespace TeamProject.DataAccess.Repository
+public interface IRepository<T> where T : class
 {
-    public interface IRepository<T> where T : class
-    {
-        void Add(T obj);
-        void Update(T obj);
+    void Add(T obj);
 
-        void Delete(T obj);
+    void Update(T obj);
 
-        IEnumerable<T> GetAll();
+    void Delete(T obj);
 
-        T? Get(int id);
-        
-    }
+    IEnumerable<T> GetAll();
+
+    T? Get(int id);
 }

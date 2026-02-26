@@ -6,50 +6,47 @@
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
-            <h3 class="text-primary">LandLords</h3>
+            <h3 class="text-primary">Landlords</h3>
         </div>
         <div class="col-6">
             <a asp-page="Create" class="btn btn-primary">
-                Create LandLords
+                Create Landlords
             </a>
         </div>
     </div>
 </div>
 
-<br />
-<br />
-<br />
+<br/>
+<br/>
+<br/>
 
 <table class="table table-bordered table-striped">
     <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-            <th>LandLord Share (%)</th>
-            <th>Income (€)</th>
-            
-
-        </tr>
+    <tr>
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Phone Number</th>
+        <th>Landlord Share (%)</th>
+        <th>Income (€)</th>
+    </tr>
     </thead>
     <tbody>
-        @foreach (var obj in Model.LandLords)
-        {
-           
-            <tr>
-                <td>@obj.Name</td>
-                <td>@obj.Email</td>
-                <td>@obj.PhoneNo</td>
-                <td>@(obj.LandLordShare > 1 ? $"{obj.LandLordShare:0.##}%" : obj.LandLordShare.ToString("P0"))</td>
-                <td>€@obj.Income</td>
-                
-                
-                <td>
-                    <a asp-page="Edit" asp-route-id="@obj.LandLordId" class="btn btn-success btn-sm mx-1">Edit</a>
-                    <a asp-page="Delete" asp-route-id="@obj.LandLordId" class="btn btn-danger btn-sm mx-1">Delete</a>
-                </td>
-            </tr>
-        }
+    @foreach (var obj in Model.Landlords)
+    {
+        <tr>
+            <td>@obj.Name</td>
+            <td>@obj.Email</td>
+            <td>@obj.PhoneNo</td>
+            <td>@(obj.LandlordShare > 1 ? $"{obj.LandlordShare:0.##}%" : obj.LandlordShare.ToString("P0"))</td>
+            <td>€@obj.Income</td>
+
+
+            <td>
+                <a asp-page="Edit" asp-route-id="@obj.LandlordId" class="btn btn-success btn-sm mx-1">Edit</a>
+                <a asp-page="Delete" asp-route-id="@obj.LandlordId" class="btn btn-danger btn-sm mx-1">Delete</a>
+            </td>
+        </tr>
+    }
     </tbody>
 </table>
 

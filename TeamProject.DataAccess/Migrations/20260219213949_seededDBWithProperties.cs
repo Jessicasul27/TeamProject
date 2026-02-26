@@ -14,7 +14,7 @@ namespace TeamProject.DataAccess.Migrations
         {
             migrationBuilder.InsertData(
                 table: "Properties",
-                columns: new[] { "PropertyId", "DescDescription", "FullDescription", "Image", "LandLordId", "Location", "MaxGuests", "PricePerNight", "PropertyType", "Title", "status" },
+                columns: new[] { "PropertyId", "DescDescription", "FullDescription", "Image", "LandlordId", "Location", "MaxGuests", "PricePerNight", "PropertyType", "Title", "status" },
                 values: new object[,]
                 {
                     { 1, "Close to ocean", "Beautiful lake view apartment.", "\\Images\\Properties\\bearview.jpg", null, "Wicklow", 4, 120.0, "Apartment", "Bear View Apartment", true },

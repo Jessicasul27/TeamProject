@@ -46,21 +46,21 @@ namespace TeamProject.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "LandLords",
+                name: "Landlords",
                 columns: table => new
                 {
-                    LandLordId = table.Column<int>(type: "int", nullable: false)
+                    LandlordId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LandLordShare = table.Column<double>(type: "float", nullable: false),
+                    LandlordShare = table.Column<double>(type: "float", nullable: false),
                     Income = table.Column<double>(type: "float", nullable: false),
                     PropertyId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_LandLords", x => x.LandLordId);
+                    table.PrimaryKey("PK_Landlords", x => x.LandlordId);
                 });
 
             migrationBuilder.CreateTable(
@@ -77,31 +77,31 @@ namespace TeamProject.DataAccess.Migrations
                     MaxGuests = table.Column<int>(type: "int", nullable: false),
                     PropertyType = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     status = table.Column<bool>(type: "bit", nullable: false),
-                    LandLordId = table.Column<int>(type: "int", nullable: true)
+                    LandlordId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Properties", x => x.PropertyId);
                     table.ForeignKey(
-                        name: "FK_Properties_LandLords_LandLordId",
-                        column: x => x.LandLordId,
-                        principalTable: "LandLords",
-                        principalColumn: "LandLordId");
+                        name: "FK_Properties_Landlords_LandlordId",
+                        column: x => x.LandlordId,
+                        principalTable: "Landlords",
+                        principalColumn: "LandlordId");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_LandLords_PropertyId",
-                table: "LandLords",
+                name: "IX_Landlords_PropertyId",
+                table: "Landlords",
                 column: "PropertyId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Properties_LandLordId",
+                name: "IX_Properties_LandlordId",
                 table: "Properties",
-                column: "LandLordId");
+                column: "LandlordId");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_LandLords_Properties_PropertyId",
-                table: "LandLords",
+                name: "FK_Landlords_Properties_PropertyId",
+                table: "Landlords",
                 column: "PropertyId",
                 principalTable: "Properties",
                 principalColumn: "PropertyId");
@@ -111,8 +111,8 @@ namespace TeamProject.DataAccess.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_LandLords_Properties_PropertyId",
-                table: "LandLords");
+                name: "FK_Landlords_Properties_PropertyId",
+                table: "Landlords");
 
             migrationBuilder.DropTable(
                 name: "Bookings");
@@ -124,7 +124,7 @@ namespace TeamProject.DataAccess.Migrations
                 name: "Properties");
 
             migrationBuilder.DropTable(
-                name: "LandLords");
+                name: "Landlords");
         }
     }
 }

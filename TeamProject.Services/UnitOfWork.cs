@@ -1,38 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TeamProject.DataAccess.DataAccess;
+﻿using TeamProject.DataAccess.DataAccess;
 using TeamProject.DataAccess.Repository;
 
-namespace TeamProject.Services
+namespace TeamProject.Services;
+
+public class UnitOfWork : IUnitOfWork
 {
-    public class UnitOfWork : IUnitOfWork
+    private readonly AppDbContext _dbContext;
+
+    public IAdminRepo AdminRepo { get; }
+    public ICustomerRepo CustomerRepo { get; }
+    public ILandlordRepo LandlordRepo { get; }
+    public IPropertyRepo PropertyRepo { get; }
+
+    public UnitOfWork(AppDbContext dbContext)
     {
-        private readonly AppDbContext _dbContext;
+        _dbContext = dbContext;
 
-        public ICustomerRepo CustomerRepo { get; private set; }
-        public IPropertyRepo PropertyRepo { get; private set; }
+        AdminRepo = new AdminRepo(_dbContext);
+        CustomerRepo = new CustomerRepo(_dbContext);
+        LandlordRepo = new LandlordRepo(_dbContext);
+        PropertyRepo = new PropertyRepo(_dbContext);
+    }
 
-        public ILandLordRepo LandLordRepo { get; private set; }
+    public void Save()
+    {
+        _dbContext.SaveChanges();
+    }
 
-        public UnitOfWork(AppDbContext dbContext)
-        {
-            _dbContext = dbContext;
-            CustomerRepo = new CustomerRepo(_dbContext);
-            PropertyRepo = new PropertyRepo(_dbContext);
-            LandLordRepo = new LandLordRepo(_dbContext);
-        }
-
-        public void Save()
-        {
-            _dbContext.SaveChanges();
-        }
-
-        public void Dispose()
-        {
-            _dbContext.Dispose();
-        }
+    public void Dispose()
+    {
+        _dbContext.Dispose();
     }
 }
