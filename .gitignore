@@ -1,0 +1,10 @@
+﻿# code editor config/local files
+.idea/
+.vs/
+
+# emit compiled binaries and build artifacts
+bin/
+obj/
+
+# user-specific project configuration
+*.user
