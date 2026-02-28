@@ -15,7 +15,7 @@ public class DetailsModel : PageModel
 
     public Property Property { get; set; }
 
-    public void OnGet(int id)
+    public void OnGet(string id)
     {
         Property = _unitOfWork.PropertyRepo.Get(id);
     }

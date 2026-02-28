@@ -16,7 +16,7 @@ public class EditModel : PageModel
 
     public Customer Customer { get; set; }
 
-    public void OnGet(int id)
+    public void OnGet(string id)
     {
         Customer = _unitOfWork.CustomerRepo.Get(id);
     }

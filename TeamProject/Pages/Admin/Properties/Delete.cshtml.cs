@@ -27,7 +27,7 @@ public class DeleteModel : PageModel
     public IActionResult OnPost()
     {
         var wwwRootFolder = _webHostEnvironment.WebRootPath;
-        var propFromDb = _unitOfWork.PropertyRepo.Get(Property.PropertyId);
+        var propFromDb = _unitOfWork.PropertyRepo.Get(Property.Id);
 
         if (propFromDb != null)
         {

@@ -15,18 +15,18 @@ public class EditModel : PageModel
         _unitOfWork = unitOfWork;
     }
 
-    public Landlord Landlords { get; set; }
+    public Landlord Landlord { get; set; }
 
-    public void OnGet(int id)
+    public void OnGet(string id)
     {
-        Landlords = _unitOfWork.LandlordRepo.Get(id);
+        Landlord = _unitOfWork.LandlordRepo.Get(id);
     }
 
     public IActionResult OnPost()
     {
         if (ModelState.IsValid)
         {
-            _unitOfWork.LandlordRepo.Update(Landlords);
+            _unitOfWork.LandlordRepo.Update(Landlord);
             _unitOfWork.Save();
         }
 

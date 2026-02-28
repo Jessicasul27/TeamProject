@@ -28,7 +28,7 @@ public class EditModel : PageModel
     {
         var wwwRootFolder = _webHostEnvironment.WebRootPath;
         var files = HttpContext.Request.Form.Files;
-        var propFromDB = _unitOfWork.PropertyRepo.Get(Property.PropertyId);
+        var propFromDB = _unitOfWork.PropertyRepo.Get(Property.Id);
 
         if (files.Count > 0)
         {

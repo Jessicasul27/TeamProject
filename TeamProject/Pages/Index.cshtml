@@ -1,17 +1,64 @@
 ﻿@page "{SearchString?}"
 @model TeamProject.Pages.IndexModel
 @{
+    ViewData["HideHeader"] = true;
 }
 
-<div class="container pb-3 backgroundWhite">
-    <p>
-    <form class="d-flex">
-        <input type="text" placeholder="Enter Location of property you would like to view..."
-               class="form-control me-sm-2" asp-for="SearchString"/>
-        <input type="submit" value="Search" class="btn btn-outline"/>
-        <a asp-rote-Products="" asp-route-SearchString="" class="btn btn-outline-secondary ms-2">Clear</a>
-    </form>
-    </p>
+<header
+    class="tw:tracking-normal tw:grid tw:grid-cols-[1fr_auto_1fr] tw:items-center tw:py-8 tw:px-12 tw:bg-neutral-50 tw:border-b-2 tw:border-neutral-200">
+
+    @* Home *@
+    <a class="tw:no-underline! tw:uppercase tw:font-bold tw:text-3xl" asp-page="/">Staycraft</a>
+
+    @* Where, When, Who *@
+    <div
+        class="tw:flex tw:items-center tw:border tw:bg-white tw:border-neutral-300 tw:rounded-full tw:text-sm tw:font-semibold tw:text-black tw:shadow-lg">
+
+        <div
+            class="tw:flex tw:flex-col tw:rounded-l-full tw:w-70 tw:px-8 tw:py-4 tw:cursor-pointer tw:hover:bg-neutral-200">
+            <span>Where</span>
+            <input placeholder="Search destinations" type="text"/>
+        </div>
+
+        <div class="tw:w-px tw:self-stretch tw:bg-neutral-300"></div>
+
+        <div class="tw:flex tw:flex-col tw:w-70 tw:px-8 tw:py-4 tw:cursor-pointer tw:hover:bg-neutral-200">
+            <span>When</span>
+            <span class="text-muted">Add dates</span>
+        </div>
+
+        <div class="tw:w-px tw:self-stretch tw:bg-neutral-300"></div>
+
+        <div
+            class="tw:flex tw:justify-between tw:items-center tw:rounded-r-full tw:w-70 tw:pl-8  tw:cursor-pointer tw:[&:hover:not(:has(button:hover))]:bg-neutral-200">
+            <div class="tw:flex tw:flex-col tw:py-4">
+                <span>Who</span>
+                <span class="text-muted">Add guests</span>
+            </div>
+            <button
+                type="button"
+                class="tw:flex tw:items-center tw:justify-center tw:w-14 tw:h-14 tw:bg-green-900 tw:text-white tw:rounded-full! tw:mr-2!">
+                <i data-lucide="search" class="tw:w-[40%] tw:h-[40%]"></i>
+            </button>
+        </div>
+    </div>
+
+    @* Login, dropdown (the cart/reservation thing) *@
+    <div class="tw:justify-self-end">
+        <a asp-page="/Login">Login</a>
+        @* ... *@
+    </div>
+</header>
+
+<div class="container backgroundWhite tw:py-3">
+    @* <p> *@
+    @* <form class="d-flex"> *@
+    @*     <input type="text" placeholder="Enter Location of property you would like to view..." *@
+    @*            class="form-control me-sm-2" asp-for="SearchString"/> *@
+    @*     <input type="submit" value="Search" class="btn btn-outline"/> *@
+    @*     <a asp-rote-Products="" asp-route-SearchString="" class="btn btn-outline-secondary ms-2">Clear</a> *@
+    @* </form> *@
+    @* </p> *@
 
     @foreach (var propertyType in Model.listOfProperties.GroupBy(p => p.PropertyType))
     {
@@ -26,7 +73,8 @@
                     <div class="card bg-white rounded shadow-sm" style="border: 1px solid #222">
 
                         <div class="card-body pb-1 row">
-                            <div class="col-8 h5">@property.Title</div>
+                            <div
+                                class="col-8 h5 tw:min-h-10 tw:line-clamp-2">@property.Title</div>
                             <div class="col-4 text-end">
                                 <span class="text-info h4">
                                     €@property.PricePerNight
@@ -34,7 +82,7 @@
                             </div>
                         </div>
 
-                        <img class="card-img-top img-fluid d-block mx-auto mb-3"
+                        <img class="img-fluid d-block mx-auto mb-3"
                              src="@property.Image"
                              alt="menuitem image">
 
@@ -57,7 +105,7 @@
 
                             <div class="col-12 p-1">
                                 <a asp-page="Details"
-                                   asp-route-id="@property.PropertyId"
+                                   asp-route-id="@property.Id"
                                    class="btn btn-dark form-control btn-sm p-2"
                                    style="height: 40px">
                                     View Details
