@@ -5,7 +5,7 @@
 namespace TeamProject.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class ver1 : Migration
+    public partial class addUserFullNames : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
