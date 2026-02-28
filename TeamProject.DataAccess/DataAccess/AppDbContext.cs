@@ -16,6 +16,8 @@ public class AppDbContext : DbContext
     public DbSet<Landlord> Landlords { get; set; }
     public DbSet<Property> Properties { set; get; }
 
+    public DbSet<PropertyImage> PropertyImages { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // -------------------- PROPERTY SEED DATA --------------------
@@ -28,10 +30,10 @@ public class AppDbContext : DbContext
                 PropertyType = "Apartment",
                 PricePerNight = 120,
                 MaxGuests = 4,
-                status = true,
+                Status = true,
                 FullDescription = "Beautiful lake view apartment.",
                 DescDescription = "Close to ocean",
-                Image = @"\Images\Properties\bearview.jpg"
+                DisplayImage = @"\Images\Properties\bearview.jpg"
             },
             new Property
             {
@@ -41,10 +43,10 @@ public class AppDbContext : DbContext
                 PropertyType = "Apartment",
                 PricePerNight = 120,
                 MaxGuests = 4,
-                status = true,
+                Status = true,
                 FullDescription = "Beautiful modern apartment overlooking the Atlantic Ocean.",
                 DescDescription = "Perfect for couples or small families.",
-                Image = @"\Images\Properties\seaview.jpg"
+                DisplayImage = @"\Images\Properties\seaview.jpg"
             },
             new Property
             {
@@ -54,10 +56,10 @@ public class AppDbContext : DbContext
                 PropertyType = "Penthouse",
                 PricePerNight = 350,
                 MaxGuests = 5,
-                status = true,
+                Status = true,
                 FullDescription = "Top-floor penthouse in the heart of Dublin city.",
                 DescDescription = "Includes private balcony and skyline views.",
-                Image = @"\Images\Properties\luxurypenthouse.jpg"
+                DisplayImage = @"\Images\Properties\luxurypenthouse.jpg"
             },
             new Property
             {
@@ -67,10 +69,10 @@ public class AppDbContext : DbContext
                 PropertyType = "Cottage",
                 PricePerNight = 90,
                 MaxGuests = 3,
-                status = true,
+                Status = true,
                 FullDescription = "Traditional Irish cottage surrounded by countryside.",
                 DescDescription = "Peaceful and quiet retreat.",
-                Image = @"\Images\Properties\cozycottage.jpg"
+                DisplayImage = @"\Images\Properties\cozycottage.jpg"
             },
             new Property
             {
@@ -80,10 +82,10 @@ public class AppDbContext : DbContext
                 PropertyType = "Townhouse",
                 PricePerNight = 180,
                 MaxGuests = 6,
-                status = false,
+                Status = false,
                 FullDescription = "Spacious townhouse close to Cork city centre.",
                 DescDescription = "Ideal for business stays or family holidays.",
-                Image = @"\Images\Properties\moderntownhouse.jpg"
+                DisplayImage = @"\Images\Properties\moderntownhouse.jpg"
             },
             new Property
             {
@@ -93,10 +95,10 @@ public class AppDbContext : DbContext
                 PropertyType = "Cabin",
                 PricePerNight = 150,
                 MaxGuests = 4,
-                status = true,
+                Status = true,
                 FullDescription = "Wooden cabin located directly beside the lake.",
                 DescDescription = "Great for hiking and outdoor adventures.",
-                Image = @"\Images\Properties\lakefrontcabin.jpg"
+                DisplayImage = @"\Images\Properties\lakefrontcabin.jpg"
             },
             new Property
             {
@@ -106,10 +108,10 @@ public class AppDbContext : DbContext
                 PropertyType = "Villa",
                 PricePerNight = 400,
                 MaxGuests = 8,
-                status = true,
+                Status = true,
                 FullDescription = "Luxury villa steps away from the beach.",
                 DescDescription = "Private pool and large garden included.",
-                Image = @"\Images\Properties\beachsidevilla.jpg"
+                DisplayImage = @"\Images\Properties\beachsidevilla.jpg"
             },
             new Property
             {
@@ -119,10 +121,10 @@ public class AppDbContext : DbContext
                 PropertyType = "House",
                 PricePerNight = 200,
                 MaxGuests = 6,
-                status = true,
+                Status = true,
                 FullDescription = "Modern house in city centre.",
                 DescDescription = "Walking distance to shops",
-                Image = @"\Images\Properties\citycenterhouse.jpg"
+                DisplayImage = @"\Images\Properties\citycenterhouse.jpg"
             }
         );
 

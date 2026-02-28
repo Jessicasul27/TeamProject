@@ -26,22 +26,57 @@ public class CreateModel : PageModel
     public IActionResult OnPost()
     {
         var wwwRootFolder = _webHostEnvironment.WebRootPath;
-        var files = HttpContext.Request.Form.Files;
-        var new_fileName = Guid.NewGuid().ToString();
-
         var upload = Path.Combine(wwwRootFolder, @"Images\Properties");
-        var extension = Path.GetExtension(files[0].FileName);
-        using (var fileStream = new FileStream(Path.Combine(upload, new_fileName + extension), FileMode.Create))
+
+        
+        var displayFile = HttpContext.Request.Form.Files["displayFile"];
+
+        if (displayFile != null && displayFile.Length > 0)
         {
-            files[0].CopyTo(fileStream);
+            var fileName = Guid.NewGuid().ToString();
+            var extension = Path.GetExtension(displayFile.FileName);
+
+            using (var fileStream = new FileStream(
+                Path.Combine(upload, fileName + extension), FileMode.Create))
+            {
+                displayFile.CopyTo(fileStream);
+            }
+
+            Property.DisplayImage = @"\Images\Properties\" + fileName + extension;
         }
 
-        Property.Image = @"\Images\Properties\" + new_fileName + extension;
-        if (ModelState.IsValid)
+        
+        _unitOfWork.PropertyRepo.Add(Property);
+        _unitOfWork.Save();
+
+       
+        var galleryFiles = HttpContext.Request.Form.Files.GetFiles("galleryFiles");
+        if (galleryFiles != null)
         {
-            _unitOfWork.PropertyRepo.Add(Property);
-            _unitOfWork.Save();
+            foreach (var file in galleryFiles)
+            {
+                if (file.Length == 0) continue;
+
+                var fileName = Guid.NewGuid().ToString();
+                var extension = Path.GetExtension(file.FileName);
+
+                using (var fileStream = new FileStream(
+                    Path.Combine(upload, fileName + extension), FileMode.Create))
+                {
+                    file.CopyTo(fileStream);
+                }
+
+                var image = new PropertyImage
+                {
+                    ImageUrl = @"\Images\Properties\" + fileName + extension,
+                    PropertyId = Property.PropertyId
+                };
+
+                _unitOfWork.PropertyImageRepo.Add(image);
+            }
         }
+
+        _unitOfWork.Save();
 
         return RedirectToPage("Index");
     }

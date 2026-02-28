@@ -18,43 +18,110 @@ public class EditModel : PageModel
     }
 
     public Property Property { get; set; }
+    public ICollection<PropertyImage> Images { get; set; }
 
-    public void OnGet(int id)
+    public IActionResult OnGet(int id)
     {
         Property = _unitOfWork.PropertyRepo.Get(id);
+
+        if (Property == null)
+        {
+            return NotFound();
+        }
+
+        Property.Images = _unitOfWork.PropertyImageRepo
+            .GetAll()
+            .Where(pi => pi.PropertyId == id)
+            .ToList();
+
+        return Page();
     }
 
     public IActionResult OnPost()
     {
         var wwwRootFolder = _webHostEnvironment.WebRootPath;
-        var files = HttpContext.Request.Form.Files;
+        var upload = Path.Combine(wwwRootFolder, @"Images\Properties");
+
         var propFromDB = _unitOfWork.PropertyRepo.Get(Property.PropertyId);
 
-        if (files.Count > 0)
+        
+        var displayFile = HttpContext.Request.Form.Files["displayFile"];
+
+        if (displayFile != null && displayFile.Length > 0)
         {
-            var new_fileName = Guid.NewGuid().ToString();
-            var upload = Path.Combine(wwwRootFolder, @"Images\Properties");
-            var extension = Path.GetExtension(files[0].FileName);
-            if (propFromDB != null)
+            var fileName = Guid.NewGuid().ToString();
+            var extension = Path.GetExtension(displayFile.FileName);
+
+            using (var fileStream = new FileStream(
+                Path.Combine(upload, fileName + extension), FileMode.Create))
             {
-                var oldFile = Path.Combine(wwwRootFolder, propFromDB.Image.TrimStart('\\'));
-                if (System.IO.File.Exists(oldFile)) System.IO.File.Delete(oldFile);
+                displayFile.CopyTo(fileStream);
             }
 
-            using (var fileStream = new FileStream(Path.Combine(upload, new_fileName + extension), FileMode.Create))
+            Property.DisplayImage = @"\Images\Properties\" + fileName + extension;
+        }
+        else
+        {
+            
+            Property.DisplayImage = propFromDB.DisplayImage;
+        }
+
+        
+        _unitOfWork.PropertyRepo.Update(Property);
+        _unitOfWork.Save();
+
+        
+        var galleryFiles = HttpContext.Request.Form.Files.GetFiles("galleryFiles");
+
+        foreach (var file in galleryFiles)
+        {
+            if (file.Length == 0) continue;
+
+            var fileName = Guid.NewGuid().ToString();
+            var extension = Path.GetExtension(file.FileName);
+
+            using (var fileStream = new FileStream(
+                Path.Combine(upload, fileName + extension), FileMode.Create))
             {
-                files[0].CopyTo(fileStream);
+                file.CopyTo(fileStream);
             }
 
-            Property.Image = @"\Images\Properties\" + new_fileName + extension;
+            var image = new PropertyImage
+            {
+                ImageUrl = @"\Images\Properties\" + fileName + extension,
+                PropertyId = Property.PropertyId
+            };
+
+            _unitOfWork.PropertyImageRepo.Add(image);
         }
 
-        if (ModelState.IsValid)
-        {
-            _unitOfWork.PropertyRepo.Update(Property);
-            _unitOfWork.Save();
-        }
+        _unitOfWork.Save();
 
         return RedirectToPage("Index");
+    }
+
+    public IActionResult OnPostDeleteImage(int imageId)
+    {
+        var image = _unitOfWork.PropertyImageRepo.Get(imageId);
+
+        if (image == null)
+        {
+            return NotFound();
+        }
+
+        // delete file from wwwroot
+        var wwwRootPath = _webHostEnvironment.WebRootPath;
+        var filePath = Path.Combine(wwwRootPath, image.ImageUrl.TrimStart('\\'));
+
+        if (System.IO.File.Exists(filePath))
+        {
+            System.IO.File.Delete(filePath);
+        }
+
+        // delete from DB
+        _unitOfWork.PropertyImageRepo.Delete(image);
+        _unitOfWork.Save();
+
+        return RedirectToPage(new { id = image.PropertyId });
     }
 }
