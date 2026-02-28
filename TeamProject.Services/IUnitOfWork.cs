@@ -9,5 +9,9 @@ public interface IUnitOfWork : IDisposable
     ILandlordRepo LandlordRepo { get; }
     IPropertyRepo PropertyRepo { get; }
 
+    IPropertyImageRepo PropertyImageRepo { get; }
+
+    
+
     void Save();
 }

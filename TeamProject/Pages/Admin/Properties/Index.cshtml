@@ -49,7 +49,7 @@
                 <td>@obj.PropertyType</td>
                 <td>€@obj.PricePerNight</td>
                 <td>@obj.MaxGuests</td>
-                <td>@(obj.status ? "Active" : "Inactive")</td>
+                <td>@(obj.Status ? "Active" : "Inactive")</td>
                 <td>
                     <a asp-page="Edit" asp-route-id="@obj.PropertyId" class="btn btn-success btn-sm mx-1">Edit</a>
                     <a asp-page="Delete" asp-route-id="@obj.PropertyId" class="btn btn-danger btn-sm mx-1">Delete</a>

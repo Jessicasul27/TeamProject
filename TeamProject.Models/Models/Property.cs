@@ -28,7 +28,9 @@ public class Property
 
     public string? PropertyType { get; set; }
 
-    public bool status { get; set; }
+    public bool Status { get; set; }
 
-    public string? Image { get; set; }
+    public string? DisplayImage { get; set; }
+
+    public ICollection<PropertyImage> Images { get; set; } = new List<PropertyImage>();
 }

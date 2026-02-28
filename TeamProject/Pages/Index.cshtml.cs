@@ -21,7 +21,7 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        listOfProperties = _unitOfWork.PropertyRepo.GetAll().Where(p => p.status);
+        listOfProperties = _unitOfWork.PropertyRepo.GetAll().Where(p => p.Status);
 
         if (!string.IsNullOrEmpty(SearchString))
             listOfProperties = listOfProperties.Where(p =>

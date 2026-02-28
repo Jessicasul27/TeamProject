@@ -22,6 +22,8 @@ public class PropertyRepo : Repository<Property>, IPropertyRepo
         var propFromDB = _dbContext
             .Properties
             .FirstOrDefault(propFromDB => propFromDB.PropertyId == property.PropertyId);
+        if(propFromDB == null)
+            return;
 
         propFromDB.Title = property.Title;
         propFromDB.FullDescription = property.FullDescription;
@@ -30,9 +32,9 @@ public class PropertyRepo : Repository<Property>, IPropertyRepo
         propFromDB.PricePerNight = property.PricePerNight;
         propFromDB.MaxGuests = property.MaxGuests;
         propFromDB.PropertyType = property.PropertyType;
-        propFromDB.status = property.status;
+        propFromDB.Status = property.Status;
 
-        if (property.Image != null)
-            propFromDB.Image = property.Image;
+        if (property.DisplayImage != null)
+            propFromDB.DisplayImage = property.DisplayImage;
     }
 }
