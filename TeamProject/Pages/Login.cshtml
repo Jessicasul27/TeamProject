@@ -1,0 +1,57 @@
+﻿@page
+@model TeamProject.Pages.LoginModel
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div class="tw:flex tw:justify-center tw:w-full tw:py-12">
+    <form method="post"
+          class="tw:w-full tw:max-w-sm tw:flex tw:flex-col tw:gap-3 tw:p-6 tw:rounded-2xl tw:border tw:border-neutral-300">
+        <h1 class="tw:text-xl tw:font-semibold">Log in</h1>
+
+        <div asp-validation-summary="ModelOnly" class="tw:text-sm tw:text-red-600"></div>
+
+        <input type="hidden" asp-for="ReturnUrl"/>
+
+        <div class="tw:flex tw:flex-col tw:gap-1">
+            <label asp-for="Input.Email" class="tw:text-sm tw:font-medium"></label>
+            <input
+                asp-for="Input.Email"
+                class="tw:rounded-xl tw:border tw:border-neutral-300 tw:px-3 tw:py-2"
+                autocomplete="username"/>
+            <span asp-validation-for="Input.Email" class="tw:text-xs tw:text-red-600"></span>
+        </div>
+
+        <div class="tw:flex tw:flex-col tw:gap-1">
+            <label asp-for="Input.Password" class="tw:text-sm tw:font-medium"></label>
+            <input asp-for="Input.Password"
+                   class="tw:rounded-xl tw:border tw:border-neutral-300 tw:px-3 tw:py-2"
+                   autocomplete="current-password"/>
+            <span asp-validation-for="Input.Password" class="tw:text-xs tw:text-red-600"></span>
+        </div>
+
+        <label class="tw:flex tw:items-center tw:gap-2 tw:text-sm">
+            <input asp-for="Input.RememberMe" class="tw:accent-neutral-900"/>
+            <span>Remember me</span>
+        </label>
+
+        <button
+            type="submit"
+            class="tw:mt-2 tw:px-4 tw:py-2 tw:bg-green-600 tw:text-white tw:font-semibold tw:rounded-2xl!"
+        >
+            Log in
+        </button>
+
+        <div class="tw:text-sm tw:text-neutral-600 tw:flex tw:gap-2">
+            <a asp-page="/Register" asp-route-returnUrl="@Model.ReturnUrl" class="tw:underline">Create account</a>
+            <span>·</span>
+            <a asp-page="/ForgotPassword" asp-route-returnUrl="@Model.ReturnUrl" class="tw:underline">
+                Forgot password?
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}
