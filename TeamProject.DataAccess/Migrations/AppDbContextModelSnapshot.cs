@@ -22,13 +22,161 @@ namespace TeamProject.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("TeamProject.Models.Models.Booking", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
-                    b.Property<string>("BookingId")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<double?>("BookingPrice")
-                        .HasColumnType("float");
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.Admin", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Admins");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.Booking", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<decimal>("BookingPrice")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("CheckInDate")
                         .HasColumnType("datetime2");
@@ -36,141 +184,63 @@ namespace TeamProject.DataAccess.Migrations
                     b.Property<DateTime>("CheckOutDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("CustomerUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PropertyId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("PhoneNo")
-                        .HasColumnType("nvarchar(max)");
+                    b.HasKey("Id");
 
-                    b.HasKey("BookingId");
+                    b.HasIndex("CustomerUserId");
+
+                    b.HasIndex("PropertyId");
 
                     b.ToTable("Bookings");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.Customer", b =>
                 {
-                    b.Property<int>("CustomerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
-
-                    b.Property<int?>("CVC")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CreditCardNo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ExpiryDate")
+                    b.Property<DateTime?>("CardExpiryDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
+                    b.Property<string>("CardNo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CustomerId");
+                    b.HasKey("UserId");
 
                     b.ToTable("Customers");
-
-                    b.HasData(
-                        new
-                        {
-                            CustomerId = 1,
-                            Email = "JohnDoe@email.com",
-                            Name = "John Doe",
-                            PhoneNumber = "0894791234"
-                        },
-                        new
-                        {
-                            CustomerId = 2,
-                            Email = "JoshBigWilly@email.com",
-                            Name = "Josh Wilis",
-                            PhoneNumber = "0877778990"
-                        },
-                        new
-                        {
-                            CustomerId = 3,
-                            Email = "Charlton.United@email.com",
-                            Name = "Booby Charlton",
-                            PhoneNumber = "0871234567"
-                        },
-                        new
-                        {
-                            CustomerId = 4,
-                            Email = "Sam_S2005@email.com",
-                            Name = "Sam Smith",
-                            PhoneNumber = "0870976543"
-                        },
-                        new
-                        {
-                            CustomerId = 5,
-                            Email = "MarkoPolo@email.com",
-                            Name = "Marko Butler",
-                            PhoneNumber = "0870998754"
-                        },
-                        new
-                        {
-                            CustomerId = 6,
-                            Email = "Bobby_D@email.com",
-                            Name = "Bob Dillion",
-                            PhoneNumber = "0898008420"
-                        });
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
                 {
-                    b.Property<int>("LandlordId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LandlordId"));
+                    b.Property<decimal>("Income")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("LandlordShare")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<double>("Income")
-                        .HasColumnType("float");
-
-                    b.Property<double>("LandlordShare")
-                        .HasColumnType("float");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("PropertyId")
-                        .HasColumnType("int");
-
-                    b.HasKey("LandlordId");
-
-                    b.HasIndex("PropertyId");
+                    b.HasKey("UserId");
 
                     b.ToTable("Landlords");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.Property", b =>
                 {
-                    b.Property<int>("PropertyId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PropertyId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("DescDescription")
                         .HasMaxLength(100)
@@ -183,8 +253,8 @@ namespace TeamProject.DataAccess.Migrations
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("LandlordId")
-                        .HasColumnType("int");
+                    b.Property<string>("LandlordUserId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
@@ -192,152 +262,226 @@ namespace TeamProject.DataAccess.Migrations
                     b.Property<int>("MaxGuests")
                         .HasColumnType("int");
 
-                    b.Property<double?>("PricePerNight")
-                        .HasColumnType("float");
+                    b.Property<decimal>("PricePerNight")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("PropertyType")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<bool>("status")
-                        .HasColumnType("bit");
+                    b.HasKey("Id");
 
-                    b.HasKey("PropertyId");
-
-                    b.HasIndex("LandlordId");
+                    b.HasIndex("LandlordUserId");
 
                     b.ToTable("Properties");
-
-                    b.HasData(
-                        new
-                        {
-                            PropertyId = 1,
-                            DescDescription = "Close to ocean",
-                            FullDescription = "Beautiful lake view apartment.",
-                            Image = "\\Images\\Properties\\bearview.jpg",
-                            Location = "Wicklow",
-                            MaxGuests = 4,
-                            PricePerNight = 120.0,
-                            PropertyType = "Apartment",
-                            Title = "Bear View Apartment",
-                            status = true
-                        },
-                        new
-                        {
-                            PropertyId = 2,
-                            DescDescription = "Perfect for couples or small families.",
-                            FullDescription = "Beautiful modern apartment overlooking the Atlantic Ocean.",
-                            Image = "\\Images\\Properties\\seaview.jpg",
-                            Location = "Galway",
-                            MaxGuests = 4,
-                            PricePerNight = 120.0,
-                            PropertyType = "Apartment",
-                            Title = "Sea View Apartment",
-                            status = true
-                        },
-                        new
-                        {
-                            PropertyId = 3,
-                            DescDescription = "Includes private balcony and skyline views.",
-                            FullDescription = "Top-floor penthouse in the heart of Dublin city.",
-                            Image = "\\Images\\Properties\\luxurypenthouse.jpg",
-                            Location = "Dublin",
-                            MaxGuests = 5,
-                            PricePerNight = 350.0,
-                            PropertyType = "Penthouse",
-                            Title = "Luxury City Penthouse",
-                            status = true
-                        },
-                        new
-                        {
-                            PropertyId = 4,
-                            DescDescription = "Peaceful and quiet retreat.",
-                            FullDescription = "Traditional Irish cottage surrounded by countryside.",
-                            Image = "\\Images\\Properties\\cozycottage.jpg",
-                            Location = "Donegal",
-                            MaxGuests = 3,
-                            PricePerNight = 90.0,
-                            PropertyType = "Cottage",
-                            Title = "Cozy Country Cottage",
-                            status = true
-                        },
-                        new
-                        {
-                            PropertyId = 5,
-                            DescDescription = "Ideal for business stays or family holidays.",
-                            FullDescription = "Spacious townhouse close to Cork city centre.",
-                            Image = "\\Images\\Properties\\moderntownhouse.jpg",
-                            Location = "Cork",
-                            MaxGuests = 6,
-                            PricePerNight = 180.0,
-                            PropertyType = "Townhouse",
-                            Title = "Modern Townhouse",
-                            status = false
-                        },
-                        new
-                        {
-                            PropertyId = 6,
-                            DescDescription = "Great for hiking and outdoor adventures.",
-                            FullDescription = "Wooden cabin located directly beside the lake.",
-                            Image = "\\Images\\Properties\\lakefrontcabin.jpg",
-                            Location = "Killarney",
-                            MaxGuests = 4,
-                            PricePerNight = 150.0,
-                            PropertyType = "Cabin",
-                            Title = "Lakefront Cabin",
-                            status = true
-                        },
-                        new
-                        {
-                            PropertyId = 7,
-                            DescDescription = "Private pool and large garden included.",
-                            FullDescription = "Luxury villa steps away from the beach.",
-                            Image = "\\Images\\Properties\\beachsidevilla.jpg",
-                            Location = "Wexford",
-                            MaxGuests = 8,
-                            PricePerNight = 400.0,
-                            PropertyType = "Villa",
-                            Title = "Beachside Villa",
-                            status = true
-                        },
-                        new
-                        {
-                            PropertyId = 8,
-                            DescDescription = "Walking distance to shops",
-                            FullDescription = "Modern house in city centre.",
-                            Image = "\\Images\\Properties\\citycenterhouse.jpg",
-                            Location = "Dublin",
-                            MaxGuests = 6,
-                            PricePerNight = 200.0,
-                            PropertyType = "House",
-                            Title = "City Centre House",
-                            status = true
-                        });
                 });
 
-            modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
+            modelBuilder.Entity("TeamProject.Models.Models.User", b =>
                 {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TeamProject.Models.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.Admin", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.User", "User")
+                        .WithOne("Admin")
+                        .HasForeignKey("TeamProject.Models.Models.Admin", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.Booking", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("TeamProject.Models.Models.Property", "Property")
                         .WithMany()
-                        .HasForeignKey("PropertyId");
+                        .HasForeignKey("PropertyId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
 
                     b.Navigation("Property");
                 });
 
+            modelBuilder.Entity("TeamProject.Models.Models.Customer", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.User", "User")
+                        .WithOne("Customer")
+                        .HasForeignKey("TeamProject.Models.Models.Customer", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.User", "User")
+                        .WithOne("Landlord")
+                        .HasForeignKey("TeamProject.Models.Models.Landlord", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("TeamProject.Models.Models.Property", b =>
                 {
-                    b.HasOne("TeamProject.Models.Models.Landlord", null)
+                    b.HasOne("TeamProject.Models.Models.Landlord", "Landlord")
                         .WithMany("Properties")
-                        .HasForeignKey("LandlordId");
+                        .HasForeignKey("LandlordUserId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Landlord");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
                 {
                     b.Navigation("Properties");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.User", b =>
+                {
+                    b.Navigation("Admin");
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Landlord");
                 });
 #pragma warning restore 612, 618
         }

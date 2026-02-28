@@ -1,4 +1,5 @@
-﻿using TeamProject.DataAccess.DataAccess;
+﻿using Microsoft.EntityFrameworkCore;
+using TeamProject.DataAccess.DataAccess;
 using TeamProject.Models.Models;
 
 namespace TeamProject.DataAccess.Repository;
@@ -17,17 +18,33 @@ public class CustomerRepo : Repository<Customer>, ICustomerRepo
         _dbContext.SaveChanges();
     }
 
+    public new Customer? Get(string id)
+    {
+        return _dbContext.Customers
+            .Include(customer => customer.User)
+            .FirstOrDefault(customer => customer.UserId == id);
+    }
+
+    public new IEnumerable<Customer> GetAll()
+    {
+        return _dbContext.Customers.Include(customer => customer.User);
+    }
+
     public new void Update(Customer customer)
     {
-        var customerFromDB = _dbContext
-            .Customers
-            .FirstOrDefault(customerFromDB => customerFromDB.CustomerId == customer.CustomerId);
+        var customerFromDb = _dbContext.Customers
+            .Include(c => c.User)
+            .FirstOrDefault(c => c.UserId == customer.UserId);
 
-        customerFromDB.Name = customer.Name;
-        customerFromDB.Email = customer.Email;
-        customerFromDB.PhoneNumber = customer.PhoneNumber;
-        customerFromDB.CreditCardNo = customer.CreditCardNo;
-        customerFromDB.ExpiryDate = customer.ExpiryDate;
-        customerFromDB.CVC = customer.CVC;
+        if (customerFromDb == null)
+            return;
+
+        customerFromDb.CardNo = customer.CardNo;
+        customerFromDb.CardExpiryDate = customer.CardExpiryDate;
+
+        customerFromDb.User.FirstName = customer.User.FirstName;
+        customerFromDb.User.LastName = customer.User.LastName;
+        customerFromDb.User.Email = customer.User.Email;
+        customerFromDb.User.PhoneNumber = customer.User.PhoneNumber;
     }
 }

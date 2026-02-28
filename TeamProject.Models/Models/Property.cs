@@ -5,7 +5,7 @@ namespace TeamProject.Models.Models;
 public class Property
 {
     [Key]
-    public int PropertyId { get; set; }
+    public int Id { get; set; }
 
     [Required]
     [StringLength(100, ErrorMessage = "Title must be under 100 characters.")]
@@ -21,14 +21,17 @@ public class Property
     public string? Location { get; set; }
 
     [Range(0.01, 10000, ErrorMessage = "Price must be greater than 0.")]
-    public double? PricePerNight { get; set; }
+    public decimal PricePerNight { get; set; }
 
     [Range(1, 50)]
     public int MaxGuests { get; set; }
 
     public string? PropertyType { get; set; }
 
-    public bool status { get; set; }
+    public bool Status { get; set; }
 
     public string? Image { get; set; }
+
+    public string? LandlordUserId { get; set; }
+    public Landlord? Landlord { get; set; }
 }

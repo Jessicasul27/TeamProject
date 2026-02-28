@@ -1,4 +1,5 @@
-﻿using TeamProject.DataAccess.DataAccess;
+﻿using Microsoft.EntityFrameworkCore;
+using TeamProject.DataAccess.DataAccess;
 using TeamProject.Models.Models;
 
 namespace TeamProject.DataAccess.Repository;
@@ -17,16 +18,33 @@ public class LandlordRepo : Repository<Landlord>, ILandlordRepo
         _dbContext.SaveChanges();
     }
 
+    public new Landlord? Get(string id)
+    {
+        return _dbContext.Landlords
+            .Include(landlord => landlord.User)
+            .FirstOrDefault(landlord => landlord.UserId == id);
+    }
+
+    public new IEnumerable<Landlord> GetAll()
+    {
+        return _dbContext.Landlords.Include(landlord => landlord.User);
+    }
+
     public new void Update(Landlord landlord)
     {
-        var landlordFromDB = _dbContext
-            .Landlords
-            .FirstOrDefault(landlordFromDB => landlordFromDB.LandlordId == landlord.LandlordId);
+        var landlordFromDb = _dbContext.Landlords
+            .Include(l => l.User)
+            .FirstOrDefault(l => l.UserId == landlord.UserId);
 
-        landlordFromDB.Name = landlord.Name;
-        landlordFromDB.Email = landlord.Email;
-        landlordFromDB.PhoneNo = landlord.PhoneNo;
-        landlordFromDB.LandlordShare = landlord.LandlordShare;
-        landlordFromDB.Income = landlord.Income;
+        if (landlordFromDb == null)
+            return;
+
+        landlordFromDb.LandlordShare = landlord.LandlordShare;
+        landlordFromDb.Income = landlord.Income;
+
+        landlordFromDb.User.FirstName = landlord.User.FirstName;
+        landlordFromDb.User.LastName = landlord.User.LastName;
+        landlordFromDb.User.Email = landlord.User.Email;
+        landlordFromDb.User.PhoneNumber = landlord.User.PhoneNumber;
     }
 }

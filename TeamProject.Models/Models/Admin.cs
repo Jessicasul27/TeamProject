@@ -4,13 +4,9 @@ namespace TeamProject.Models.Models;
 
 public class Admin
 {
+    // FK to AspNetUsers.Id (Identity auth)
     [Key]
-    public int AdminId { get; set; }
+    public string UserId { get; set; } = string.Empty;
 
-    [Required]
-    public string? Name { get; set; }
-
-    public string? Email { get; set; }
-
-    public string? Password { get; set; }
+    public User User { get; set; } = null!;
 }

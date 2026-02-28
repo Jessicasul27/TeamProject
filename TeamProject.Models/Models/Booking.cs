@@ -1,18 +1,21 @@
-﻿namespace TeamProject.Models.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TeamProject.Models.Models;
 
 public class Booking
 {
-    public string? BookingId { get; set; }
-    
+    [Key]
+    public string Id { get; set; } = Guid.NewGuid().ToString();
+
     public DateTime CheckInDate { get; set; }
-    
+
     public DateTime CheckOutDate { get; set; }
-    
-    public double? BookingPrice { get; set; }
-    
-    public string? Name { get; set; }
-    
-    public string? Email { get; set; }
-    
-    public string? PhoneNo { get; set; }
+
+    public decimal BookingPrice { get; set; }
+
+    public int PropertyId { get; set; }
+    public Property Property { get; set; } = null!;
+
+    public string CustomerUserId { get; set; } = string.Empty;
+    public Customer Customer { get; set; } = null!;
 }
