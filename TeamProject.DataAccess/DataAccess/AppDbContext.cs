@@ -15,7 +15,6 @@ public class AppDbContext : IdentityDbContext<User>
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Landlord> Landlords { get; set; }
     public DbSet<Property> Properties { set; get; }
-
     public DbSet<PropertyImage> PropertyImages { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

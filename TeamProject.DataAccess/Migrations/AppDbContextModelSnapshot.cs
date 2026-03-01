@@ -253,9 +253,6 @@ namespace TeamProject.DataAccess.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("LandlordUserId")
                         .HasColumnType("nvarchar(450)");
 
@@ -285,6 +282,28 @@ namespace TeamProject.DataAccess.Migrations
                     b.HasIndex("LandlordUserId");
 
                     b.ToTable("Properties");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.PropertyImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PropertyId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PropertyId");
+
+                    b.ToTable("PropertyImages");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.User", b =>
@@ -487,6 +506,11 @@ namespace TeamProject.DataAccess.Migrations
             modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
                 {
                     b.Navigation("Properties");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.Property", b =>
+                {
+                    b.Navigation("Images");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.User", b =>

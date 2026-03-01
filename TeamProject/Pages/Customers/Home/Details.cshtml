@@ -38,20 +38,20 @@
 
                             @if (Model.Property.Images != null && Model.Property.Images.Any())
                             {
-                                    <div class="row">
+                                <div class="row">
                                     @foreach (var img in Model.Property.Images)
                                     {
-                                                <div class="col-4 col-md-3 mb-3">
-                                                    <img src="@img.ImageUrl"
-                                                         class="img-fluid rounded"
-                                                         style="height:150px; object-fit:cover; width:100%;" />
-                                                </div>
+                                        <div class="col-4 col-md-3 mb-3">
+                                            <img src="@img.ImageUrl"
+                                                 class="img-fluid rounded"
+                                                 style="height:150px; object-fit:cover; width:100%;"/>
+                                        </div>
                                     }
-                                    </div>
+                                </div>
                             }
                             else
                             {
-                                    <p>No additional images available</p>
+                                <p>No additional images available</p>
                             }
                         </div>
                     </div>
@@ -70,7 +70,7 @@
 
                     <div class="col-12 col-md-6">
                         <a asp-page="/Customers/Home/Booking"
-                           asp-route-id="@Model.Property.PropertyId"
+                           asp-route-id="@Model.Property.Id"
                            class="btn btn-primary form-control"
                            style="height:50px;">
                             Book now!

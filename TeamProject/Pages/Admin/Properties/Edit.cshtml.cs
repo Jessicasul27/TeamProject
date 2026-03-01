@@ -24,10 +24,7 @@ public class EditModel : PageModel
     {
         Property = _unitOfWork.PropertyRepo.Get(id);
 
-        if (Property == null)
-        {
-            return NotFound();
-        }
+        if (Property == null) return NotFound();
 
         Property.Images = _unitOfWork.PropertyImageRepo
             .GetAll()
@@ -42,9 +39,9 @@ public class EditModel : PageModel
         var wwwRootFolder = _webHostEnvironment.WebRootPath;
         var upload = Path.Combine(wwwRootFolder, @"Images\Properties");
 
-        var propFromDB = _unitOfWork.PropertyRepo.Get(Property.PropertyId);
+        var propFromDB = _unitOfWork.PropertyRepo.Get(Property.Id);
 
-        
+
         var displayFile = HttpContext.Request.Form.Files["displayFile"];
 
         if (displayFile != null && displayFile.Length > 0)
@@ -62,15 +59,14 @@ public class EditModel : PageModel
         }
         else
         {
-            
             Property.DisplayImage = propFromDB.DisplayImage;
         }
 
-        
+
         _unitOfWork.PropertyRepo.Update(Property);
         _unitOfWork.Save();
 
-        
+
         var galleryFiles = HttpContext.Request.Form.Files.GetFiles("galleryFiles");
 
         foreach (var file in galleryFiles)
@@ -89,7 +85,7 @@ public class EditModel : PageModel
             var image = new PropertyImage
             {
                 ImageUrl = @"\Images\Properties\" + fileName + extension,
-                PropertyId = Property.PropertyId
+                PropertyId = Property.Id
             };
 
             _unitOfWork.PropertyImageRepo.Add(image);
@@ -104,19 +100,13 @@ public class EditModel : PageModel
     {
         var image = _unitOfWork.PropertyImageRepo.Get(imageId);
 
-        if (image == null)
-        {
-            return NotFound();
-        }
+        if (image == null) return NotFound();
 
         // delete file from wwwroot
         var wwwRootPath = _webHostEnvironment.WebRootPath;
         var filePath = Path.Combine(wwwRootPath, image.ImageUrl.TrimStart('\\'));
 
-        if (System.IO.File.Exists(filePath))
-        {
-            System.IO.File.Delete(filePath);
-        }
+        if (System.IO.File.Exists(filePath)) System.IO.File.Delete(filePath);
 
         // delete from DB
         _unitOfWork.PropertyImageRepo.Delete(image);

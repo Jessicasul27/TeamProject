@@ -28,7 +28,7 @@ public class CreateModel : PageModel
         var wwwRootFolder = _webHostEnvironment.WebRootPath;
         var upload = Path.Combine(wwwRootFolder, @"Images\Properties");
 
-        
+
         var displayFile = HttpContext.Request.Form.Files["displayFile"];
 
         if (displayFile != null && displayFile.Length > 0)
@@ -45,14 +45,13 @@ public class CreateModel : PageModel
             Property.DisplayImage = @"\Images\Properties\" + fileName + extension;
         }
 
-        
+
         _unitOfWork.PropertyRepo.Add(Property);
         _unitOfWork.Save();
 
-       
+
         var galleryFiles = HttpContext.Request.Form.Files.GetFiles("galleryFiles");
         if (galleryFiles != null)
-        {
             foreach (var file in galleryFiles)
             {
                 if (file.Length == 0) continue;
@@ -69,12 +68,11 @@ public class CreateModel : PageModel
                 var image = new PropertyImage
                 {
                     ImageUrl = @"\Images\Properties\" + fileName + extension,
-                    PropertyId = Property.PropertyId
+                    PropertyId = Property.Id
                 };
 
                 _unitOfWork.PropertyImageRepo.Add(image);
             }
-        }
 
         _unitOfWork.Save();
 

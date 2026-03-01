@@ -12,8 +12,8 @@ using TeamProject.DataAccess.DataAccess;
 namespace TeamProject.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260228184600_addUserFullNames")]
-    partial class addUserFullNames
+    [Migration("20260301124942_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -249,12 +249,12 @@ namespace TeamProject.DataAccess.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("DisplayImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FullDescription")
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
-
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LandlordUserId")
                         .HasColumnType("nvarchar(450)");
@@ -285,6 +285,28 @@ namespace TeamProject.DataAccess.Migrations
                     b.HasIndex("LandlordUserId");
 
                     b.ToTable("Properties");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.PropertyImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PropertyId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PropertyId");
+
+                    b.ToTable("PropertyImages");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.User", b =>
@@ -473,9 +495,25 @@ namespace TeamProject.DataAccess.Migrations
                     b.Navigation("Landlord");
                 });
 
+            modelBuilder.Entity("TeamProject.Models.Models.PropertyImage", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.Property", "Property")
+                        .WithMany("Images")
+                        .HasForeignKey("PropertyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Property");
+                });
+
             modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>
                 {
                     b.Navigation("Properties");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.Property", b =>
+                {
+                    b.Navigation("Images");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.User", b =>

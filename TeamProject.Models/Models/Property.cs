@@ -33,4 +33,7 @@ public class Property
     public string? DisplayImage { get; set; }
 
     public ICollection<PropertyImage> Images { get; set; } = new List<PropertyImage>();
+
+    public string? LandlordUserId { get; set; }
+    public Landlord? Landlord { get; set; }
 }

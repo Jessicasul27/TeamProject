@@ -84,7 +84,7 @@ public static class Seeder
                     Status = true,
                     FullDescription = "Beautiful lake view apartment.",
                     DescDescription = "Close to ocean",
-                    Image = @"\Images\Properties\bearview.jpg",
+                    DisplayImage = @"\Images\Properties\bearview.jpg",
                     LandlordUserId = landlordUser.Id
                 },
                 new Property
@@ -97,7 +97,7 @@ public static class Seeder
                     Status = true,
                     FullDescription = "Beautiful modern apartment overlooking the Atlantic Ocean.",
                     DescDescription = "Perfect for couples or small families.",
-                    Image = @"\Images\Properties\seaview.jpg",
+                    DisplayImage = @"\Images\Properties\seaview.jpg",
                     LandlordUserId = landlordUser.Id
                 },
                 new Property
@@ -110,7 +110,7 @@ public static class Seeder
                     Status = true,
                     FullDescription = "Top-floor penthouse in the heart of Dublin city.",
                     DescDescription = "Includes private balcony and skyline views.",
-                    Image = @"\Images\Properties\luxurypenthouse.jpg",
+                    DisplayImage = @"\Images\Properties\luxurypenthouse.jpg",
                     LandlordUserId = landlordUser.Id
                 },
                 new Property
@@ -123,7 +123,7 @@ public static class Seeder
                     Status = true,
                     FullDescription = "Traditional Irish cottage surrounded by countryside.",
                     DescDescription = "Peaceful and quiet retreat.",
-                    Image = @"\Images\Properties\cozycottage.jpg",
+                    DisplayImage = @"\Images\Properties\cozycottage.jpg",
                     LandlordUserId = landlordUser.Id
                 },
                 new Property
@@ -136,7 +136,7 @@ public static class Seeder
                     Status = false,
                     FullDescription = "Spacious townhouse close to Cork city centre.",
                     DescDescription = "Ideal for business stays or family holidays.",
-                    Image = @"\Images\Properties\moderntownhouse.jpg",
+                    DisplayImage = @"\Images\Properties\moderntownhouse.jpg",
                     LandlordUserId = landlordUser.Id
                 },
                 new Property
@@ -149,7 +149,7 @@ public static class Seeder
                     Status = true,
                     FullDescription = "Wooden cabin located directly beside the lake.",
                     DescDescription = "Great for hiking and outdoor adventures.",
-                    Image = @"\Images\Properties\lakefrontcabin.jpg",
+                    DisplayImage = @"\Images\Properties\lakefrontcabin.jpg",
                     LandlordUserId = landlordUser.Id
                 },
                 new Property
@@ -162,7 +162,7 @@ public static class Seeder
                     Status = true,
                     FullDescription = "Luxury villa steps away from the beach.",
                     DescDescription = "Private pool and large garden included.",
-                    Image = @"\Images\Properties\beachsidevilla.jpg",
+                    DisplayImage = @"\Images\Properties\beachsidevilla.jpg",
                     LandlordUserId = landlordUser.Id
                 },
                 new Property
@@ -175,7 +175,7 @@ public static class Seeder
                     Status = true,
                     FullDescription = "Modern house in city centre.",
                     DescDescription = "Walking distance to shops",
-                    Image = @"\Images\Properties\citycenterhouse.jpg",
+                    DisplayImage = @"\Images\Properties\citycenterhouse.jpg",
                     LandlordUserId = landlordUser.Id
                 }
             );

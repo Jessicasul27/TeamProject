@@ -21,8 +21,9 @@ public class PropertyRepo : Repository<Property>, IPropertyRepo
     {
         var propFromDB = _dbContext
             .Properties
-            .FirstOrDefault(propFromDB => propFromDB.PropertyId == property.PropertyId);
-        if(propFromDB == null)
+            .FirstOrDefault(propFromDB => propFromDB.Id == property.Id);
+
+        if (propFromDB == null)
             return;
 
         propFromDB.Title = property.Title;

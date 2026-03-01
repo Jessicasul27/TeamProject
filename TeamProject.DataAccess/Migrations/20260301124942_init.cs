@@ -227,7 +227,7 @@ namespace TeamProject.DataAccess.Migrations
                     MaxGuests = table.Column<int>(type: "int", nullable: false),
                     PropertyType = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Status = table.Column<bool>(type: "bit", nullable: false),
-                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DisplayImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LandlordUserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
@@ -267,6 +267,26 @@ namespace TeamProject.DataAccess.Migrations
                         principalTable: "Properties",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PropertyImages",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PropertyId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PropertyImages", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_PropertyImages_Properties_PropertyId",
+                        column: x => x.PropertyId,
+                        principalTable: "Properties",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -322,6 +342,11 @@ namespace TeamProject.DataAccess.Migrations
                 name: "IX_Properties_LandlordUserId",
                 table: "Properties",
                 column: "LandlordUserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PropertyImages_PropertyId",
+                table: "PropertyImages",
+                column: "PropertyId");
         }
 
         /// <inheritdoc />
@@ -347,6 +372,9 @@ namespace TeamProject.DataAccess.Migrations
 
             migrationBuilder.DropTable(
                 name: "Bookings");
+
+            migrationBuilder.DropTable(
+                name: "PropertyImages");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

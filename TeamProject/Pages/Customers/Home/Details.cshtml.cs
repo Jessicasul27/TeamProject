@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Models.Models;
 using TeamProject.Services;
@@ -16,7 +15,7 @@ public class DetailsModel : PageModel
 
     public Property Property { get; set; }
 
-    public void OnGet(string id)
+    public void OnGet(int id)
     {
         Property = _unitOfWork.PropertyRepo.Get(id);
 
@@ -25,6 +24,7 @@ public class DetailsModel : PageModel
             .Where(i => i.PropertyId == id)
             .ToList();
 
-        Property.Images = images;
+        if (Property != null)
+            Property.Images = images;
     }
 }

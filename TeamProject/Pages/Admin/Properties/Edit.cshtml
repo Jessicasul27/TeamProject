@@ -54,50 +54,51 @@
                 <input asp-for="@Model.Property.MaxGuests" class="form-control"/>
                 <span asp-validation-for="@Model.Property.MaxGuests" class="text-danger"></span>
             </div>
-        <div class="mb-3">
-            <label>Current Display Image</label><br />
-            <img src="@Model.Property.DisplayImage" width="200" class="mb-2" />
-        </div>
+            <div class="mb-3">
+                <label>Current Display Image</label><br/>
+                <img src="@Model.Property.DisplayImage" width="200" class="mb-2"/>
+            </div>
 
-        <div class="mb-3">
-            <label>Replace Display Image</label>
-            <input type="file" name="displayFile" class="form-control" />
-        </div>
+            <div class="mb-3">
+                <label>Replace Display Image</label>
+                <input type="file" name="displayFile" class="form-control"/>
+            </div>
 
-        
-        <div class="mb-3">
-            <label>Gallery Images</label><br />
+
+            <div class="mb-3">
+                <label>Gallery Images</label><br/>
 
                 @if (Model.Property.Images != null)
                 {
                     foreach (var img in Model.Property.Images)
                     {
-                            <div style="display:inline-block; margin:10px;">
-                                <img src="@img.ImageUrl" width="150" /><br />
+                        <div style="display:inline-block; margin:10px;">
+                            <img src="@img.ImageUrl" width="150"/><br/>
 
-                                
-                                       <button type="submit"
-                                                formaction="?handler=DeleteImage"
-                                                formmethod="post"
-                                                name="imageId"
-                                                value="@img.Id"
-                                                class="btn btn-danger btn-sm mt-1">
-                                            Delete
-                                        </button>
-                            </div>
+
+                            <button type="submit"
+                                    formaction="?handler=DeleteImage"
+                                    formmethod="post"
+                                    name="imageId"
+                                    value="@img.Id"
+                                    class="btn btn-danger btn-sm mt-1">
+                                Delete
+                            </button>
+                        </div>
                     }
                 }
-        </div>
+            </div>
 
-        
-        <div class="mb-3">
-            <label>Add More Images</label>
-            <input type="file" name="galleryFiles" multiple class="form-control" />
-        </div>
 
-        <div class="mb-3">
-            <button type="submit" class="btn btn-success">Update</button>
-            <a asp-page="Index" class="btn btn-primary">Back to Index</a>
+            <div class="mb-3">
+                <label>Add More Images</label>
+                <input type="file" name="galleryFiles" multiple class="form-control"/>
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-success">Update</button>
+                <a asp-page="Index" class="btn btn-primary">Back to Index</a>
+            </div>
         </div>
     </div>
 </form>
