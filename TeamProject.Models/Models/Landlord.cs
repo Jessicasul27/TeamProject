@@ -4,24 +4,16 @@ namespace TeamProject.Models.Models;
 
 public class Landlord
 {
+    // FK to AspNetUsers.Id (Identity auth)
     [Key]
-    public int LandlordId { get; set; }
-    
-    [Required]
-    public string? Name { get; set; }
-    
-    [Required]
-    public string? Email { get; set; }
-    
-    [Required]
-    public string? PhoneNo { get; set; }
-    
-    [Required]
-    public double LandlordShare { get; set;}
+    public string UserId { get; set; } = string.Empty;
 
-    public double Income { get; set; }
+    public User User { get; set; } = null!;
 
-    public Property? Property { get; set; }
+    [Required]
+    public decimal LandlordShare { get; set; }
+
+    public decimal Income { get; set; }
 
     public List<Property>? Properties { get; set; }
 }

@@ -17,14 +17,14 @@ public class DeleteModel : PageModel
     [BindProperty]
     public Customer Customer { get; set; }
 
-    public void OnGet(int id)
+    public void OnGet(string id)
     {
         Customer = _unitOfWork.CustomerRepo.Get(id);
     }
 
     public IActionResult OnPost()
     {
-        var customerFromDb = _unitOfWork.CustomerRepo.Get(Customer.CustomerId);
+        var customerFromDb = _unitOfWork.CustomerRepo.Get(Customer.UserId);
 
         if (customerFromDb == null) return NotFound();
 

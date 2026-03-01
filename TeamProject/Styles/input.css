@@ -1,0 +1,5 @@
+﻿@import "tailwindcss" prefix(tw);
+
+/* tailwind looks for any used utility classes in all (cs)html files, 
+   which then get put into one .css which the application then uses. */
+@source "../Pages/**/*.cshtml";

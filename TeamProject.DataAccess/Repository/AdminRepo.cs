@@ -19,12 +19,7 @@ public class AdminRepo : Repository<Admin>, IAdminRepo
 
     public new void Update(Admin admin)
     {
-        var adminFromDB = _dbContext
-            .Admins
-            .FirstOrDefault(adminFromDB => adminFromDB.AdminId == admin.AdminId);
-
-        adminFromDB.Email = admin.Email;
-        adminFromDB.Name = admin.Name;
-        adminFromDB.Password = admin.Password;
+        var adminFromDb = _dbContext.Admins
+            .FirstOrDefault(c => c.UserId == admin.UserId);
     }
 }

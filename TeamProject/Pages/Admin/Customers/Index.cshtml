@@ -16,28 +16,28 @@
     </div>
 </div>
 
-<br />
-<br />
-<br />
+<br/>
+<br/>
+<br/>
 
 <table class="table table-bordered table-striped">
     <thead>
-        <tr>
-            <th>Customer List</th>
-        </tr>
+    <tr>
+        <th>Customer List</th>
+    </tr>
     </thead>
     <tbody>
-        @foreach (var obj in Model.Customers)
-        {
-            <tr>
-                <td width="50%">@obj.Name</td>
-                <td>
-                    <a asp-page="Edit" asp-route-id="@obj.CustomerId">Edit</a>
-                </td>
-                <td>
-                    <a asp-page="Delete" asp-route-id="@obj.CustomerId">Delete</a>
-                </td>
-            </tr>
-        }
+    @foreach (var obj in Model.Customers)
+    {
+        <tr>
+            <td width="50%">@obj.User.FirstName @obj.User.LastName</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@obj.UserId">Edit</a>
+            </td>
+            <td>
+                <a asp-page="Delete" asp-route-id="@obj.UserId">Delete</a>
+            </td>
+        </tr>
+    }
     </tbody>
 </table>

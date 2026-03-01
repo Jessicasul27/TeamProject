@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TeamProject.DataAccess.DataAccess;
 
@@ -11,9 +12,11 @@ using TeamProject.DataAccess.DataAccess;
 namespace TeamProject.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260228181037_init")]
+    partial class init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -246,9 +249,6 @@ namespace TeamProject.DataAccess.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("DisplayImage")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("FullDescription")
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
@@ -471,17 +471,6 @@ namespace TeamProject.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Landlord");
-                });
-
-            modelBuilder.Entity("TeamProject.Models.Models.PropertyImage", b =>
-                {
-                    b.HasOne("TeamProject.Models.Models.Property", "Property")
-                        .WithMany("Images")
-                        .HasForeignKey("PropertyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Property");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using TeamProject.DataAccess.DataAccess;
 
 namespace TeamProject.DataAccess.Repository;
@@ -27,6 +28,14 @@ public class Repository<T> : IRepository<T> where T : class
     public T? Get(int id)
     {
         if (id == 0)
+            return null;
+        else
+            return dbSet.Find(id);
+    }
+
+    public T? Get(string id)
+    {
+        if (id.IsNullOrEmpty())
             return null;
         else
             return dbSet.Find(id);

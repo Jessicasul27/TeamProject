@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.IdentityModel.Tokens;
 using TeamProject.Services;
 using TeamProject.Models.Models;
 
@@ -17,16 +18,16 @@ public class DeleteModel : PageModel
 
     public Landlord Landlords { get; set; }
 
-    public void OnGet(int id)
+    public void OnGet(string id)
     {
         Landlords = _unitOfWork.LandlordRepo.Get(id);
     }
 
     public IActionResult OnPost()
     {
-        if (Landlords == null || Landlords.LandlordId == 0) return BadRequest();
+        if (Landlords == null || Landlords.UserId.IsNullOrEmpty()) return BadRequest();
 
-        var landlordFromDB = _unitOfWork.LandlordRepo.Get(Landlords.LandlordId);
+        var landlordFromDB = _unitOfWork.LandlordRepo.Get(Landlords.UserId);
 
         if (landlordFromDB == null) return NotFound();
 
