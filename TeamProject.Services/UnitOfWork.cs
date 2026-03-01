@@ -1,5 +1,6 @@
 ﻿using TeamProject.DataAccess.DataAccess;
 using TeamProject.DataAccess.Repository;
+using TeamProject.Models.Models;
 
 namespace TeamProject.Services;
 
@@ -12,6 +13,8 @@ public class UnitOfWork : IUnitOfWork
     public ILandlordRepo LandlordRepo { get; }
     public IPropertyRepo PropertyRepo { get; }
 
+    public IPropertyImageRepo PropertyImageRepo { get; }
+
     public UnitOfWork(AppDbContext dbContext)
     {
         _dbContext = dbContext;
@@ -20,6 +23,7 @@ public class UnitOfWork : IUnitOfWork
         CustomerRepo = new CustomerRepo(_dbContext);
         LandlordRepo = new LandlordRepo(_dbContext);
         PropertyRepo = new PropertyRepo(_dbContext);
+        PropertyImageRepo = new PropertyImageRepo(_dbContext);
     }
 
     public void Save()

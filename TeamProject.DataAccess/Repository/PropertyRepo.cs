@@ -19,19 +19,22 @@ public class PropertyRepo : Repository<Property>, IPropertyRepo
 
     public new void Update(Property property)
     {
-        var propertyFromDb = _dbContext.Properties
-            .FirstOrDefault(propFromDB => propFromDB.Id == property.Id);
+        var propFromDB = _dbContext
+            .Properties
+            .FirstOrDefault(propFromDB => propFromDB.PropertyId == property.PropertyId);
+        if(propFromDB == null)
+            return;
 
-        propertyFromDb.Title = property.Title;
-        propertyFromDb.FullDescription = property.FullDescription;
-        propertyFromDb.DescDescription = property.DescDescription;
-        propertyFromDb.Location = property.Location;
-        propertyFromDb.PricePerNight = property.PricePerNight;
-        propertyFromDb.MaxGuests = property.MaxGuests;
-        propertyFromDb.PropertyType = property.PropertyType;
-        propertyFromDb.Status = property.Status;
+        propFromDB.Title = property.Title;
+        propFromDB.FullDescription = property.FullDescription;
+        propFromDB.DescDescription = property.DescDescription;
+        propFromDB.Location = property.Location;
+        propFromDB.PricePerNight = property.PricePerNight;
+        propFromDB.MaxGuests = property.MaxGuests;
+        propFromDB.PropertyType = property.PropertyType;
+        propFromDB.Status = property.Status;
 
-        if (property.Image != null)
-            propertyFromDb.Image = property.Image;
+        if (property.DisplayImage != null)
+            propFromDB.DisplayImage = property.DisplayImage;
     }
 }

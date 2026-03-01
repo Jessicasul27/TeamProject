@@ -30,8 +30,7 @@ public class Property
 
     public bool Status { get; set; }
 
-    public string? Image { get; set; }
+    public string? DisplayImage { get; set; }
 
-    public string? LandlordUserId { get; set; }
-    public Landlord? Landlord { get; set; }
+    public ICollection<PropertyImage> Images { get; set; } = new List<PropertyImage>();
 }

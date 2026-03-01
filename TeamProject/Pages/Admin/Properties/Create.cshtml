@@ -53,14 +53,22 @@
                 <input asp-for="@Model.Property.MaxGuests" class="form-control"/>
                 <span asp-validation-for="@Model.Property.MaxGuests" class="text-danger"></span>
             </div>
-            <div>
-                <label asp-for="@Model.Property.Image">FileUpload</label>
-                <input type="file" name="files" id="uploadBox" class="form-control"/>
+           <div>
+                <label>Display Image</label>
+                <input type="file" name="displayFile" class="form-control" />
             </div>
+
+          
+            <div>
+                <label>Gallery Images</label>
+                <input type="file" name="galleryFiles" multiple class="form-control" />
+            </div>
+
             <div class="mb-3">
                 <button type="submit" class="btn btn-success">Create</button>
                 <a asp-page="Index" class="btn btn-primary">Back to Index</a>
             </div>
+
         </div>
     </div>
 </form>

@@ -246,6 +246,9 @@ namespace TeamProject.DataAccess.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("DisplayImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FullDescription")
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
@@ -468,6 +471,17 @@ namespace TeamProject.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Landlord");
+                });
+
+            modelBuilder.Entity("TeamProject.Models.Models.PropertyImage", b =>
+                {
+                    b.HasOne("TeamProject.Models.Models.Property", "Property")
+                        .WithMany("Images")
+                        .HasForeignKey("PropertyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Property");
                 });
 
             modelBuilder.Entity("TeamProject.Models.Models.Landlord", b =>

@@ -19,27 +19,68 @@ public class DeleteModel : PageModel
 
     public Property Property { get; set; }
 
-    public void OnGet(int id)
+    public IActionResult OnGet(int id)
     {
         Property = _unitOfWork.PropertyRepo.Get(id);
+
+        if (Property == null)
+        {
+            return NotFound();
+        }
+
+        Property.Images = _unitOfWork.PropertyImageRepo
+            .GetAll()
+            .Where(pi => pi.PropertyId == id)
+            .ToList();
+
+        return Page();
+
     }
 
-    public IActionResult OnPost()
+    public IActionResult OnPost(int id)
     {
-        var wwwRootFolder = _webHostEnvironment.WebRootPath;
-        var propFromDb = _unitOfWork.PropertyRepo.Get(Property.Id);
+        var property = _unitOfWork.PropertyRepo.Get(id);
 
-        if (propFromDb != null)
+        if (property == null)
         {
-            var oldFile = Path.Combine(wwwRootFolder, propFromDb.Image.TrimStart('\\'));
-            if (System.IO.File.Exists(oldFile)) System.IO.File.Delete(oldFile);
+            return NotFound();
         }
 
-        if (ModelState.IsValid)
+        var wwwRootPath = _webHostEnvironment.WebRootPath;
+
+      
+        if (!string.IsNullOrEmpty(property.DisplayImage))
         {
-            _unitOfWork.PropertyRepo.Delete(propFromDb);
-            _unitOfWork.Save();
+            var displayPath = Path.Combine(wwwRootPath, property.DisplayImage.TrimStart('\\'));
+
+            if (System.IO.File.Exists(displayPath))
+            {
+                System.IO.File.Delete(displayPath);
+            }
         }
+
+        
+        var images = _unitOfWork.PropertyImageRepo
+            .GetAll()
+            .Where(i => i.PropertyId == id)
+            .ToList();
+
+        foreach (var img in images)
+        {
+            var imagePath = Path.Combine(wwwRootPath, img.ImageUrl.TrimStart('\\'));
+
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
+            }
+
+            _unitOfWork.PropertyImageRepo.Delete(img);
+        }
+
+        
+        _unitOfWork.PropertyRepo.Delete(property);
+
+        _unitOfWork.Save();
 
         return RedirectToPage("Index");
     }
