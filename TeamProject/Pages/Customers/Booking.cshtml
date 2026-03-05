@@ -1,0 +1,117 @@
+﻿@page
+@model TeamProject.Pages.Customers.BookingModel
+@{
+}
+
+<div class="container backgroundWhite">
+    <div class="card">
+
+        <!-- Header -->
+        <div class="card-header">
+            <div class="text-light ml-0 row">
+                <div class="col-12 col-md-6 pt-2">
+                    <h1 class="text-primary">Complete Your Booking</h1>
+                </div>
+
+                <div class="col-12 col-md-6 text-end pt-2">
+                    <h1 class="text-muted">Payment</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body">
+            <div class="container rounded p-2">
+
+                <!-- Booking Summary -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h4>Booking Summary</h4>
+                        <p><strong>Check-in:</strong> @Model.CheckInDate?.ToString("yyyy-MM-dd")</p>
+                        <p><strong>Check-out:</strong> @Model.CheckOutDate?.ToString("yyyy-MM-dd")</p>
+                        <p><strong>Total Price:</strong> €@Model.TotalPrice</p> <!-- use TotalPrice here -->
+                    </div>
+                </div>
+
+                <!-- Express Payments -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h4>Express Checkout</h4>
+                    </div>
+
+                    <div class="col-4 text-center">
+                        <button type="button" class="btn btn-light w-100">
+                            <img src="" class="img-fluid" alt="Apple Pay" />
+                        </button>
+                    </div>
+
+                    <div class="col-4 text-center">
+                        <button type="button" class="btn btn-light w-100">
+                            <img src="" class="img-fluid" alt="Visa" />
+                        </button>
+                    </div>
+
+                    <div class="col-4 text-center">
+                        <button type="button" class="btn btn-light w-100">
+                            <img src="" class="img-fluid" alt="Google Pay" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- OR Divider -->
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <hr />
+                        <h5 class="text-muted">OR</h5>
+                        <hr />
+                    </div>
+                </div>
+
+                <!-- Card Payment Form -->
+                <form method="post">
+
+                    <input type="hidden" asp-for="PropertyId" />
+                    <input type="hidden" asp-for="CheckInDate" />
+                    <input type="hidden" asp-for="CheckOutDate" />
+                    <input type="hidden" asp-for="TotalPrice" />
+
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label>Card Number</label>
+                            <input asp-for="CardNo" class="form-control" placeholder="1234 5678 9012 3456" />
+                            <span asp-validation-for="CardNo" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label>Expiry Date (MM/YY)</label>
+                            <input asp-for="ExpiryDate" class="form-control" placeholder="MM/YY" />
+                            <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <label>CVC</label>
+                            <input asp-for="CVC" class="form-control" placeholder="123" />
+                            <span asp-validation-for="CVC" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary form-control" style="height:50px;">
+                                Confirm Payment
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>

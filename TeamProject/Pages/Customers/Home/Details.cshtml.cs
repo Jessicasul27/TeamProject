@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Models.Models;
 using TeamProject.Services;
@@ -15,7 +16,49 @@ public class DetailsModel : PageModel
 
     public Property Property { get; set; }
 
+    [BindProperty]
+    public DateTime? CheckInDate { get; set; }
+
+    [BindProperty]
+    public DateTime? CheckOutDate { get; set; }
+
+    public string ErrorMessage { get; set; }
+
     public void OnGet(int id)
+    {
+        LoadProperty(id);
+    }
+
+    public IActionResult OnPost(int id)
+{
+    LoadProperty(id);
+
+        // Validate dates
+        if (CheckInDate == null || CheckOutDate == null)
+    {
+        ErrorMessage = "Please select check-in and check-out dates.";
+        return Page();
+    }
+
+    if (CheckOutDate <= CheckInDate)
+    {
+        ErrorMessage = "Check-out must be after check-in.";
+        return Page();
+    }
+
+        var numberOfNights = (CheckOutDate.Value - CheckInDate.Value).TotalDays;
+        var totalPrice = Property.PricePerNight * (decimal)numberOfNights;
+
+        return RedirectToPage("/Customers/Booking", new
+        {
+            propertyId = id,
+            checkIn = CheckInDate.Value.ToString("yyyy-MM-dd"),
+            checkOut = CheckOutDate.Value.ToString("yyyy-MM-dd"),
+            totalPrice = totalPrice.ToString("F2")
+        });
+    }
+
+    private void LoadProperty(int id)
     {
         Property = _unitOfWork.PropertyRepo.Get(id);
 

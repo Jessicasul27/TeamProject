@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int}"
 @model TeamProject.Pages.Customers.Home.DetailsModel
 @{
 }
@@ -6,11 +6,14 @@
 <div class="">
     <div class="container backgroundWhite">
         <div class="card">
+
+            ```
             <div class="card-header">
                 <div class="text-light ml-0 row ">
                     <div class="col-12 col-md-6 pt-2">
                         <h1 class="text-primary">@Model.Property.Title</h1>
                     </div>
+
                     <div class="col-12 col-md-6 text-end pt-2">
                         <h1 class="text-muted">€@Model.Property.PricePerNight</h1>
                     </div>
@@ -19,18 +22,23 @@
 
             <div class="card-body">
                 <div class="container rounded p-2">
+
                     <div class="row">
                         <div class="col-12 col-lg-8">
+
                             <p class="text-secondary">@Model.Property.FullDescription</p>
                             <p class="text-secondary">@Model.Property.PropertyType</p>
 
                             <p>Max Guests: @Model.Property.MaxGuests</p>
                             <p>Location: @Model.Property.Location</p>
                             <p>€@Model.Property.PricePerNight per night</p>
+
                         </div>
 
                         <div class="col-12 col-lg-4 p-1 text-center">
-                            <img src="@Model.Property.DisplayImage" width="100%" class="rounded"/>
+                            <img src="@Model.Property.DisplayImage"
+                                 width="100%"
+                                 class="rounded" />
                         </div>
 
                         <div class="col-12 mt-3">
@@ -44,7 +52,7 @@
                                         <div class="col-4 col-md-3 mb-3">
                                             <img src="@img.ImageUrl"
                                                  class="img-fluid rounded"
-                                                 style="height:150px; object-fit:cover; width:100%;"/>
+                                                 style="height:150px; object-fit:cover; width:100%;" />
                                         </div>
                                     }
                                 </div>
@@ -55,29 +63,66 @@
                             }
                         </div>
                     </div>
+
+                    <hr />
+
+                    <form method="post">
+
+                        <input type="hidden" name="id" value="@Model.Property.Id" />
+
+                        <div class="row mt-3">
+
+                            <div class="col-md-6">
+                                <label>Check In</label>
+                                <input asp-for="CheckInDate"
+                                       type="date"
+                                       class="form-control"
+                                       min="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label>Check Out</label>
+                                <input asp-for="CheckOutDate"
+                                       type="date"
+                                       class="form-control"
+                                       min="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                            </div>
+
+                        </div>
+
+                        <div class="text-danger mt-2">
+                            @Model.ErrorMessage
+                        </div>
+
+                        <div class="card-footer mt-3">
+                            <div class="row">
+
+                                <div class="col-12 col-md-6 pb-1">
+                                    <a asp-page="/Index"
+                                       class="btn btn-success form-control"
+                                       style="height:50px;">
+                                        Back to List
+                                    </a>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <button type="submit"
+                                            class="btn btn-primary form-control"
+                                            style="height:50px;">
+                                        Book now!
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+
                 </div>
             </div>
 
-            <div class="card-footer">
-                <div class="row">
-                    <div class="col-12 col-md-6 pb-1">
-                        <a asp-page="/Index"
-                           class="btn btn-success form-control"
-                           style="height:50px;">
-                            Back to List
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <a asp-page="/Customers/Home/Booking"
-                           asp-route-id="@Model.Property.Id"
-                           class="btn btn-primary form-control"
-                           style="height:50px;">
-                            Book now!
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+    ```
+
 </div>
