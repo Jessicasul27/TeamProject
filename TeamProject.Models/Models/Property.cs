@@ -23,14 +23,16 @@ public class Property
     [Range(0.01, 10000, ErrorMessage = "Price must be greater than 0.")]
     public decimal PricePerNight { get; set; }
 
-    [Range(1, 50)]
+    [Required]
+    [Range(1, 50, ErrorMessage = "Max guests must not exceed 50")]
     public int MaxGuests { get; set; }
 
     public string? PropertyType { get; set; }
 
     public bool Status { get; set; }
 
-    public string? DisplayImage { get; set; }
+    [Required(ErrorMessage = "Display image is required.")]
+    public string DisplayImage { get; set; } = string.Empty;
 
     public ICollection<PropertyImage> Images { get; set; } = new List<PropertyImage>();
 
