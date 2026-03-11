@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TeamProject.Models.Models;
 
@@ -14,8 +16,14 @@ public class Booking
     public decimal BookingPrice { get; set; }
 
     public int PropertyId { get; set; }
+
+    [ForeignKey("PropertyId")]
+    [ValidateNever]
     public Property Property { get; set; } = null!;
 
     public string CustomerUserId { get; set; } = string.Empty;
+
+    [ForeignKey("CustomerUserId")]
+    [ValidateNever]
     public Customer Customer { get; set; } = null!;
 }

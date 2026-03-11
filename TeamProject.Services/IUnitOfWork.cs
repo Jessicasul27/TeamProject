@@ -8,7 +8,7 @@ public interface IUnitOfWork : IDisposable
     ICustomerRepo CustomerRepo { get; }
     ILandlordRepo LandlordRepo { get; }
     IPropertyRepo PropertyRepo { get; }
-
+    IBookingRepo BookingRepo { get; }
     IPropertyImageRepo PropertyImageRepo { get; }
 
     
