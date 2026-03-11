@@ -1,95 +1,99 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using TeamProject.Models.Models;
 using TeamProject.Services;
 
-namespace TeamProject.Pages.Customers
+namespace TeamProject.Pages.Customers;
+
+// this entire page is only accessible to authorized users + users with "Customer" role
+[Authorize(Roles = "Customer")]
+public class BookingModel : PageModel
 {
-    public class BookingModel : PageModel
+    private readonly UserManager<User> _userManager;
+    private readonly IUnitOfWork _unitOfWork;
+
+    public BookingModel(UserManager<User> userManager, IUnitOfWork unitOfWork)
     {
-        private readonly IUnitOfWork _unitOfWork;
+        _userManager = userManager;
+        _unitOfWork = unitOfWork;
+    }
 
-        public BookingModel(IUnitOfWork unitOfWork)
+    [BindProperty]
+    [Required]
+    [RegularExpression(@"^\d{12,19}$", ErrorMessage = "Card number must be 12 to 19 digits.")]
+    public string CardNo { get; set; }
+
+    [BindProperty]
+    [Required]
+    [RegularExpression(@"^(0[1-9]|1[0-2])\/\d{2}$", ErrorMessage = "Expiry must be in MM/YY format.")]
+    public string ExpiryDate { get; set; }
+
+    [BindProperty]
+    [Required]
+    [RegularExpression(@"^\d{3,4}$", ErrorMessage = "CVC must be 3 or 4 digits.")]
+    public string CVC { get; set; }
+
+    // Booking info
+    [BindProperty(SupportsGet = true)]
+    public DateTime? CheckInDate { get; set; }
+
+    [BindProperty(SupportsGet = true)]
+    public DateTime? CheckOutDate { get; set; }
+
+    [BindProperty(SupportsGet = true)]
+    public int PropertyId { get; set; }
+
+    [BindProperty(SupportsGet = true)]
+    public decimal TotalPrice { get; set; }
+
+    [BindProperty]
+    public Booking Booking { get; set; }
+
+    public void OnGet(string propertyId, string checkIn, string checkOut, string totalPrice)
+    {
+        PropertyId = int.Parse(propertyId);
+        CheckInDate = DateTime.Parse(checkIn);
+        CheckOutDate = DateTime.Parse(checkOut);
+        TotalPrice = decimal.Parse(totalPrice);
+
+        Booking = new Booking
         {
-            _unitOfWork = unitOfWork;
-        }
+            PropertyId = PropertyId,
+            CheckInDate = CheckInDate.Value,
+            CheckOutDate = CheckOutDate.Value,
+            BookingPrice = TotalPrice
+        };
+    }
 
-        // Card details
-        [BindProperty]
-        [Required]
-        [RegularExpression(@"^\d{12,19}$", ErrorMessage = "Card number must be 12 to 19 digits.")]
-        public string CardNo { get; set; }
+    public IActionResult OnPost()
+    {
+        if (!ModelState.IsValid)
+            return Page();
 
-        [BindProperty]
-        [Required]
-        [RegularExpression(@"^(0[1-9]|1[0-2])\/\d{2}$", ErrorMessage = "Expiry must be in MM/YY format.")]
-        public string ExpiryDate { get; set; }
+        // Mock payment success
+        var paymentSuccess = true;
 
-        [BindProperty]
-        [Required]
-        [RegularExpression(@"^\d{3,4}$", ErrorMessage = "CVC must be 3 or 4 digits.")]
-        public string CVC { get; set; }
+        // if (!paymentSuccess)
+        // {
+        //     ModelState.AddModelError("", "Payment failed.");
+        //     return Page();
+        // }
 
-        // Booking info
-        [BindProperty(SupportsGet = true)]
-        public DateTime? CheckInDate { get; set; }
-
-        [BindProperty(SupportsGet = true)]
-        public DateTime? CheckOutDate { get; set; }
-
-        [BindProperty(SupportsGet = true)]
-        public int PropertyId { get; set; }
-
-        [BindProperty(SupportsGet = true)]
-        public decimal TotalPrice { get; set; }
-
-        [BindProperty]
-        public Booking Booking { get; set; }
-
-        public void OnGet(string propertyId, string checkIn, string checkOut, string totalPrice)
+        var newBooking = new Booking
         {
-            PropertyId = int.Parse(propertyId);
-            CheckInDate = DateTime.Parse(checkIn);
-            CheckOutDate = DateTime.Parse(checkOut);
-            TotalPrice = decimal.Parse(totalPrice);
+            PropertyId = PropertyId,
+            CheckInDate = CheckInDate.Value,
+            CheckOutDate = CheckOutDate.Value,
+            BookingPrice = TotalPrice,
+            CustomerUserId = _userManager.GetUserId(User)!
+        };
 
-            Booking = new Booking
-            {
-                PropertyId = PropertyId,
-                CheckInDate = CheckInDate.Value,
-                CheckOutDate = CheckOutDate.Value,
-                BookingPrice = TotalPrice
-            };
-        }
+        _unitOfWork.BookingRepo.Add(newBooking);
+        _unitOfWork.Save();
 
-        public IActionResult OnPost()
-        {
-            if (!ModelState.IsValid)
-                return Page();
-
-            // Mock payment success
-            bool paymentSuccess = true;
-
-            if (!paymentSuccess)
-            {
-                ModelState.AddModelError("", "Payment failed.");
-                return Page();
-            }
-
-            var newBooking = new Booking
-            {
-                PropertyId = PropertyId,
-                CheckInDate = CheckInDate.Value,
-                CheckOutDate = CheckOutDate.Value,
-                BookingPrice = TotalPrice,
-                CustomerUserId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value
-            };
-
-            _unitOfWork.BookingRepo.Add(newBooking);
-            _unitOfWork.Save();
-
-            return RedirectToPage("/Index");
-        }
+        return RedirectToPage("/Index");
     }
 }

@@ -1,8 +1,7 @@
 ﻿using TeamProject.Models.Models;
 
-namespace TeamProject.DataAccess.Repository
+namespace TeamProject.DataAccess.Repository;
+
+public interface IBookingRepo : IRepository<Booking>
 {
-    public interface IBookingRepo : IRepository <Booking>
-    {
-    }
 }
