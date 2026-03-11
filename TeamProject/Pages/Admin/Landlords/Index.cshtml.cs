@@ -6,10 +6,10 @@ namespace TeamProject.Pages.Admin.Landlords;
 
 public class IndexModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
     public IEnumerable<Landlord> Landlords;
 
-    public IndexModel(IUnitOfWork unitOfWork)
+    public IndexModel(UnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }

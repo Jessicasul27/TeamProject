@@ -7,9 +7,9 @@ namespace TeamProject.Pages.Admin.Customers;
 
 public class EditModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
 
-    public EditModel(IUnitOfWork unitOfWork)
+    public EditModel(UnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }

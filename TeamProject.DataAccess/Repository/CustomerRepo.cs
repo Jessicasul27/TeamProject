@@ -4,13 +4,10 @@ using TeamProject.Models.Models;
 
 namespace TeamProject.DataAccess.Repository;
 
-public class CustomerRepo : Repository<Customer>, ICustomerRepo
+public class CustomerRepo : Repository<Customer>
 {
-    private readonly AppDbContext _dbContext;
-
     public CustomerRepo(AppDbContext dbContext) : base(dbContext)
     {
-        _dbContext = dbContext;
     }
 
     public void SaveAll()

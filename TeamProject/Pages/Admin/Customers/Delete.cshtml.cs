@@ -7,9 +7,9 @@ namespace TeamProject.Pages.Admin.Customers;
 
 public class DeleteModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
 
-    public DeleteModel(IUnitOfWork unitOfWork)
+    public DeleteModel(UnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }

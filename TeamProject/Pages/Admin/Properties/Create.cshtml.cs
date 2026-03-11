@@ -8,10 +8,10 @@ namespace TeamProject.Pages.Admin.Properties;
 [BindProperties]
 public class CreateModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
     private readonly IWebHostEnvironment _webHostEnvironment;
 
-    public CreateModel(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
+    public CreateModel(UnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
     {
         _unitOfWork = unitOfWork;
         _webHostEnvironment = webHostEnvironment;
@@ -30,10 +30,7 @@ public class CreateModel : PageModel
 
 
         var displayFile = HttpContext.Request.Form.Files["displayFile"];
-        if (displayFile == null || displayFile.Length == 0)
-        {
-            return Page();
-        }
+        if (displayFile == null || displayFile.Length == 0) return Page();
 
         if (displayFile != null && displayFile.Length > 0)
         {

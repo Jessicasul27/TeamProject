@@ -9,9 +9,9 @@ namespace TeamProject.Pages.Admin.Landlords;
 [BindProperties]
 public class DeleteModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
 
-    public DeleteModel(IUnitOfWork unitOfWork)
+    public DeleteModel(UnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }

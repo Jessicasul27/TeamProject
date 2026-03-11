@@ -7,9 +7,9 @@ namespace TeamProject.Pages.Customers.Home;
 
 public class DetailsModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
 
-    public DetailsModel(IUnitOfWork unitOfWork)
+    public DetailsModel(UnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }
@@ -44,6 +44,7 @@ public class DetailsModel : PageModel
             ErrorMessage = "Check-out must be after check-in.";
             return Page();
         }
+
         if (!User.Identity.IsAuthenticated || !User.IsInRole("Customer"))
         {
             ErrorMessage = "You need to be logged in as a Customer to book this property.";

@@ -3,13 +3,10 @@ using TeamProject.Models.Models;
 
 namespace TeamProject.DataAccess.Repository;
 
-public class PropertyRepo : Repository<Property>, IPropertyRepo
+public class PropertyRepo : Repository<Property>
 {
-    private readonly AppDbContext _dbContext;
-
     public PropertyRepo(AppDbContext dbContext) : base(dbContext)
     {
-        _dbContext = dbContext;
     }
 
     public void SaveAll()

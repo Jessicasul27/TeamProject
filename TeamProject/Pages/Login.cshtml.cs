@@ -27,7 +27,7 @@ public class LoginModel : PageModel
     public InputModel Input { get; set; } = new();
 
     [BindProperty(SupportsGet = true)]
-    public string? ReturnUrl { get; set; }
+    public string ReturnUrl { get; set; }
 
     public async Task OnGetAsync()
     {
