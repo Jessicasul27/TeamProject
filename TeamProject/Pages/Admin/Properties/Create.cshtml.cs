@@ -30,6 +30,10 @@ public class CreateModel : PageModel
 
 
         var displayFile = HttpContext.Request.Form.Files["displayFile"];
+        if (displayFile == null || displayFile.Length == 0)
+        {
+            return Page();
+        }
 
         if (displayFile != null && displayFile.Length > 0)
         {
