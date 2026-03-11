@@ -1,4 +1,6 @@
 ﻿@page
+@using static TeamProject.Models.Models.PropertyType
+@using static TeamProject.Models.Models.PropertyStatus
 @model TeamProject.Pages.Admin.Properties.CreateModel
 @{
 }
@@ -22,7 +24,8 @@
             </div>
             <div class="mb-3">
                 <label asp-for="@Model.Property.PropertyType"></label>
-                <input asp-for="@Model.Property.PropertyType" class="form-control"/>
+                 <select asp-for="Property.PropertyType" asp-items="Html.GetEnumSelectList<TypeOfProperty>()" class="form-select">
+                </select>
                 <span asp-validation-for="@Model.Property.PropertyType" class="text-danger"></span>
             </div>
             <div class="mb-3">
@@ -32,9 +35,7 @@
             </div>
             <div class="mb-3">
                 <label asp-for="Property.Status" class="form-label"></label>
-                <select asp-for="Property.Status" class="form-select">
-                    <option value="true">Active</option>
-                    <option value="false">Inactive</option>
+                <select asp-for="Property.Status" asp-items="Html.GetEnumSelectList<Status>()" class="form-select">
                 </select>
                 <span asp-validation-for="Property.Status" class="text-danger"></span>
             </div>

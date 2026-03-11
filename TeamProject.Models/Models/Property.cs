@@ -1,6 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using static TeamProject.Models.Models.PropertyStatus;
+using static TeamProject.Models.Models.PropertyType;
 
 namespace TeamProject.Models.Models;
+
 
 public class Property
 {
@@ -27,9 +30,9 @@ public class Property
     [Range(1, 50, ErrorMessage = "Max guests must not exceed 50")]
     public int MaxGuests { get; set; }
 
-    public string? PropertyType { get; set; }
+    public TypeOfProperty PropertyType { get; set; }
 
-    public bool Status { get; set; }
+    public Status Status { get; set; }
 
     [Required(ErrorMessage = "Display image is required.")]
     public string DisplayImage { get; set; } = string.Empty;
