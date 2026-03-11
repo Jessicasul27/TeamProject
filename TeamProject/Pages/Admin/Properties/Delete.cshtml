@@ -33,10 +33,8 @@
             </div>
             <div class="mb-3">
                 <label asp-for="Property.Status" class="form-label"></label>
-                <select asp-for="Property.Status" class="form-select" readonly>
-                    <option value="true">Active</option>
-                    <option value="false">Inactive</option>
-                </select>
+                <input asp-for="Property.Status" class="form-select" readonly>
+                </input>
                 <span asp-validation-for="Property.Status" class="text-danger"></span>
             </div>
             <div>
@@ -54,29 +52,29 @@
                 <input asp-for="@Model.Property.MaxGuests" class="form-control" readonly/>
                 <span asp-validation-for="@Model.Property.MaxGuests" class="text-danger"></span>
             </div>
+            <div class="mb-3">
+                <label>Display Image</label><br/>
+                <img src="@Model.Property.DisplayImage" width="200" class="mb-2"/>
+            </div>
 
         </div>
-        <div class="mb-3">
-            <label>Display Image</label><br />
-            <img src="@Model.Property.DisplayImage" width="200" />
-        </div>
-
+        
         
         <div class="mb-3">
-            <label>Gallery Images</label><br />
+                <label>Gallery Images</label><br/>
 
-            @if (Model.Property.Images != null && Model.Property.Images.Any())
+            @if (Model.Property.Images != null)
             {
                 foreach (var img in Model.Property.Images)
                 {
-                            <img src="@img.ImageUrl" width="120" style="margin:5px;" />
+                                <div style="display:inline-block; margin:10px;">
+                                    <img src="@img.ImageUrl" width="150"/><br/>
+
+
+                                </div>
                 }
             }
-            else
-            {
-                    <p>No gallery images</p>
-            }
-        </div>
+            </div>
         <div class="mb-3">
             <button type="submit" class="btn btn-danger">Delete</button>
             <a asp-page="Index" class="btn btn-primary">Back to Index</a>
