@@ -12,7 +12,7 @@ public class UnitOfWork : IUnitOfWork
     public ICustomerRepo CustomerRepo { get; }
     public ILandlordRepo LandlordRepo { get; }
     public IPropertyRepo PropertyRepo { get; }
-
+    public IBookingRepo BookingRepo { get; }
     public IPropertyImageRepo PropertyImageRepo { get; }
 
     public UnitOfWork(AppDbContext dbContext)
@@ -24,10 +24,12 @@ public class UnitOfWork : IUnitOfWork
         LandlordRepo = new LandlordRepo(_dbContext);
         PropertyRepo = new PropertyRepo(_dbContext);
         PropertyImageRepo = new PropertyImageRepo(_dbContext);
+        BookingRepo = new BookingRepo(_dbContext);
     }
 
     public void Save()
     {
+        //main issue here
         _dbContext.SaveChanges();
     }
 
