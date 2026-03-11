@@ -3,7 +3,9 @@
 @{
     ViewData["HideHeader"] = true;
 }
-
+@using Microsoft.AspNetCore.Identity
+@using TeamProject.Models.Models
+@inject SignInManager<User> signInManager
 <header
     class="tw:tracking-normal tw:grid tw:grid-cols-[1fr_auto_1fr] tw:items-center tw:py-8 tw:px-12 tw:bg-neutral-50 tw:border-b-2 tw:border-neutral-200">
 
@@ -44,10 +46,49 @@
     </div>
 
     @* Login, dropdown (the cart/reservation thing) *@
-    <div class="tw:justify-self-end">
-        <a asp-page="/Login">Login</a>
+    @if(signInManager.IsSignedIn(User))
+    {
+        @if (User.IsInRole("Admin"))
+        {
+           
+
+
+            <div class="tw:justify-self-end">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-haspopup="true" aria-expanded="false">CRUD</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/Admin/Properties/Index">Properties</a>
+                    <a class="dropdown-item" href="/Admin/Customers/Index">Customers</a>
+                    <a class="dropdown-item" href="/Admin/Landlords/Index">Landlords</a>
+
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </div>
+        }
+        else
+        {
+
+            <div class="tw:justify-self-end">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+               aria-haspopup="true" aria-expanded="false">Account</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">My Account</a>
+                <a class="dropdown-item" href="#">My Bookings</a>
+                <a class="dropdown-item" href="#">Help</a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Logout</a>
+            </div>
+        </div>
+        }
+    }
+    else {
+        <div class="tw:justify-self-end">
+            <a asp-page="/Login">Login</a>
         @* ... *@
     </div>
+    }
 </header>
 
 <div class="container backgroundWhite tw:py-3">
