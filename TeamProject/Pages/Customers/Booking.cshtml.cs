@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
-using System.Security.Claims;
 using TeamProject.Models.Models;
 using TeamProject.Services;
 
@@ -43,7 +42,8 @@ namespace TeamProject.Pages.Customers
         public int PropertyId { get; set; }
 
         [BindProperty(SupportsGet = true)]
-        public decimal TotalPrice { get; set; } 
+        public decimal TotalPrice { get; set; }
+
         [BindProperty]
         public Booking Booking { get; set; }
 
@@ -77,21 +77,13 @@ namespace TeamProject.Pages.Customers
                 return Page();
             }
 
-            // Create booking
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (string.IsNullOrEmpty(userId))
-            {
-                ModelState.AddModelError("", "You must be logged in to make a booking.");
-                return Page();
-            }
-
             var newBooking = new Booking
             {
                 PropertyId = PropertyId,
                 CheckInDate = CheckInDate.Value,
                 CheckOutDate = CheckOutDate.Value,
                 BookingPrice = TotalPrice,
-                CustomerUserId = userId
+                CustomerUserId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value
             };
 
             _unitOfWork.BookingRepo.Add(newBooking);

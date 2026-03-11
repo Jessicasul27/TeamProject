@@ -30,21 +30,25 @@ public class DetailsModel : PageModel
     }
 
     public IActionResult OnPost(int id)
-{
-    LoadProperty(id);
+    {
+        LoadProperty(id);
 
-        // Validate dates
         if (CheckInDate == null || CheckOutDate == null)
-    {
-        ErrorMessage = "Please select check-in and check-out dates.";
-        return Page();
-    }
+        {
+            ErrorMessage = "Please select check-in and check-out dates.";
+            return Page();
+        }
 
-    if (CheckOutDate <= CheckInDate)
-    {
-        ErrorMessage = "Check-out must be after check-in.";
-        return Page();
-    }
+        if (CheckOutDate <= CheckInDate)
+        {
+            ErrorMessage = "Check-out must be after check-in.";
+            return Page();
+        }
+        if (!User.Identity.IsAuthenticated || !User.IsInRole("Customer"))
+        {
+            ErrorMessage = "You need to be logged in as a Customer to book this property.";
+            return Page();
+        }
 
         var numberOfNights = (CheckOutDate.Value - CheckInDate.Value).TotalDays;
         var totalPrice = Property.PricePerNight * (decimal)numberOfNights;
