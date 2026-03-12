@@ -49,8 +49,8 @@ public class BookingModel : PageModel
     [BindProperty(SupportsGet = true)]
     public decimal TotalPrice { get; set; }
 
-    [BindProperty]
-    public Booking Booking { get; set; }
+    // [BindProperty]
+    // public Booking Booking { get; set; }
 
     public void OnGet(string propertyId, string checkIn, string checkOut, string totalPrice)
     {
@@ -59,19 +59,36 @@ public class BookingModel : PageModel
         CheckOutDate = DateTime.Parse(checkOut);
         TotalPrice = decimal.Parse(totalPrice);
 
-        Booking = new Booking
-        {
-            PropertyId = PropertyId,
-            CheckInDate = CheckInDate.Value,
-            CheckOutDate = CheckOutDate.Value,
-            BookingPrice = TotalPrice
-        };
+        // Booking = new Booking
+        // {
+        //     PropertyId = PropertyId,
+        //     CheckInDate = CheckInDate.Value,
+        //     CheckOutDate = CheckOutDate.Value,
+        //     BookingPrice = TotalPrice
+        // };
     }
 
     public IActionResult OnPost()
     {
+        Console.WriteLine("1");
+
+        foreach (var kvp in ModelState)
+        {
+            var key = kvp.Key;
+            var state = kvp.Value;
+
+            foreach (var error in state.Errors)
+            {
+                Console.WriteLine($"ModelState error on '{key}': {error.ErrorMessage}");
+                if (error.Exception != null)
+                    Console.WriteLine(error.Exception);
+            }
+        }
+
         if (!ModelState.IsValid)
             return Page();
+
+        Console.WriteLine("2");
 
         // Mock payment success
         var paymentSuccess = true;
@@ -91,8 +108,12 @@ public class BookingModel : PageModel
             CustomerUserId = _userManager.GetUserId(User)!
         };
 
+        Console.WriteLine($"3 {_userManager.GetUserId(User)!}");
+
         _unitOfWork.BookingRepo.Add(newBooking);
         _unitOfWork.Save();
+
+        Console.WriteLine("4");
 
         return RedirectToPage("/Index");
     }
