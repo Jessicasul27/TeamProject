@@ -27,42 +27,42 @@
     </div>
 
 
-    <br />
-    <br />
-    <br />
+    <br/>
+    <br/>
+    <br/>
 
     <table class="table table-bordered table-striped">
         <thead>
-            <tr>
-                <th>Name</th>
-                
-            </tr>
+        <tr>
+            <th>Name</th>
+
+        </tr>
         </thead>
         <tbody>
-            @foreach (var obj in Model.Customers)
-            {
-                <tr>
-                    <td>@obj.User.FirstName @obj.User.LastName</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+        @foreach (var obj in Model.Customers)
+        {
+            <tr>
+                <td>@obj.User.FirstName @obj.User.LastName</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
 
-                    <td>
-                        <a asp-page="Edit" asp-route-id="@obj.UserId" class="btn btn-success btn-sm mx-1">Edit</a>
-                        <a asp-page="Delete" asp-route-id="@obj.UserId" class="btn btn-danger btn-sm mx-1">Delete</a>
-                    </td>
-                </tr>
-            }
+                <td>
+                    <a asp-page="Edit" asp-route-id="@obj.UserId" class="btn btn-success btn-sm mx-1">Edit</a>
+                    <a asp-page="Delete" asp-route-id="@obj.UserId" class="btn btn-danger btn-sm mx-1">Delete</a>
+                </td>
+            </tr>
+        }
         </tbody>
     </table>
 </div>

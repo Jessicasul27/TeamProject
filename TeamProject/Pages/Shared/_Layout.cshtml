@@ -8,125 +8,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Staycraft</title>
-    <link rel="stylesheet" href="~/css/tailwind.css" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/bootswatchTheme.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/TeamProject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/tailwind.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/bootswatchTheme.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/TeamProject.styles.css" asp-append-version="true"/>
 </head>
 
 <body class="tw:grid tw:grid-rows-[auto_1fr_auto] tw:min-h-screen">
-    @if (!hideHeader)
-    {
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-page="/Index">Staycraft</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target=".navbar-collapse"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                            </li>
+@if (!hideHeader)
+{
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Staycraft</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
 
-                            @if (SignInManager.IsSignedIn(User))
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            @if (User.IsInRole("Admin"))
                             {
-                                @if (User.IsInRole("Admin"))
-                                {
-                                    <li class="nav-item dropdown nav-justify-content-end">
-                                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                        aria-haspopup="true" aria-expanded="false">CRUD</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="/Admin/Properties/Index">Properties</a>
-                                            <a class="dropdown-item" href="/Admin/Customers/Index">Customers</a>
-                                            <a class="dropdown-item" href="/Admin/Landlords/Index">Landlords</a>
+                                <li class="nav-item dropdown nav-justify-content-end">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="true" aria-expanded="false">CRUD</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" asp-page="/Admin/Properties/Index">Properties</a>
+                                        <a class="dropdown-item" asp-page="/Admin/Customers/Index">Customers</a>
+                                        <a class="dropdown-item" asp-page="/Admin/Landlords/Index">Landlords</a>
 
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="/Logout">Logout</a>
-                                        </div>
-                                    </li>
-                                }
-
-                                @if (User.IsInRole("Customer"))
-                                {
-                                    <li class="nav-item dropdown nav-justify-content-end">
-                                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                           aria-haspopup="true" aria-expanded="false">Account</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">My Account</a>
-                                            <a class="dropdown-item" href="#">My Booking</a>
-                                            <a class="dropdown-item" href="#">Help</a>
-
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="/Logout">Logout</a>
-                                        </div>
-                                    </li>
-                                
-                                
-                                }
-                                @if (User.IsInRole("Landlord"))
-                                {
-                                    <li class="nav-item dropdown nav-justify-content-end">
-                                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                           aria-haspopup="true" aria-expanded="false">Account</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">My Account</a>
-                                            <a class="dropdown-item" href="#">My Properties</a>
-                                            <a class="dropdown-item" href="#">Help</a>
-
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="/Logout">Logout</a>
-                                        </div>
-                                    </li>
-
-
-                                }
-
-
-                            }
-                            else
-                            {
-                                <li class="nav-item nav-justify-content-end">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-page="/Logout">Logout</a>
+                                    </div>
                                 </li>
                             }
-                        </ul>
-                    </div>
+
+                            @if (User.IsInRole("Customer"))
+                            {
+                                <li class="nav-item dropdown nav-justify-content-end">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Account</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">My Account</a>
+                                        <a class="dropdown-item" href="#">My Booking</a>
+                                        <a class="dropdown-item" href="#">Help</a>
+
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="/Logout">Logout</a>
+                                    </div>
+                                </li>
+                            }
+
+                            @if (User.IsInRole("Landlord"))
+                            {
+                                <li class="nav-item dropdown nav-justify-content-end">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Account</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">My Account</a>
+                                        <a class="dropdown-item" href="#">My Properties</a>
+                                        <a class="dropdown-item" href="#">Help</a>
+
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-page="/Logout">Logout</a>
+                                    </div>
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <li class="nav-item nav-justify-content-end">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                            </li>
+                        }
+                    </ul>
                 </div>
-            </nav>
-        </header>
-    }
+            </div>
+        </nav>
+    </header>
+}
 
+@* <div class="container"> *@
+<main role="main" class="pb-3">
+    @RenderBody()
+</main>
+@* </div> *@
+
+<footer class="tw:flex tw:justify-center tw:border-t tw:border-neutral-200 tw:p-4">
     @* <div class="container"> *@
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
+    &copy; 2026 - TeamProject -&nbsp;<a asp-area="" asp-page="/Privacy">Privacy</a>
     @* </div> *@
+</footer>
 
-    <footer class="tw:flex tw:justify-center tw:border-t tw:border-neutral-200 tw:p-4">
-        @* <div class="container"> *@
-        &copy; 2026 - TeamProject -&nbsp;<a asp-area="" asp-page="/Privacy">Privacy</a>
-        @* </div> *@
-    </footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+@* lucide icons: https://lucide.dev/ *@
+<script src="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js"></script>
+<script>
+    lucide.createIcons();
+</script>
 
-    @* lucide icons: https://lucide.dev/ *@
-    <script src="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-
-    @await RenderSectionAsync("Scripts", false)
+@await RenderSectionAsync("Scripts", false)
 </body>
 </html>

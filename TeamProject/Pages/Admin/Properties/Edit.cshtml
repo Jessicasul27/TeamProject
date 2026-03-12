@@ -23,9 +23,10 @@
                 <input asp-for="@Model.Property.Location" class="form-control"/>
                 <span asp-validation-for="@Model.Property.Location" class="text-danger"></span>
             </div>
-             <div class="mb-3">
+            <div class="mb-3">
                 <label asp-for="@Model.Property.PropertyType"></label>
-                 <select asp-for="Property.PropertyType" asp-items="Html.GetEnumSelectList<TypeOfProperty>()" class="form-select">
+                <select asp-for="Property.PropertyType" asp-items="Html.GetEnumSelectList<TypeOfProperty>()"
+                        class="form-select">
                 </select>
                 <span asp-validation-for="@Model.Property.PropertyType" class="text-danger"></span>
             </div>
@@ -34,7 +35,7 @@
                 <input asp-for="@Model.Property.PricePerNight" class="form-control"/>
                 <span asp-validation-for="@Model.Property.PricePerNight" class="text-danger"></span>
             </div>
-             <div class="mb-3">
+            <div class="mb-3">
                 <label asp-for="Property.Status" class="form-label"></label>
                 <select asp-for="Property.Status" asp-items="Html.GetEnumSelectList<Status>()" class="form-select">
                 </select>

@@ -46,20 +46,17 @@
     </div>
 
     @* Login, dropdown (the cart/reservation thing) *@
-    @if(signInManager.IsSignedIn(User))
+    @if (signInManager.IsSignedIn(User))
     {
         @if (User.IsInRole("Admin"))
         {
-           
-
-
             <div class="tw:justify-self-end">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                aria-haspopup="true" aria-expanded="false">CRUD</a>
+                   aria-haspopup="true" aria-expanded="false">CRUD</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/Admin/Properties/Index">Properties</a>
-                    <a class="dropdown-item" href="/Admin/Customers/Index">Customers</a>
-                    <a class="dropdown-item" href="/Admin/Landlords/Index">Landlords</a>
+                    <a class="dropdown-item" asp-page="/Admin/Properties/Index">Properties</a>
+                    <a class="dropdown-item" asp-page="/Admin/Customers/Index">Customers</a>
+                    <a class="dropdown-item" asp-page="/Admin/Landlords/Index">Landlords</a>
 
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Logout</a>
@@ -68,26 +65,26 @@
         }
         else
         {
-
             <div class="tw:justify-self-end">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-               aria-haspopup="true" aria-expanded="false">Account</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">My Account</a>
-                <a class="dropdown-item" href="#">My Bookings</a>
-                <a class="dropdown-item" href="#">Help</a>
+                   aria-haspopup="true" aria-expanded="false">Account</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">My Account</a>
+                    <a class="dropdown-item" href="#">My Bookings</a>
+                    <a class="dropdown-item" href="#">Help</a>
 
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Logout</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
             </div>
-        </div>
         }
     }
-    else {
+    else
+    {
         <div class="tw:justify-self-end">
             <a asp-page="/Login">Login</a>
-        @* ... *@
-    </div>
+            @* ... *@
+        </div>
     }
 </header>
 
