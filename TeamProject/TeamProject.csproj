@@ -7,10 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.0"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,12 +18,12 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\TeamProject.DataAccess\TeamProject.DataAccess.csproj"/>
-        <ProjectReference Include="..\TeamProject.Models\TeamProject.Models.csproj"/>
-        <ProjectReference Include="..\TeamProject.Services\TeamProject.Services.csproj"/>
+        <ProjectReference Include="..\TeamProject.DataAccess\TeamProject.DataAccess.csproj" />
+        <ProjectReference Include="..\TeamProject.Models\TeamProject.Models.csproj" />
+        <ProjectReference Include="..\TeamProject.Services\TeamProject.Services.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="wwwroot\Images\Properties\"/>
+        <Folder Include="wwwroot\Images\Properties\" />
     </ItemGroup>
 </Project>
