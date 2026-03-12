@@ -49,26 +49,15 @@ public class BookingModel : PageModel
     [BindProperty(SupportsGet = true)]
     public decimal TotalPrice { get; set; }
 
-    [BindProperty]
-    public Booking Booking { get; set; }
-
     public void OnGet(string propertyId, string checkIn, string checkOut, string totalPrice)
     {
         PropertyId = int.Parse(propertyId);
         CheckInDate = DateTime.Parse(checkIn);
         CheckOutDate = DateTime.Parse(checkOut);
         TotalPrice = decimal.Parse(totalPrice);
-
-        Booking = new Booking
-        {
-            PropertyId = PropertyId,
-            CheckInDate = CheckInDate.Value,
-            CheckOutDate = CheckOutDate.Value,
-            BookingPrice = TotalPrice
-        };
     }
 
-    public IActionResult OnPost()
+    public IActionResult OnPostAsync()
     {
         if (!ModelState.IsValid)
             return Page();

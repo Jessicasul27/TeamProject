@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Models.Models;
+using TeamProject.Services;
 
 namespace TeamProject.Pages;
 
@@ -13,10 +14,12 @@ namespace TeamProject.Pages;
 public class RegisterModel : PageModel
 {
     private readonly SignInManager<User> _signInManager;
+    private readonly UnitOfWork _unitOfWork;
     private readonly UserManager<User> _userManager;
 
-    public RegisterModel(UserManager<User> userManager, SignInManager<User> signInManager)
+    public RegisterModel(UnitOfWork unitOfWork, UserManager<User> userManager, SignInManager<User> signInManager)
     {
+        _unitOfWork = unitOfWork;
         _userManager = userManager;
         _signInManager = signInManager;
     }
@@ -65,11 +68,8 @@ public class RegisterModel : PageModel
             UserName = Input.Email[..Input.Email.IndexOf('@')]
         };
 
-        var createResult = await _userManager.CreateAsync(user, Input.Password);
-
-        Console.WriteLine(createResult);
-
-        if (!createResult.Succeeded)
+        var userResult = await _userManager.CreateAsync(user, Input.Password);
+        if (!userResult.Succeeded)
         {
             ModelState.AddModelError(string.Empty, "An error occured during registration. (could not create user)");
             return Page();
@@ -82,6 +82,30 @@ public class RegisterModel : PageModel
             await _userManager.DeleteAsync(user);
             return Page();
         }
+
+        switch (Input.Role)
+        {
+            case "Customer":
+                _unitOfWork.CustomerRepo.Add(new Customer
+                {
+                    UserId = user.Id
+                });
+                break;
+
+            case "Landlord":
+                _unitOfWork.LandlordRepo.Add(new Landlord
+                {
+                    UserId = user.Id,
+                    LandlordShare = 0.7m,
+                    Income = 0
+                });
+                break;
+
+            default:
+                throw new InvalidOperationException("Invalid role");
+        }
+
+        _unitOfWork.Save();
 
         await _signInManager.SignInAsync(user, true);
 
