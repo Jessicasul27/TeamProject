@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Models.Models;
 using TeamProject.Services;
 
@@ -12,8 +12,8 @@ namespace TeamProject.Pages.Customers;
 [Authorize(Roles = "Customer")]
 public class BookingModel : PageModel
 {
-    private readonly UserManager<User> _userManager;
     private readonly UnitOfWork _unitOfWork;
+    private readonly UserManager<User> _userManager;
 
     public BookingModel(UserManager<User> userManager, UnitOfWork unitOfWork)
     {

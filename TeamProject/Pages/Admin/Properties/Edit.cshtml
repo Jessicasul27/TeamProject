@@ -1,6 +1,6 @@
 ﻿@page
 @using TeamProject.Models.Models
-@model TeamProject.Pages.Admin.Properties.EditModel
+@model EditModel
 @{
 }
 
@@ -36,7 +36,8 @@
             </div>
             <div class="mb-3">
                 <label asp-for="Property.Status" class="form-label"></label>
-                <select asp-for="Property.Status" asp-items="Html.GetEnumSelectList<PropertyStatus>()" class="form-select">
+                <select asp-for="Property.Status" asp-items="Html.GetEnumSelectList<PropertyStatus>()"
+                        class="form-select">
                 </select>
                 <span asp-validation-for="Property.Status" class="text-danger"></span>
             </div>

@@ -1,9 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using static TeamProject.Models.Models.PropertyStatus;
-using static TeamProject.Models.Models.PropertyType;
 
 namespace TeamProject.Models.Models;
-
 
 public class Property
 {

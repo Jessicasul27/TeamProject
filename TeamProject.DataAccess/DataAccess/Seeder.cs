@@ -104,7 +104,7 @@ public static class Seeder
                 {
                     Title = "Luxury City Penthouse",
                     Location = "Dublin",
-                    PropertyType =  PropertyType.Other,
+                    PropertyType = PropertyType.Other,
                     PricePerNight = 350,
                     MaxGuests = 5,
                     Status = PropertyStatus.Active,

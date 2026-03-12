@@ -1,9 +1,8 @@
 ﻿namespace TeamProject.Models.Models;
 
-
-    public enum PropertyStatus
+public enum PropertyStatus
 {
-        Inactive,
-        Pending,
-        Active
-    }
+    Inactive,
+    Pending,
+    Active
+}
