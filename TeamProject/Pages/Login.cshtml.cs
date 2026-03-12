@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -9,9 +8,9 @@ namespace TeamProject.Pages;
 
 public class LoginModel : PageModel
 {
+    private readonly ILogger<LoginModel> _logger;
     private readonly SignInManager<User> _signInManager;
     private readonly UserManager<User> _userManager;
-    private readonly ILogger<LoginModel> _logger;
 
     public LoginModel(
         SignInManager<User> signInManager,

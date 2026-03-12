@@ -7,13 +7,6 @@ public class UnitOfWork
 {
     private readonly AppDbContext _dbContext;
 
-    public AdminRepo AdminRepo { get; }
-    public CustomerRepo CustomerRepo { get; }
-    public LandlordRepo LandlordRepo { get; }
-    public PropertyRepo PropertyRepo { get; }
-    public BookingRepo BookingRepo { get; }
-    public PropertyImageRepo PropertyImageRepo { get; }
-
     public UnitOfWork(AppDbContext dbContext)
     {
         _dbContext = dbContext;
@@ -25,6 +18,13 @@ public class UnitOfWork
         PropertyImageRepo = new PropertyImageRepo(_dbContext);
         BookingRepo = new BookingRepo(_dbContext);
     }
+
+    public AdminRepo AdminRepo { get; }
+    public CustomerRepo CustomerRepo { get; }
+    public LandlordRepo LandlordRepo { get; }
+    public PropertyRepo PropertyRepo { get; }
+    public BookingRepo BookingRepo { get; }
+    public PropertyImageRepo PropertyImageRepo { get; }
 
     public void Save()
     {

@@ -1,8 +1,8 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using TeamProject.Models.Models
+@{
     var hideHeader = (bool?)ViewData["HideHeader"] == true;
 }
-@using Microsoft.AspNetCore.Identity
-@using TeamProject.Models.Models
 @inject SignInManager<User> SignInManager
 
 <!DOCTYPE html>

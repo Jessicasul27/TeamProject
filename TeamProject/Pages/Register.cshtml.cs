@@ -13,9 +13,9 @@ namespace TeamProject.Pages;
 [AllowAnonymous]
 public class RegisterModel : PageModel
 {
+    private readonly SignInManager<User> _signInManager;
     private readonly UnitOfWork _unitOfWork;
     private readonly UserManager<User> _userManager;
-    private readonly SignInManager<User> _signInManager;
 
     public RegisterModel(UnitOfWork unitOfWork, UserManager<User> userManager, SignInManager<User> signInManager)
     {

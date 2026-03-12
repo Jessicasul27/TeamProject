@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.IdentityModel.Tokens;
-using TeamProject.Services;
 using TeamProject.Models.Models;
+using TeamProject.Services;
 
 namespace TeamProject.Pages.Admin.Landlords;
 

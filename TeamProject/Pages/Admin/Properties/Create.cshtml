@@ -1,8 +1,8 @@
 ﻿@page
-@using static TeamProject.Models.Models.PropertyType
-@using static TeamProject.Models.Models.PropertyStatus
-@model TeamProject.Pages.Admin.Properties.CreateModel
+@using TeamProject.Models.Models
+@model CreateModel
 @{
+    ViewData["Title"] = "Create Property";
 }
 
 <form method="post" enctype="multipart/form-data">
@@ -24,7 +24,7 @@
             </div>
             <div class="mb-3">
                 <label asp-for="@Model.Property.PropertyType"></label>
-                <select asp-for="Property.PropertyType" asp-items="Html.GetEnumSelectList<TypeOfProperty>()"
+                <select asp-for="Property.PropertyType" asp-items="Html.GetEnumSelectList<PropertyType>()"
                         class="form-select">
                 </select>
                 <span asp-validation-for="@Model.Property.PropertyType" class="text-danger"></span>
@@ -36,7 +36,8 @@
             </div>
             <div class="mb-3">
                 <label asp-for="Property.Status" class="form-label"></label>
-                <select asp-for="Property.Status" asp-items="Html.GetEnumSelectList<Status>()" class="form-select">
+                <select asp-for="Property.Status" asp-items="Html.GetEnumSelectList<PropertyStatus>()"
+                        class="form-select">
                 </select>
                 <span asp-validation-for="Property.Status" class="text-danger"></span>
             </div>

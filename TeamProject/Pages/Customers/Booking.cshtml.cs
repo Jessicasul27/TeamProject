@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using TeamProject.Models.Models;
 using TeamProject.Services;
 
@@ -12,8 +12,8 @@ namespace TeamProject.Pages.Customers;
 [Authorize(Roles = "Customer")]
 public class BookingModel : PageModel
 {
-    private readonly UserManager<User> _userManager;
     private readonly UnitOfWork _unitOfWork;
+    private readonly UserManager<User> _userManager;
 
     public BookingModel(UserManager<User> userManager, UnitOfWork unitOfWork)
     {
@@ -49,26 +49,15 @@ public class BookingModel : PageModel
     [BindProperty(SupportsGet = true)]
     public decimal TotalPrice { get; set; }
 
-    // [BindProperty]
-    // public Booking Booking { get; set; }
-
     public void OnGet(string propertyId, string checkIn, string checkOut, string totalPrice)
     {
         PropertyId = int.Parse(propertyId);
         CheckInDate = DateTime.Parse(checkIn);
         CheckOutDate = DateTime.Parse(checkOut);
         TotalPrice = decimal.Parse(totalPrice);
-
-        // Booking = new Booking
-        // {
-        //     PropertyId = PropertyId,
-        //     CheckInDate = CheckInDate.Value,
-        //     CheckOutDate = CheckOutDate.Value,
-        //     BookingPrice = TotalPrice
-        // };
     }
 
-    public IActionResult OnPost()
+    public IActionResult OnPostAsync()
     {
         Console.WriteLine("1");
 

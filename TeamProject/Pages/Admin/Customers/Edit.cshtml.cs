@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using TeamProject.Services;
 using TeamProject.Models.Models;
+using TeamProject.Services;
 
 namespace TeamProject.Pages.Admin.Customers;
 
