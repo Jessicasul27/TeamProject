@@ -59,8 +59,25 @@ public class BookingModel : PageModel
 
     public IActionResult OnPostAsync()
     {
+        Console.WriteLine("1");
+
+        foreach (var kvp in ModelState)
+        {
+            var key = kvp.Key;
+            var state = kvp.Value;
+
+            foreach (var error in state.Errors)
+            {
+                Console.WriteLine($"ModelState error on '{key}': {error.ErrorMessage}");
+                if (error.Exception != null)
+                    Console.WriteLine(error.Exception);
+            }
+        }
+
         if (!ModelState.IsValid)
             return Page();
+
+        Console.WriteLine("2");
 
         // Mock payment success
         var paymentSuccess = true;
@@ -80,8 +97,12 @@ public class BookingModel : PageModel
             CustomerUserId = _userManager.GetUserId(User)!
         };
 
+        Console.WriteLine($"3 {_userManager.GetUserId(User)!}");
+
         _unitOfWork.BookingRepo.Add(newBooking);
         _unitOfWork.Save();
+
+        Console.WriteLine("4");
 
         return RedirectToPage("/Index");
     }
