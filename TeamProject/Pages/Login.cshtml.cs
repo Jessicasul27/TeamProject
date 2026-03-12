@@ -29,9 +29,13 @@ public class LoginModel : PageModel
     [BindProperty(SupportsGet = true)]
     public string ReturnUrl { get; set; }
 
-    public async Task OnGetAsync()
+    public IActionResult OnGet()
     {
-        await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
+        // prevent already authorized users from accessing this page
+        if (User.Identity?.IsAuthenticated == true)
+            return RedirectToPage("/Index");
+
+        return Page();
     }
 
     public async Task<IActionResult> OnPostAsync()
