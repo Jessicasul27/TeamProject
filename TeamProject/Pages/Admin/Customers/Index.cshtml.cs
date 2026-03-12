@@ -6,10 +6,10 @@ namespace TeamProject.Pages.Admin.Customers;
 
 public class IndexModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
     public IEnumerable<Customer> Customers = new List<Customer>();
 
-    public IndexModel(IUnitOfWork unitOfWork)
+    public IndexModel(UnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }

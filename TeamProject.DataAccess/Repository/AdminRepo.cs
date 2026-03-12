@@ -3,13 +3,10 @@ using TeamProject.Models.Models;
 
 namespace TeamProject.DataAccess.Repository;
 
-public class AdminRepo : Repository<Admin>, IAdminRepo
+public class AdminRepo : Repository<Admin>
 {
-    private readonly AppDbContext _dbContext;
-
     public AdminRepo(AppDbContext dbContext) : base(dbContext)
     {
-        _dbContext = dbContext;
     }
 
     public void SaveAll()

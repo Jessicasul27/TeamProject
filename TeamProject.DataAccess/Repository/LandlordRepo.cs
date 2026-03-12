@@ -4,13 +4,10 @@ using TeamProject.Models.Models;
 
 namespace TeamProject.DataAccess.Repository;
 
-public class LandlordRepo : Repository<Landlord>, ILandlordRepo
+public class LandlordRepo : Repository<Landlord>
 {
-    private readonly AppDbContext _dbContext;
-
     public LandlordRepo(AppDbContext dbContext) : base(dbContext)
     {
-        _dbContext = dbContext;
     }
 
     public void SaveAll()

@@ -7,9 +7,9 @@ namespace TeamProject.Pages.Admin.Customers;
 
 public class CreateModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
 
-    public CreateModel(IUnitOfWork unitOfWork)
+    public CreateModel(UnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
     }

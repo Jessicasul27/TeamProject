@@ -4,51 +4,44 @@ using TeamProject.DataAccess.DataAccess;
 
 namespace TeamProject.DataAccess.Repository;
 
-public class Repository<T> : IRepository<T> where T : class
+public class Repository<T> where T : class
 {
-    private readonly AppDbContext _dbContext;
-    internal readonly DbSet<T> dbSet;
+    protected readonly AppDbContext _dbContext;
+    protected readonly DbSet<T> _dbSet;
 
     protected Repository(AppDbContext dbContext)
     {
         _dbContext = dbContext;
-        dbSet = _dbContext.Set<T>();
+        _dbSet = _dbContext.Set<T>();
     }
 
     public void Add(T obj)
     {
-        dbSet.Add(obj);
+        _dbSet.Add(obj);
     }
 
     public void Delete(T obj)
     {
-        dbSet.Remove(obj);
+        _dbSet.Remove(obj);
     }
 
     public T? Get(int id)
     {
-        if (id == 0)
-            return null;
-        else
-            return dbSet.Find(id);
+        return id == 0 ? null : _dbSet.Find(id);
     }
 
     public T? Get(string id)
     {
-        if (id.IsNullOrEmpty())
-            return null;
-        else
-            return dbSet.Find(id);
+        return id.IsNullOrEmpty() ? null : _dbSet.Find(id);
     }
 
     public IEnumerable<T> GetAll()
     {
-        IQueryable<T> list = dbSet;
-        return list.ToList();
+        return _dbSet;
     }
 
     public void Update(T obj)
     {
-        dbSet.Update(obj);
+        _dbSet.Update(obj);
     }
 }

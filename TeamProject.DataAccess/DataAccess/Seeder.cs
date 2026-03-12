@@ -78,7 +78,7 @@ public static class Seeder
                 {
                     Title = "Bear View Apartment",
                     Location = "Wicklow",
-                    PropertyType = PropertyType.TypeOfProperty.Apartment ,
+                    PropertyType = PropertyType.TypeOfProperty.Apartment,
                     PricePerNight = 120,
                     MaxGuests = 4,
                     Status = PropertyStatus.Status.Active,
@@ -199,7 +199,7 @@ public static class Seeder
         {
             FirstName = firstName,
             LastName = lastName,
-            UserName = email.Substring(0, email.IndexOf('@')),
+            UserName = email[..email.IndexOf('@')],
             Email = email,
             PhoneNumber = phoneNumber,
             EmailConfirmed = true

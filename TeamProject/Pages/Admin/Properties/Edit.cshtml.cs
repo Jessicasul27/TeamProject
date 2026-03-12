@@ -8,10 +8,10 @@ namespace TeamProject.Pages.Admin.Properties;
 [BindProperties]
 public class EditModel : PageModel
 {
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
     private readonly IWebHostEnvironment _webHostEnvironment;
 
-    public EditModel(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
+    public EditModel(UnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
     {
         _unitOfWork = unitOfWork;
         _webHostEnvironment = webHostEnvironment;

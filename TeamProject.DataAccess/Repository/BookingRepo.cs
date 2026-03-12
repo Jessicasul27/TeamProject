@@ -3,12 +3,9 @@ using TeamProject.Models.Models;
 
 namespace TeamProject.DataAccess.Repository;
 
-public class BookingRepo : Repository<Booking>, IBookingRepo
+public class BookingRepo : Repository<Booking>
 {
-    private readonly AppDbContext _dbContext;
-
     public BookingRepo(AppDbContext dbContext) : base(dbContext)
     {
-        _dbContext = dbContext;
     }
 }

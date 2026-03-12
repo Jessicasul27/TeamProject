@@ -1,19 +1,18 @@
 ﻿using TeamProject.DataAccess.DataAccess;
 using TeamProject.DataAccess.Repository;
-using TeamProject.Models.Models;
 
 namespace TeamProject.Services;
 
-public class UnitOfWork : IUnitOfWork
+public class UnitOfWork
 {
     private readonly AppDbContext _dbContext;
 
-    public IAdminRepo AdminRepo { get; }
-    public ICustomerRepo CustomerRepo { get; }
-    public ILandlordRepo LandlordRepo { get; }
-    public IPropertyRepo PropertyRepo { get; }
-    public IBookingRepo BookingRepo { get; }
-    public IPropertyImageRepo PropertyImageRepo { get; }
+    public AdminRepo AdminRepo { get; }
+    public CustomerRepo CustomerRepo { get; }
+    public LandlordRepo LandlordRepo { get; }
+    public PropertyRepo PropertyRepo { get; }
+    public BookingRepo BookingRepo { get; }
+    public PropertyImageRepo PropertyImageRepo { get; }
 
     public UnitOfWork(AppDbContext dbContext)
     {
@@ -29,7 +28,6 @@ public class UnitOfWork : IUnitOfWork
 
     public void Save()
     {
-        //main issue here
         _dbContext.SaveChanges();
     }
 

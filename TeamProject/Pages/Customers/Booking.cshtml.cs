@@ -13,9 +13,9 @@ namespace TeamProject.Pages.Customers;
 public class BookingModel : PageModel
 {
     private readonly UserManager<User> _userManager;
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly UnitOfWork _unitOfWork;
 
-    public BookingModel(UserManager<User> userManager, IUnitOfWork unitOfWork)
+    public BookingModel(UserManager<User> userManager, UnitOfWork unitOfWork)
     {
         _userManager = userManager;
         _unitOfWork = unitOfWork;

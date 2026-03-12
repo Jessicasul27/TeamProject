@@ -1,0 +1,114 @@
+@page
+@model TeamProject.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="tw:flex tw:justify-center tw:py-16">
+    <form method="post"
+          class="tw:w-200 tw:flex tw:flex-col tw:gap-6 tw:rounded-3xl tw:border tw:border-neutral-300 tw:bg-white tw:p-10">
+        <h1 class="tw:text-4xl tw:font-semibold tw:tracking-wide">Create account</h1>
+
+        <div asp-validation-summary="ModelOnly" class="tw:text-sm tw:text-red-600"></div>
+
+        <input type="hidden" asp-for="ReturnUrl"/>
+
+        <div class="tw:flex tw:flex-col tw:gap-3">
+            <label class="tw:text-sm tw:font-medium">Register as</label>
+
+            <div class="tw:grid tw:grid-cols-2 tw:gap-4">
+                <div>
+                    <input asp-for="Input.Role"
+                           id="role-customer"
+                           type="radio"
+                           value="Customer"
+                           class="tw:peer tw:hidden"/>
+
+                    <label for="role-customer"
+                           class="tw:flex! tw:flex-col tw:min-h-[150px] tw:p-6 tw:rounded-2xl tw:cursor-pointer
+                                  tw:bg-white tw:border tw:border-neutral-300  tw:transition
+                                  hover:tw:border-green-600 hover:tw:bg-green-50
+                                  tw:peer-checked:border-green-600 tw:peer-checked:bg-green-50 tw:peer-checked:ring-1 tw:peer-checked:ring-green-600">
+                        <span class="tw:text-lg tw:font-semibold">Customer</span>
+                        <span class="tw:mt-2 tw:text-sm tw:text-neutral-600">
+                            Book properties, manage stays, and browse listings.
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input asp-for="Input.Role"
+                           id="role-landlord"
+                           type="radio"
+                           value="Landlord"
+                           class="tw:peer tw:hidden"/>
+
+                    <label for="role-landlord"
+                           class="tw:flex! tw:flex-col tw:min-h-[150px] tw:p-6 tw:rounded-2xl tw:cursor-pointer
+                                  tw:bg-white tw:border tw:border-neutral-300  tw:transition
+                                  hover:tw:border-green-600 hover:tw:bg-green-50
+                                  tw:peer-checked:border-green-600 tw:peer-checked:bg-green-50 tw:peer-checked:ring-1 tw:peer-checked:ring-green-600">
+                        <span class="tw:text-lg tw:font-semibold">Landlord</span>
+                        <span class="tw:mt-2 tw:text-sm tw:text-neutral-600">
+                            List properties, manage bookings, and host customers.
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <span asp-validation-for="Input.Role" class="tw:text-xs tw:text-red-600"></span>
+        </div>
+
+        <div class="tw:flex tw:flex-col tw:gap-1">
+            <label asp-for="Input.FirstName" class="tw:text-sm tw:font-medium"></label>
+            <input asp-for="Input.FirstName" class="tw:h-12 tw:rounded-xl tw:border tw:border-neutral-300 tw:px-4"/>
+            <span asp-validation-for="Input.FirstName" class="tw:text-xs tw:text-red-600"></span>
+        </div>
+
+        <div class="tw:flex tw:flex-col tw:gap-1">
+            <label asp-for="Input.LastName" class="tw:text-sm tw:font-medium"></label>
+            <input asp-for="Input.LastName" class="tw:h-12 tw:rounded-xl tw:border tw:border-neutral-300 tw:px-4"/>
+            <span asp-validation-for="Input.LastName" class="tw:text-xs tw:text-red-600"></span>
+        </div>
+
+        <div class="tw:flex tw:flex-col tw:gap-1">
+            <label asp-for="Input.Email" class="tw:text-sm tw:font-medium"></label>
+            <input asp-for="Input.Email"
+                   class="tw:h-12 tw:rounded-xl tw:border tw:border-neutral-300 tw:px-4"
+                   autocomplete="username"/>
+            <span asp-validation-for="Input.Email" class="tw:text-xs tw:text-red-600"></span>
+        </div>
+
+        <div class="tw:grid tw:grid-cols-2 tw:gap-4">
+            <div class="tw:flex tw:flex-col tw:gap-1">
+                <label asp-for="Input.Password" class="tw:text-sm tw:font-medium"></label>
+                <input asp-for="Input.Password"
+                       class="tw:h-12 tw:rounded-xl tw:border tw:border-neutral-300 tw:px-4"
+                       autocomplete="new-password"/>
+                <span asp-validation-for="Input.Password" class="tw:text-xs tw:text-red-600"></span>
+            </div>
+
+            <div class="tw:flex tw:flex-col tw:gap-1">
+                <label asp-for="Input.ConfirmPassword" class="tw:text-sm tw:font-medium"></label>
+                <input asp-for="Input.ConfirmPassword"
+                       class="tw:h-12 tw:rounded-xl tw:border tw:border-neutral-300 tw:px-4"
+                       autocomplete="new-password"/>
+                <span asp-validation-for="Input.ConfirmPassword" class="tw:text-xs tw:text-red-600"></span>
+            </div>
+        </div>
+
+        <button type="submit" class="tw:h-12 tw:rounded-2xl! tw:bg-green-600 tw:font-semibold tw:text-white">
+            Register
+        </button>
+
+        <div class="tw:text-sm tw:text-neutral-600">
+            <a asp-page="/Login" asp-route-returnUrl="@Model.ReturnUrl" class="tw:underline">
+                Already have an account?
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}

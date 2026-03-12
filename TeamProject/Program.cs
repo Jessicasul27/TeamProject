@@ -33,8 +33,7 @@ builder.Services
 
 builder.Services.ConfigureApplicationCookie(options => { options.LoginPath = "/Login"; });
 
-// builder.Services.AddScoped<IPropertyRepo, PropertyRepo>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<UnitOfWork>();
 
 var app = builder.Build();
 
