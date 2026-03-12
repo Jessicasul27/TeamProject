@@ -1,6 +1,9 @@
 ﻿@{
     var hideHeader = (bool?)ViewData["HideHeader"] == true;
 }
+@using Microsoft.AspNetCore.Identity
+@using TeamProject.Models.Models
+@inject SignInManager<User> SignInManager
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,8 +22,7 @@
 @if (!hideHeader)
 {
     <header>
-        <nav
-            class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Staycraft</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,27 +36,63 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                               aria-haspopup="true" aria-expanded="false">CRUD</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="/Admin/Properties/Index">Properties</a>
-                                <a class="dropdown-item" href="/Admin/Customers/Index">Customers</a>
-                                <a class="dropdown-item" href="/Admin/Landlords/Index">Landlords</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="Properties/Index">Properties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                        </li>
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item dropdown nav-justify-content-end">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="true" aria-expanded="false">CRUD</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" asp-page="/Admin/Properties/Index">Properties</a>
+                                        <a class="dropdown-item" asp-page="/Admin/Customers/Index">Customers</a>
+                                        <a class="dropdown-item" asp-page="/Admin/Landlords/Index">Landlords</a>
+
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-page="/Logout">Logout</a>
+                                    </div>
+                                </li>
+                            }
+
+                            @if (User.IsInRole("Customer"))
+                            {
+                                <li class="nav-item dropdown nav-justify-content-end">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Account</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">My Account</a>
+                                        <a class="dropdown-item" href="#">My Booking</a>
+                                        <a class="dropdown-item" href="#">Help</a>
+
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-page="/Logout">Logout</a>
+                                    </div>
+                                </li>
+                            }
+
+                            @if (User.IsInRole("Landlord"))
+                            {
+                                <li class="nav-item dropdown nav-justify-content-end">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Account</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">My Account</a>
+                                        <a class="dropdown-item" href="#">My Properties</a>
+                                        <a class="dropdown-item" href="#">Help</a>
+
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-page="/Logout">Logout</a>
+                                    </div>
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <li class="nav-item nav-justify-content-end">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

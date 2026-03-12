@@ -24,7 +24,8 @@
             </div>
             <div class="mb-3">
                 <label asp-for="@Model.Property.PropertyType"></label>
-                 <select asp-for="Property.PropertyType" asp-items="Html.GetEnumSelectList<TypeOfProperty>()" class="form-select">
+                <select asp-for="Property.PropertyType" asp-items="Html.GetEnumSelectList<TypeOfProperty>()"
+                        class="form-select">
                 </select>
                 <span asp-validation-for="@Model.Property.PropertyType" class="text-danger"></span>
             </div>
@@ -54,16 +55,16 @@
                 <input asp-for="@Model.Property.MaxGuests" class="form-control"/>
                 <span asp-validation-for="@Model.Property.MaxGuests" class="text-danger"></span>
             </div>
-           <div>
+            <div>
                 <label>Display Image</label>
-                <input type="file" name="displayFile" class="form-control" />
+                <input type="file" name="displayFile" class="form-control"/>
                 <span asp-validation-for="Property.DisplayImage" class="text-danger"></span>
             </div>
 
-          
+
             <div>
                 <label>Gallery Images</label>
-                <input type="file" name="galleryFiles" multiple class="form-control" />
+                <input type="file" name="galleryFiles" multiple class="form-control"/>
             </div>
 
             <div class="mb-3">
@@ -74,8 +75,9 @@
         </div>
     </div>
 </form>
+
 @section Scripts {
     @{
-                <partial name="_validationScriptsPartial"/>
+        <partial name="_validationScriptsPartial"/>
     }
 }

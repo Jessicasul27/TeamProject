@@ -2,42 +2,68 @@
 @model TeamProject.Pages.Admin.Customers.IndexModel
 @{
 }
+<style>
+    .table-btn {
+        display: inline-block;
+        min-width: 70px;
+        padding: 4px 8px;
+        font-size: 0.85rem;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
+</style>
 
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
-            <h3 class="text-primary">Customer Index</h3>
+            <h3 class="text-primary">Customers</h3>
         </div>
-        <div class="col-6">
+        <div class="col-6 text-end">
             <a asp-page="Create" class="btn btn-primary">
                 Create Customer
             </a>
         </div>
     </div>
+
+
+    <br/>
+    <br/>
+    <br/>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var obj in Model.Customers)
+        {
+            <tr>
+                <td>@obj.User.FirstName @obj.User.LastName</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                <td>
+                    <a asp-page="Edit" asp-route-id="@obj.UserId" class="btn btn-success btn-sm mx-1">Edit</a>
+                    <a asp-page="Delete" asp-route-id="@obj.UserId" class="btn btn-danger btn-sm mx-1">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
 </div>
 
-<br/>
-<br/>
-<br/>
-
-<table class="table table-bordered table-striped">
-    <thead>
-    <tr>
-        <th>Customer List</th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var obj in Model.Customers)
-    {
-        <tr>
-            <td width="50%">@obj.User.FirstName @obj.User.LastName</td>
-            <td>
-                <a asp-page="Edit" asp-route-id="@obj.UserId">Edit</a>
-            </td>
-            <td>
-                <a asp-page="Delete" asp-route-id="@obj.UserId">Delete</a>
-            </td>
-        </tr>
-    }
-    </tbody>
-</table>

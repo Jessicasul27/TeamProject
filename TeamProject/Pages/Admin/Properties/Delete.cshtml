@@ -58,31 +58,32 @@
             </div>
 
         </div>
-        
-        
+
+
         <div class="mb-3">
-                <label>Gallery Images</label><br/>
+            <label>Gallery Images</label><br/>
 
             @if (Model.Property.Images != null)
             {
                 foreach (var img in Model.Property.Images)
                 {
-                                <div style="display:inline-block; margin:10px;">
-                                    <img src="@img.ImageUrl" width="150"/><br/>
+                    <div style="display:inline-block; margin:10px;">
+                        <img src="@img.ImageUrl" width="150"/><br/>
 
 
-                                </div>
+                    </div>
                 }
             }
-            </div>
+        </div>
         <div class="mb-3">
             <button type="submit" class="btn btn-danger">Delete</button>
             <a asp-page="Index" class="btn btn-primary">Back to Index</a>
         </div>
     </div>
 </form>
+
 @section Scripts {
     @{
-                <partial name="_validationScriptsPartial"/>
+        <partial name="_validationScriptsPartial"/>
     }
 }

@@ -36,7 +36,7 @@
                         <div class="col-12 col-lg-4 p-1 text-center">
                             <img src="@Model.Property.DisplayImage"
                                  width="100%"
-                                 class="rounded" />
+                                 class="rounded"/>
                         </div>
 
                         <div class="col-12 mt-3">
@@ -50,7 +50,7 @@
                                         <div class="col-4 col-md-3 mb-3">
                                             <img src="@img.ImageUrl"
                                                  class="img-fluid rounded"
-                                                 style="height:150px; object-fit:cover; width:100%;" />
+                                                 style="height:150px; object-fit:cover; width:100%;"/>
                                         </div>
                                     }
                                 </div>
@@ -62,10 +62,10 @@
                         </div>
                     </div>
 
-                    <hr />
+                    <hr/>
 
                     <form method="post">
-                        <input type="hidden" name="id" value="@Model.Property.Id" />
+                        <input type="hidden" name="id" value="@Model.Property.Id"/>
 
                         <div class="row mt-3">
                             <div class="col-md-6">
@@ -73,7 +73,7 @@
                                 <input asp-for="CheckInDate"
                                        type="date"
                                        class="form-control"
-                                       min="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                                       min="@DateTime.Today.ToString("yyyy-MM-dd")"/>
                             </div>
 
                             <div class="col-md-6">
@@ -81,7 +81,7 @@
                                 <input asp-for="CheckOutDate"
                                        type="date"
                                        class="form-control"
-                                       min="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                                       min="@DateTime.Today.ToString("yyyy-MM-dd")"/>
                             </div>
                         </div>
 
@@ -109,7 +109,6 @@
                             </div>
                         </div>
                     </form>
-
 
 
                 </div>
