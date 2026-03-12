@@ -30,9 +30,9 @@ public class Property
     [Range(1, 50, ErrorMessage = "Max guests must not exceed 50")]
     public int MaxGuests { get; set; }
 
-    public TypeOfProperty PropertyType { get; set; }
+    public PropertyType PropertyType { get; set; }
 
-    public Status Status { get; set; }
+    public PropertyStatus Status { get; set; }
 
     [Required(ErrorMessage = "Display image is required.")]
     public string DisplayImage { get; set; } = string.Empty;
