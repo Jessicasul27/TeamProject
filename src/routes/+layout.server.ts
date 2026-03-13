@@ -2,12 +2,14 @@ import { db } from "$lib/server/db";
 import type { User } from "$lib/server/db/entities/user";
 import type { LayoutServerLoad } from "./$types";
 
-export const load: LayoutServerLoad = async (event) => {
+export const load: LayoutServerLoad = async ({ depends, locals }) => {
+  depends("auth:session");
+
   let user: User | null = null;
 
-  if (event.locals.user) {
+  if (locals.user) {
     user = await db.userRepo.findOne({
-      where: { id: event.locals.user.id },
+      where: { id: locals.user.id },
       relations: {
         customer: true,
         landlord: true,

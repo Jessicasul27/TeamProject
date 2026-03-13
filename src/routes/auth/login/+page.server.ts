@@ -31,6 +31,6 @@ export const actions: Actions = {
       },
     });
 
-    redirect(303, "/");
+    throw redirect(303, "/");
   },
 };

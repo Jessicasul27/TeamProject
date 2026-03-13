@@ -4,8 +4,7 @@
   import { registerSchema } from "$lib/schemas/register";
   import { resolve } from "$app/paths";
 
-  let { data } = $props();
-
+  const { data } = $props();
   const { form, errors, enhance } = superForm(data.form, {
     validators: zod4Client(registerSchema),
     validationMethod: "onblur",
@@ -17,143 +16,167 @@
     use:enhance
     method="POST"
     novalidate
-    class="flex w-200 flex-col gap-6 rounded-3xl border border-neutral-300 bg-white p-10">
-    <h1 class="text-4xl font-semibold tracking-wide">Create account</h1>
+    class="card w-full max-w-4xl border border-base-300 bg-base-100 shadow-sm">
+    <div class="card-body gap-6 p-10">
+      <h1 class="card-title text-4xl font-semibold tracking-wide">
+        Create account
+      </h1>
 
-    <div class="flex flex-col gap-3">
-      <span class="text-sm font-medium">Register as</span>
+      <fieldset class="form-control gap-3">
+        <legend class="text-sm font-medium mb-2">Register as</legend>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <input
+              bind:group={$form.role}
+              id="role-customer"
+              name="role"
+              type="radio"
+              value="customer"
+              class="peer sr-only" >
+
+            <label
+              for="role-customer"
+              class="flex min-h-36 cursor-pointer flex-col rounded-box border border-base-300 bg-base-100 p-6 
+                     transition-colors peer-checked:border-success peer-checked:bg-success/20 hover:border-success hover:bg-success/40">
+              <span class="text-lg font-semibold">Customer</span>
+              <span class="mt-2 text-sm text-base-content/70">
+                Book properties, manage stays, and browse listings.
+              </span>
+            </label>
+          </div>
+
+          <div>
+            <input
+              bind:group={$form.role}
+              id="role-landlord"
+              name="role"
+              type="radio"
+              value="landlord"
+              class="peer sr-only" >
+
+            <label
+              for="role-landlord"
+              class="flex min-h-36 cursor-pointer flex-col rounded-box border border-base-300 bg-base-100 p-6 
+                     transition-colors peer-checked:border-success peer-checked:bg-success/20 hover:border-success hover:bg-success/20">
+              <span class="text-lg font-semibold">Landlord</span>
+              <span class="mt-2 text-sm text-base-content/70">
+                List properties, manage bookings, and host customers.
+              </span>
+            </label>
+          </div>
+        </div>
+
+        {#if $errors.role}
+          <p class="text-sm text-error">{$errors.role[0]}</p>
+        {/if}
+      </fieldset>
+
+      <div class="form-control w-full">
+        <label for="firstName" class="label">
+          <span class="label-text font-medium">First name</span>
+        </label>
+
+        <input
+          bind:value={$form.firstName}
+          id="firstName"
+          name="firstName"
+          class="input input-bordered w-full" >
+
+        {#if $errors.firstName}
+          <p id="firstName-error" class="mt-1 text-sm text-error">
+            {$errors.firstName[0]}
+          </p>
+        {/if}
+      </div>
+
+      <div class="form-control w-full">
+        <label for="lastName" class="label">
+          <span class="label-text font-medium">Last name</span>
+        </label>
+
+        <input
+          bind:value={$form.lastName}
+          id="lastName"
+          name="lastName"
+          class="input input-bordered w-full" >
+
+        {#if $errors.lastName}
+          <p id="lastName-error" class="mt-1 text-sm text-error">
+            {$errors.lastName[0]}
+          </p>
+        {/if}
+      </div>
+
+      <div class="form-control w-full">
+        <label for="email" class="label">
+          <span class="label-text font-medium">Email</span>
+        </label>
+
+        <input
+          bind:value={$form.email}
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="username"
+          class="input input-bordered w-full" >
+
+        {#if $errors.email}
+          <p id="email-error" class="mt-1 text-sm text-error">
+            {$errors.email[0]}
+          </p>
+        {/if}
+      </div>
 
       <div class="grid grid-cols-2 gap-4">
-        <div>
-          <input
-            id="role-customer"
-            name="role"
-            type="radio"
-            value="customer"
-            bind:group={$form.role}
-            class="peer hidden" >
-
-          <label
-            for="role-customer"
-            class="flex! min-h-36 cursor-pointer flex-col rounded-2xl border
-									 border-neutral-300 bg-white p-6 transition
-									 peer-checked:border-green-600 peer-checked:bg-green-50
-								 	 peer-checked:ring-1 peer-checked:ring-green-600 hover:border-green-600 hover:bg-green-50">
-            <span class="text-lg font-semibold">Customer</span>
-            <span class="mt-2 text-sm text-neutral-600">
-              Book properties, manage stays, and browse listings.
-            </span>
+        <div class="form-control w-full">
+          <label for="password" class="label">
+            <span class="label-text font-medium">Password</span>
           </label>
+
+          <input
+            bind:value={$form.password}
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="new-password"
+            class="input input-bordered w-full" >
+
+          {#if $errors.password}
+            <p id="password-error" class="mt-1 text-sm text-error">
+              {$errors.password[0]}
+            </p>
+          {/if}
         </div>
 
-        <div>
-          <input
-            id="role-landlord"
-            name="role"
-            type="radio"
-            value="landlord"
-            bind:group={$form.role}
-            class="peer hidden" >
-
-          <label
-            for="role-landlord"
-            class="flex! min-h-36 cursor-pointer flex-col rounded-2xl border
-							border-neutral-300 bg-white p-6 transition
-							peer-checked:border-green-600 peer-checked:bg-green-50
-							peer-checked:ring-1 peer-checked:ring-green-600 hover:border-green-600 hover:bg-green-50">
-            <span class="text-lg font-semibold">Landlord</span>
-            <span class="mt-2 text-sm text-neutral-600">
-              List properties, manage bookings, and host customers.
-            </span>
+        <div class="form-control w-full">
+          <label for="confirmPassword" class="label">
+            <span class="label-text font-medium">Confirm password</span>
           </label>
+
+          <input
+            bind:value={$form.confirmPassword}
+            id="confirmPassword"
+            name="confirmPassword"
+            type="password"
+            autocomplete="new-password"
+            class="input input-bordered w-full" >
+
+          {#if $errors.confirmPassword}
+            <p id="confirmPassword-error" class="mt-1 text-sm text-error">
+              {$errors.confirmPassword[0]}
+            </p>
+          {/if}
         </div>
       </div>
 
-      {#if $errors.role}
-        <span class="text-xs text-red-600">{$errors.role[0]}</span>
-      {/if}
-    </div>
+      <button type="submit" class="btn btn-success">Register</button>
 
-    <div class="flex flex-col gap-1">
-      <label for="firstName" class="text-sm font-medium">First name</label>
-      <input
-        id="firstName"
-        name="firstName"
-        bind:value={$form.firstName}
-        class="h-12 rounded-xl border border-neutral-300 px-4" >
-      {#if $errors.firstName}
-        <span class="text-xs text-red-600">{$errors.firstName[0]}</span>
-      {/if}
-    </div>
-
-    <div class="flex flex-col gap-1">
-      <label for="lastName" class="text-sm font-medium">Last name</label>
-      <input
-        id="lastName"
-        name="lastName"
-        bind:value={$form.lastName}
-        class="h-12 rounded-xl border border-neutral-300 px-4" >
-      {#if $errors.lastName}
-        <span class="text-xs text-red-600">{$errors.lastName[0]}</span>
-      {/if}
-    </div>
-
-    <div class="flex flex-col gap-1">
-      <label for="email" class="text-sm font-medium">Email</label>
-      <input
-        bind:value={$form.email}
-        id="email"
-        name="email"
-        type="email"
-        autocomplete="username"
-        class="h-12 rounded-xl border border-neutral-300 px-4" >
-      {#if $errors.email}
-        <span class="text-xs text-red-600">{$errors.email[0]}</span>
-      {/if}
-    </div>
-
-    <div class="grid grid-cols-2 gap-4">
-      <div class="flex flex-col gap-1">
-        <label for="password" class="text-sm font-medium">Password</label>
-        <input
-          bind:value={$form.password}
-          id="password"
-          name="password"
-          type="password"
-          autocomplete="new-password"
-          class="h-12 rounded-xl border border-neutral-300 px-4" >
-        {#if $errors.password}
-          <span class="text-xs text-red-600">{$errors.password[0]}</span>
-        {/if}
+      <div class="text-sm text-base-content/70">
+        <a href={resolve("/auth/login")} class="link link-hover">
+          Already have an account?
+        </a>
       </div>
-
-      <div class="flex flex-col gap-1">
-        <label for="confirmPassword" class="text-sm font-medium"
-          >Confirm password</label
-        >
-        <input
-          bind:value={$form.confirmPassword}
-          id="confirmPassword"
-          name="confirmPassword"
-          type="password"
-          autocomplete="new-password"
-          class="h-12 rounded-xl border border-neutral-300 px-4" >
-        {#if $errors.confirmPassword}
-          <span class="text-xs text-red-600">{$errors.confirmPassword[0]}</span>
-        {/if}
-      </div>
-    </div>
-
-    <button
-      type="submit"
-      class="h-12 rounded-2xl! bg-green-600 font-semibold text-white">
-      Register
-    </button>
-
-    <div class="text-sm text-neutral-600">
-      <a href={resolve("/auth/login")} class="underline">
-        Already have an account?
-      </a>
     </div>
   </form>
 </div>
