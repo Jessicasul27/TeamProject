@@ -49,6 +49,6 @@ export const actions: Actions = {
         break;
     }
 
-    redirect(303, "/");
+    throw redirect(303, "/");
   },
 };
