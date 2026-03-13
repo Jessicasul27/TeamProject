@@ -2,7 +2,7 @@
 
 ## Extensions for VS Code
 
-![extensions](https://i.imgur.com/DCwVVlD.png)
+![extensions](https://i.imgur.com/Vm9OJt4.png)
 
 ## Run
 
