@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 // prettier-ignore
-export const registerSchema = z
+export const schemaRegister = z
   .object({
     firstName: z
       .string()

@@ -1,18 +1,22 @@
 <script lang="ts">
   import { superForm } from "sveltekit-superforms";
   import { zod4Client } from "sveltekit-superforms/adapters";
-  import { propertyEditSchema } from "$lib/schemas/property";
+  import { schemaUpdateProperty } from "./schema";
   import { PropertyStatus, PropertyType } from "$lib/enums";
 
   let { data } = $props();
 
   const { form, errors, constraints, enhance } = superForm(data.form, {
-    validators: zod4Client(propertyEditSchema),
+    validators: zod4Client(schemaUpdateProperty),
     validationMethod: "oninput",
   });
 </script>
 
-<form method="POST" action="?/update" enctype="multipart/form-data" use:enhance>
+<form
+  method="POST"
+  action="?/updateProperty"
+  enctype="multipart/form-data"
+  use:enhance>
   <input type="hidden" name="id" bind:value={$form.id} >
 
   <div class="mt-4 border p-3">

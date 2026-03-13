@@ -11,3 +11,6 @@ vite.config.ts.timestamp-*
 
 # npm
 package-lock.json
+
+# jetbrains
+.idea/

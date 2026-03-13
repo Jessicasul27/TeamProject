@@ -1,7 +1,7 @@
 import { PropertyStatus, PropertyType } from "$lib/enums";
 import { z } from "zod";
 
-export const propertyEditSchema = z.object({
+export const schemaUpdateProperty = z.object({
   id: z.uuid(),
 
   title: z
@@ -38,6 +38,6 @@ export const propertyEditSchema = z.object({
     .min(1, "Max guests must be at least 1."),
 });
 
-export const deleteImageSchema = z.object({
+export const schemaDeleteImage = z.object({
   imageId: z.uuid(),
 });

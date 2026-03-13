@@ -1,4 +1,4 @@
-import { registerSchema } from "$lib/schemas/register";
+import { schemaRegister } from "./schema";
 import { auth } from "$lib/server/auth";
 import { db } from "$lib/server/db";
 import { fail, redirect } from "@sveltejs/kit";
@@ -12,13 +12,13 @@ export const load: PageServerLoad = async ({ locals }) => {
   }
 
   return {
-    form: await superValidate(zod4(registerSchema)),
+    form: await superValidate(zod4(schemaRegister)),
   };
 };
 
 export const actions: Actions = {
   default: async ({ request }) => {
-    const form = await superValidate(request, zod4(registerSchema));
+    const form = await superValidate(request, zod4(schemaRegister));
     if (!form.valid) {
       return fail(400, { form });
     }

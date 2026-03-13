@@ -1,12 +1,12 @@
 <script lang="ts">
   import { superForm } from "sveltekit-superforms";
   import { zod4Client } from "sveltekit-superforms/adapters";
-  import { registerSchema } from "$lib/schemas/register";
+  import { schemaRegister } from "./schema";
   import { resolve } from "$app/paths";
 
   const { data } = $props();
   const { form, errors, enhance } = superForm(data.form, {
-    validators: zod4Client(registerSchema),
+    validators: zod4Client(schemaRegister),
     validationMethod: "onblur",
   });
 </script>
