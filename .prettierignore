@@ -1,0 +1,5 @@
+# package Managers
+package-lock.json
+
+# misc
+/static/

@@ -1,15 +1,13 @@
-﻿# code editor config/local files
-.idea/
-.vs/
-
-# emit compiled C# binaries and build artifacts
-bin/
-obj/
-
-# user-specific project configuration
-*.user
-
-# npm/node stuff for tailwindcss
-# just experimenting with tailwind here, these do not have to stay in the final version - Robert
+# node
 node_modules/
+
+# build artifacts
+.svelte-kit/
+/build
+
+# vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# npm
 package-lock.json

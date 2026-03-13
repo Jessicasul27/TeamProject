@@ -1,0 +1,10 @@
+{
+	"deno.enable": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"svelte.plugin.svelte.compilerWarnings": {
+		"state_referenced_locally": "ignore"
+	}
+}
