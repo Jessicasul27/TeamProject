@@ -1,10 +1,10 @@
-import { deleteImageSchema, propertyEditSchema } from "$lib/schemas/property";
+import { schemaDeleteImage, schemaUpdateProperty } from "./schema";
 import { db } from "$lib/server/db";
 import type { Property } from "$lib/server/db/entities/property";
 import { fail, redirect } from "@sveltejs/kit";
-import { randomUUID } from "crypto";
-import { writeFile } from "fs/promises";
-import { resolve } from "path";
+import { randomUUID } from "node:crypto";
+import { writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
 import { superValidate } from "sveltekit-superforms";
 import { zod4 } from "sveltekit-superforms/adapters";
 import type { Actions, PageServerLoad } from "./$types";
@@ -25,7 +25,7 @@ export const load: PageServerLoad = async ({ parent }) => {
   const { property } = await parent();
 
   return {
-    form: await superValidate(property, zod4(propertyEditSchema)),
+    form: await superValidate(property, zod4(schemaUpdateProperty)),
     property: {
       displayImage: property.displayImage,
       images: (property.images ?? []).map((image) => {
@@ -39,9 +39,9 @@ export const load: PageServerLoad = async ({ parent }) => {
 };
 
 export const actions: Actions = {
-  update: async ({ request, url }) => {
+  updateProperty: async ({ request, url }) => {
     const formData = await request.formData();
-    const form = await superValidate(formData, zod4(propertyEditSchema));
+    const form = await superValidate(formData, zod4(schemaUpdateProperty));
 
     if (!form.valid) {
       return fail(400, { form });
@@ -62,7 +62,7 @@ export const actions: Actions = {
     for (const galleryFile of galleryFiles) {
       const path = await savePropertyImage(galleryFile);
       await db.propertyImageRepo.save({
-        propertyId: property.id!,
+        propertyId: property.id,
         imageUrl: path,
       });
     }
@@ -73,7 +73,7 @@ export const actions: Actions = {
   },
 
   deleteImage: async ({ request, url }) => {
-    const form = await superValidate(request, zod4(deleteImageSchema));
+    const form = await superValidate(request, zod4(schemaDeleteImage));
     if (!form.valid) {
       return fail(400, { form });
     }
