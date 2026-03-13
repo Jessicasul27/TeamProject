@@ -8,7 +8,7 @@
 
 ```shell
 # install npm dependencies
-npm i
+npm i --force
 
 # run the app; go to http://localhost:5173 on your browser to see it
 npm run dev

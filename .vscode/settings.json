@@ -1,10 +1,14 @@
 {
-	"deno.enable": false,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"files.associations": {
-		"*.css": "tailwindcss"
-	},
-	"svelte.plugin.svelte.compilerWarnings": {
-		"state_referenced_locally": "ignore"
-	}
+  "deno.enable": false,
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome",
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  "svelte.plugin.svelte.compilerWarnings": {
+    "state_referenced_locally": "ignore"
+  }
 }

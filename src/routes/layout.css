@@ -1,2 +1,5 @@
-@import "tailwindcss" prefix(tw);
-@import "bootstrap";
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: garden --default;
+}

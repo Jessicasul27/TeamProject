@@ -1,3 +1,9 @@
 {
-	"recommendations": ["svelte.svelte-vscode", "bradlc.vscode-tailwindcss", "esbenp.prettier-vscode", "dbaeumer.vscode-eslint", "qwtel.sqlite-viewer"]
+  "recommendations": [
+    "svelte.svelte-vscode",
+    "bradlc.vscode-tailwindcss",
+    "biomejs.biome",
+    "dbaeumer.vscode-eslint",
+    "qwtel.sqlite-viewer"
+  ]
 }

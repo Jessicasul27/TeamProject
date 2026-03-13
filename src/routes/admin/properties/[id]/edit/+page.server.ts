@@ -12,72 +12,74 @@ import type { Actions, PageServerLoad } from "./$types";
 const PROPERTY_IMAGES_DIR = resolve("static", "images", "properties");
 
 async function savePropertyImage(file: File): Promise<string> {
-	const filename = randomUUID();
-	const path = resolve(PROPERTY_IMAGES_DIR, filename);
+  const filename = randomUUID();
+  const path = resolve(PROPERTY_IMAGES_DIR, filename);
 
-	const buffer = Buffer.from(await file.arrayBuffer());
-	await writeFile(path, buffer);
+  const buffer = Buffer.from(await file.arrayBuffer());
+  await writeFile(path, buffer);
 
-	return `/images/properties/${filename}`;
+  return `/images/properties/${filename}`;
 }
 
 export const load: PageServerLoad = async ({ parent }) => {
-	const { property } = await parent();
+  const { property } = await parent();
 
-	return {
-		form: await superValidate(property, zod4(propertyEditSchema)),
-		property: {
-			displayImage: property.displayImage,
-			images: (property.images ?? []).map((image) => {
-				return {
-					id: image.id,
-					imageUrl: image.imageUrl,
-				};
-			}),
-		},
-	};
+  return {
+    form: await superValidate(property, zod4(propertyEditSchema)),
+    property: {
+      displayImage: property.displayImage,
+      images: (property.images ?? []).map((image) => {
+        return {
+          id: image.id,
+          imageUrl: image.imageUrl,
+        };
+      }),
+    },
+  };
 };
 
 export const actions: Actions = {
-	update: async ({ request, url }) => {
-		const formData = await request.formData();
-		const form = await superValidate(formData, zod4(propertyEditSchema));
+  update: async ({ request, url }) => {
+    const formData = await request.formData();
+    const form = await superValidate(formData, zod4(propertyEditSchema));
 
-		if (!form.valid) {
-			return fail(400, { form });
-		}
+    if (!form.valid) {
+      return fail(400, { form });
+    }
 
-		const property = form.data as Partial<Property>;
+    const property = form.data as Partial<Property>;
 
-		const displayFile = formData.get("displayFile");
-		const galleryFiles = formData.getAll("galleryFiles").filter((file): file is File => file instanceof File && file.size > 0);
+    const displayFile = formData.get("displayFile");
+    const galleryFiles = formData
+      .getAll("galleryFiles")
+      .filter((file): file is File => file instanceof File && file.size > 0);
 
-		if (displayFile instanceof File && displayFile.size > 0) {
-			const path = await savePropertyImage(displayFile);
-			property.displayImage = path;
-		}
+    if (displayFile instanceof File && displayFile.size > 0) {
+      const path = await savePropertyImage(displayFile);
+      property.displayImage = path;
+    }
 
-		for (const galleryFile of galleryFiles) {
-			const path = await savePropertyImage(galleryFile);
-			await db.propertyImageRepo.save({
-				propertyId: property.id!,
-				imageUrl: path,
-			});
-		}
+    for (const galleryFile of galleryFiles) {
+      const path = await savePropertyImage(galleryFile);
+      await db.propertyImageRepo.save({
+        propertyId: property.id!,
+        imageUrl: path,
+      });
+    }
 
-		await db.propertyRepo.save(property);
+    await db.propertyRepo.save(property);
 
-		throw redirect(303, url.pathname);
-	},
+    throw redirect(303, url.pathname);
+  },
 
-	deleteImage: async ({ request, url }) => {
-		const form = await superValidate(request, zod4(deleteImageSchema));
-		if (!form.valid) {
-			return fail(400, { form });
-		}
+  deleteImage: async ({ request, url }) => {
+    const form = await superValidate(request, zod4(deleteImageSchema));
+    if (!form.valid) {
+      return fail(400, { form });
+    }
 
-		await db.propertyImageRepo.delete(form.data.imageId);
+    await db.propertyImageRepo.delete(form.data.imageId);
 
-		throw redirect(303, url.pathname);
-	},
+    throw redirect(303, url.pathname);
+  },
 };
