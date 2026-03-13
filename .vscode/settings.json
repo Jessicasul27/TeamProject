@@ -10,5 +10,8 @@
 
   "svelte.plugin.svelte.compilerWarnings": {
     "state_referenced_locally": "ignore"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   }
 }
