@@ -1,4 +1,4 @@
-import { DataSource, Repository } from "typeorm";
+import { DataSource, type Repository } from "typeorm";
 
 import { Admin } from "./entities/admin";
 import { Booking } from "./entities/booking";

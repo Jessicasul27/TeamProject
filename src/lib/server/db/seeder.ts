@@ -1,10 +1,10 @@
 import { PropertyStatus, PropertyType } from "$lib/enums";
 import { dataSource, db } from ".";
 import { auth } from "../auth";
-import { Admin } from "./entities/admin";
-import { Customer } from "./entities/customer";
-import { Landlord } from "./entities/landlord";
-import { User } from "./entities/user";
+import type { Admin } from "./entities/admin";
+import type { Customer } from "./entities/customer";
+import type { Landlord } from "./entities/landlord";
+import type { User } from "./entities/user";
 
 export async function seed(): Promise<void> {
   if (!dataSource.isInitialized) {
