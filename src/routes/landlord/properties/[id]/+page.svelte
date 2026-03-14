@@ -66,6 +66,29 @@
         {/each}
       </select>
     </label>
+    <label class="text-sm">
+      Upload new cover image
+    <input class="mt-1 block" type="file" name="displayImageFile" accept="image/*" />
+    </label>
+    <img class="h-32 w-32 rounded-xl object-cover" src={property.displayImage} alt="Cover" />
+    <label class="text-sm">
+    Add gallery images
+    <input class="mt-1 block" type="file" name="imageFiles" accept="image/*" multiple />
+    </label>
+    {#if property.images?.length}
+  <p class="text-sm font-medium mt-4">Existing gallery images</p>
+  <div class="mt-2 flex flex-wrap gap-3">
+    {#each property.images as img}
+      <label class="flex flex-col gap-1">
+        <img class="h-24 w-24 rounded-xl object-cover" src={img.imageUrl} alt="" />
+        <span class="text-xs">
+          <input type="checkbox" name="removeImageIds" value={img.id} />
+          Remove
+        </span>
+      </label>
+    {/each}
+  </div>
+{/if}
 
     <div class="mt-2 flex gap-3">
       <button
