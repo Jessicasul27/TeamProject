@@ -12,7 +12,7 @@
 
 <div class="flex flex-col gap-10 px-6 py-6">
   <div>
-    <h2 class="text-lg font-semibold">Editable (Inactive)</h2>
+    <h2 class="text-lg font-semibold">Editable</h2>
 
     <div class="mt-4 flex flex-wrap gap-4">
       {#each editable as property}
@@ -44,7 +44,7 @@
   </div>
 
   <div>
-    <h2 class="text-lg font-semibold">Submitted / Locked</h2>
+    <h2 class="text-lg font-semibold">Submitted</h2>
 
     <div class="mt-4 flex flex-wrap gap-4">
       {#each locked as property}
