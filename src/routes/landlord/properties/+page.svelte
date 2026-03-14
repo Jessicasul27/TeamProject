@@ -10,6 +10,13 @@
   );
 </script>
 
+<a
+  href="/landlord/properties/create"
+  class="inline-block rounded-xl border px-4 py-2"
+>
+  Create Property
+</a>
+
 <div class="flex flex-col gap-10 px-6 py-6">
   <div>
     <h2 class="text-lg font-semibold">Editable</h2>
