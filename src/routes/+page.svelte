@@ -1,5 +1,14 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { resolve } from "$app/paths";
+
+  onMount(() => {
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get("paid") === "true") {
+      alert("Payment successful! Your booking is confirmed.");
+    }
+  });
 
   const { data } = $props();
   const { properties } = data;

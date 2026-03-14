@@ -1,5 +1,7 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
+  import { onMount } from "svelte";
+
   const { data } = $props();
 
   const property = data.property;
@@ -7,6 +9,38 @@
   const checkOut = data.checkOut;
   const nights = data.nights;
   const totalPrice = data.totalPrice;
+  const paymentError = data.paymentError;
+
+  onMount(() => {
+    if (paymentError) {
+      alert(paymentError);
+    }
+  });
+
+  function formatCard(event: Event) {
+    const input = event.target as HTMLInputElement;
+    let value = input.value.replace(/\D/g, "");
+    value = value.slice(0, 16);
+    value = value.replace(/(.{4})/g, "$1 ").trim();
+    input.value = value;
+  }
+
+  function formatExpiry(event: Event) {
+    const input = event.target as HTMLInputElement;
+    let value = input.value.replace(/\D/g, "");
+    value = value.slice(0, 4);
+
+    if (value.length >= 3) {
+      value = `${value.slice(0, 2)}/${value.slice(2)}`;
+    }
+
+    input.value = value;
+  }
+
+  function formatCvc(event: Event) {
+    const input = event.target as HTMLInputElement;
+    input.value = input.value.replace(/\D/g, "").slice(0, 4);
+  }
 </script>
 
 <div class="container mt-4">
@@ -26,11 +60,10 @@
         <hr >
 
         <p>€{property.pricePerNight} × {nights} nights</p>
-
         <h4 class="text-success">Total Price: €{totalPrice}</h4>
       </div>
 
-      <form method="post">
+      <form method="post" action="?/validation">
         <input type="hidden" name="propertyId" value={property.id} >
         <input type="hidden" name="checkIn" value={checkIn} >
         <input type="hidden" name="checkOut" value={checkOut} >
@@ -41,6 +74,9 @@
             name="cardNumber"
             class="form-control"
             placeholder="4242 4242 4242 4242"
+            maxlength="19"
+            inputmode="numeric"
+            on:input={formatCard}
             required >
         </div>
 
@@ -51,18 +87,30 @@
               name="expiry"
               class="form-control"
               placeholder="MM/YY"
+              maxlength="5"
+              inputmode="numeric"
+              on:input={formatExpiry}
               required >
           </div>
 
           <div class="col-md-6">
             <label>CVC</label>
-            <input name="cvc" class="form-control" placeholder="123" required >
+            <input
+              name="cvc"
+              class="form-control"
+              placeholder="123"
+              maxlength="4"
+              inputmode="numeric"
+              on:input={formatCvc}
+              required >
           </div>
         </div>
+
         <div class="col-md-6">
           <button type="submit" class="btn btn-primary mt-4 w-100">Pay</button>
         </div>
       </form>
+
       <div class="card-footer mt-4">
         <div class="row">
           <div class="col-md-6">
