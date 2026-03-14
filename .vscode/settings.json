@@ -10,5 +10,6 @@
 
   "svelte.plugin.svelte.compilerWarnings": {
     "state_referenced_locally": "ignore"
-  }
+  },
+  "snyk.advanced.autoSelectOrganization": true
 }
