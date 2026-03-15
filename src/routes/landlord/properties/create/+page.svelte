@@ -73,7 +73,6 @@
             {/each}
           </select>
         </label>
-
         <label class="form-control w-full">
           <div class="label"><span class="label-text">Cover image</span></div>
           <input
