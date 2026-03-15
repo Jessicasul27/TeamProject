@@ -1,10 +1,8 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
 
-  // `data` is the object returned from the `load` function in `+page.server.ts`
   const { data } = $props();
 
-  // our property was loaded during server-side rendering, which we now access here
   const property = data.property;
 </script>
 

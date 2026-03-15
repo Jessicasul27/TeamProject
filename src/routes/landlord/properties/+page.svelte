@@ -3,82 +3,113 @@
   let { data } = $props();
 
   const editable = data.properties.filter(
-    (p) => p.status === PropertyStatus.Inactive,
+    (p) =>
+      p.status === PropertyStatus.Inactive ||
+      p.status === PropertyStatus.Pending,
   );
   const locked = data.properties.filter(
-    (p) => p.status !== PropertyStatus.Inactive,
+    (p) => p.status === PropertyStatus.Active,
   );
 </script>
 
-<a
-  href="/landlord/properties/create"
-  class="inline-block rounded-xl border px-4 py-2"
->
-  Create Property
-</a>
+<div class="p-6">
+  <div class="flex items-center justify-between">
+    <h1 class="text-2xl font-bold">Your Properties</h1>
 
-<div class="flex flex-col gap-10 px-6 py-6">
-  <div>
-    <h2 class="text-lg font-semibold">Editable</h2>
-
-    <div class="mt-4 flex flex-wrap gap-4">
-      {#each editable as property}
-        <a
-          href={`/landlord/properties/${property.id}`}
-          class="flex flex-col gap-2">
-          <img
-            class="h-60 w-60 rounded-2xl object-cover"
-            src={property.displayImage}
-            alt={property.title} >
-          <div class="flex flex-col">
-            <span class="text-sm font-semibold text-neutral-950"
-              >{property.title}</span
-            >
-            <span class="text-xs text-neutral-500">
-              Max guests: {property.maxGuests} | {property.type}
-            </span>
-            <span class="text-xs text-neutral-500"
-              >€{property.pricePerNight}
-              per night</span
-            >
-            <span class="text-xs text-neutral-500"
-              >Status: {property.status}</span
-            >
-          </div>
-        </a>
-      {/each}
-    </div>
+    <a href="/landlord/properties/create" class="btn btn-primary">
+      Create Property
+    </a>
   </div>
 
-  <div>
-    <h2 class="text-lg font-semibold">Submitted</h2>
-
-    <div class="mt-4 flex flex-wrap gap-4">
-      {#each locked as property}
-        <a
-          href={`/landlord/properties/${property.id}`}
-          class="flex flex-col gap-2 opacity-80">
-          <img
-            class="h-60 w-60 rounded-2xl object-cover"
-            src={property.displayImage}
-            alt={property.title} >
-          <div class="flex flex-col">
-            <span class="text-sm font-semibold text-neutral-950"
-              >{property.title}</span
-            >
-            <span class="text-xs text-neutral-500">
-              Max guests: {property.maxGuests} | {property.type}
-            </span>
-            <span class="text-xs text-neutral-500"
-              >€{property.pricePerNight}
-              per night</span
-            >
-            <span class="text-xs text-neutral-500"
-              >Status: {property.status}</span
-            >
-          </div>
-        </a>
-      {/each}
+  <section class="mt-10">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-semibold">Editable</h2>
+      <span class="badge badge-outline">{editable.length}</span>
     </div>
-  </div>
+
+    {#if editable.length === 0}
+      <p class="mt-3 text-sm opacity-70">No editable properties right now.</p>
+    {:else}
+      <div class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {#each editable as property}
+          <a
+            href={`/landlord/properties/${property.id}/edit`}
+            class="card bg-base-100 shadow-sm  hover:shadow-md transition">
+            <figure class="h-70">
+              <img
+                class="h-full w-full object-cover"
+                src={property.displayImage}
+                alt={property.title} >
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">
+                {property.title}
+                <span class="badge badge-warning">{property.status}</span>
+              </h3>
+
+              <p class="text-sm opacity-80">
+                Max guests: {property.maxGuests} | {property.type}
+              </p>
+
+              <p class="text-sm font-semibold">
+                €{property.pricePerNight}
+                <span class="font-normal opacity-70">/ night</span>
+              </p>
+
+              <div class="card-actions justify-end">
+                <span class="btn btn-sm btn-outline">Manage</span>
+              </div>
+            </div>
+          </a>
+        {/each}
+      </div>
+    {/if}
+  </section>
+
+  <section class="mt-12">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-semibold">Approved</h2>
+      <span class="badge badge-outline">{locked.length}</span>
+    </div>
+
+    {#if locked.length === 0}
+      <p class="mt-3 text-sm opacity-70">No Submitted properties</p>
+    {:else}
+      <div class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {#each locked as property}
+          <a
+            href={`/landlord/properties/${property.id}`}
+            class="card bg-base-100 shadow-sm opacity-80 hover:opacity-100 hover:shadow-md transition">
+            <figure class="h-70">
+              <img
+                class="h-full w-full object-cover"
+                src={property.displayImage}
+                alt={property.title} >
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">
+                {property.title}
+                <span class="badge badge-success">{property.status}</span>
+              </h3>
+
+              <p class="text-sm opacity-80">
+                Max guests: {property.maxGuests} | {property.type}
+              </p>
+
+              <p class="text-sm font-semibold">
+                €{property.pricePerNight}
+                <span class="font-normal opacity-70">/ night</span>
+              </p>
+
+              <div class="card-actions justify-end">
+                <span class="btn btn-sm btn-outline">View</span>
+              </div>
+            </div>
+          </a>
+        {/each}
+      </div>
+    {/if}
+  </section>
 </div>
