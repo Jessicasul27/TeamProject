@@ -26,9 +26,9 @@
         <div class="flex flex-col items-center gap-4">
           <h1 class="text-2xl font-bold">Welcome to your profile!</h1>
           <p class="text-center text-gray-600">
-            Here you can manage your account details, view your bookings, and
-            explore our properties.
+            Here you can manage your account details and view your bookings.
           </p>
+          <h3>Your Bookings</h3>
           {#each bookings as booking, index}
             <div class="carousel w-full">
               <div id="slide{index}" class="carousel-item relative w-full">
@@ -147,7 +147,10 @@
       <div class="avatar justify-center">
         <div class="w-80 rounded-full">
           <img
-            src={"https://placehold.co/100x100?text=Avatar"}
+            src={"https://placehold.co/100x100?text={}".replace(
+              "{}",
+              user.firstName.charAt(0) + user.lastName.charAt(0),
+            )}
             alt="User Avatar"
           />
         </div>
