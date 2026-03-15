@@ -7,6 +7,7 @@
       p.status === PropertyStatus.Inactive ||
       p.status === PropertyStatus.Pending,
   );
+
   const locked = data.properties.filter(
     (p) => p.status === PropertyStatus.Active,
   );
@@ -34,7 +35,7 @@
         {#each editable as property}
           <a
             href={`/landlord/properties/${property.id}/edit`}
-            class="card bg-base-100 shadow-sm  hover:shadow-md transition">
+            class="card bg-base-100 shadow-sm hover:shadow-md transition">
             <figure class="h-70">
               <img
                 class="h-full w-full object-cover"
@@ -78,8 +79,7 @@
     {:else}
       <div class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {#each locked as property}
-          <a
-            href={`/landlord/properties/${property.id}`}
+          <div
             class="card bg-base-100 shadow-sm opacity-80 hover:opacity-100 hover:shadow-md transition">
             <figure class="h-70">
               <img
@@ -103,11 +103,15 @@
                 <span class="font-normal opacity-70">/ night</span>
               </p>
 
-              <div class="card-actions justify-end">
-                <span class="btn btn-sm btn-outline">View</span>
+              <div class="card-actions justify-end gap-2">
+                <a
+                  href={`/landlord/properties/${property.id}/view`}
+                  class="btn btn-sm btn-outline">
+                  View
+                </a>
               </div>
             </div>
-          </a>
+          </div>
         {/each}
       </div>
     {/if}
