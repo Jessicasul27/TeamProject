@@ -1,7 +1,7 @@
 import { db } from "$lib/server/db";
 import { redirect, fail } from "@sveltejs/kit";
 import type { PageServerLoad, Actions } from "./$types";
-import { validateCard } from "./validation/schema";
+import { validateCard } from "./schema";
 
 async function requireCustomer(user: App.Locals["user"]) {
   if (!user) {
