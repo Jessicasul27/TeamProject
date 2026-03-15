@@ -1,11 +1,26 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
+  import { onMount } from "svelte";
 
-  const { data } = $props();
+  const { data, form } = $props();
   const property = data.property;
 
-  const today = new Date().toISOString().split("T")[0];
-  let checkIn = "";
+  function getLocalToday() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  }
+
+  const today = getLocalToday();
+  const bookingError = form?.bookingError ?? null;
+
+  onMount(() => {
+    if (bookingError) {
+      alert(bookingError);
+    }
+  });
 </script>
 
 <div class="backgroundWhite container">
@@ -60,33 +75,26 @@
 
       <hr >
 
-      <form
-        method="post"
-        action={`/properties/${property.id}/payment?/prepare`}>
-        <input type="hidden" name="id" value={property.id} >
-
+      <form method="post" action="?/prepare">
         <div class="row mt-3">
-          <div class="row mt-3">
-            <div class="col-md-6">
-              <label>Check In</label>
-              <input
-                name="checkIn"
-                type="date"
-                class="form-control"
-                min={today}
-                bind:value={checkIn}
-                required >
-            </div>
+          <div class="col-md-6">
+            <label>Check In</label>
+            <input
+              name="checkIn"
+              type="date"
+              class="form-control"
+              min={today}
+              required >
+          </div>
 
-            <div class="col-md-6">
-              <label>Check Out</label>
-              <input
-                name="checkOut"
-                type="date"
-                class="form-control"
-                min={checkIn || today}
-                required >
-            </div>
+          <div class="col-md-6">
+            <label>Check Out</label>
+            <input
+              name="checkOut"
+              type="date"
+              class="form-control"
+              min={today}
+              required >
           </div>
         </div>
 

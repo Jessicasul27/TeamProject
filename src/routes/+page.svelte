@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import { resolve } from "$app/paths";
+  import { onMount } from "svelte";
 
   onMount(() => {
     const params = new URLSearchParams(window.location.search);

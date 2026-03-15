@@ -1,7 +1,23 @@
 import { db } from "$lib/server/db";
-import { redirect, error } from "@sveltejs/kit";
+import { redirect, fail } from "@sveltejs/kit";
 import type { PageServerLoad, Actions } from "./$types";
-import { validateCard } from "$lib/validation/schema";
+import { validateCard } from "./validation/schema";
+
+async function requireCustomer(user: App.Locals["user"]) {
+  if (!user) {
+    throw redirect(303, "/auth/login");
+  }
+
+  const customer = await db.customerRepo.findOne({
+    where: { userId: user.id },
+  });
+
+  if (!customer) {
+    throw redirect(303, "/auth/login");
+  }
+
+  return user;
+}
 
 function calculateBooking(
   checkIn: string | null,
@@ -28,15 +44,9 @@ function calculateBooking(
   return { nights, totalPrice };
 }
 
-function paymentRedirect(
-  propertyId: string,
-  checkIn: string,
-  checkOut: string,
-) {
-  return `/properties/${propertyId}/payment?checkIn=${encodeURIComponent(checkIn)}&checkOut=${encodeURIComponent(checkOut)}&error=invalid`;
-}
+export const load: PageServerLoad = async ({ params, url, locals }) => {
+  await requireCustomer(locals.user);
 
-export const load: PageServerLoad = async ({ params, url }) => {
   const property = await db.propertyRepo.findOneOrFail({
     where: { id: params.id },
     relations: {
@@ -47,7 +57,6 @@ export const load: PageServerLoad = async ({ params, url }) => {
 
   const checkIn = url.searchParams.get("checkIn");
   const checkOut = url.searchParams.get("checkOut");
-  const paymentError = url.searchParams.get("error");
 
   const { nights, totalPrice } = calculateBooking(
     checkIn,
@@ -61,23 +70,30 @@ export const load: PageServerLoad = async ({ params, url }) => {
     checkOut,
     nights,
     totalPrice,
-    paymentError:
-      paymentError === "invalid"
-        ? "Invalid card details. Please check your card number, expiry date, and CVC."
-        : null,
   };
 };
 
 export const actions: Actions = {
-  validation: async ({ request, params }) => {
+  validation: async ({ request, params, locals }) => {
+    const user = await requireCustomer(locals.user);
+
     const form = await request.formData();
 
     const cardNumber = form.get("cardNumber")?.toString() ?? "";
     const expiry = form.get("expiry")?.toString() ?? "";
     const cvc = form.get("cvc")?.toString() ?? "";
-
     const checkIn = form.get("checkIn")?.toString() ?? "";
     const checkOut = form.get("checkOut")?.toString() ?? "";
+
+    const property = await db.propertyRepo.findOneOrFail({
+      where: { id: params.id },
+    });
+
+    const { nights, totalPrice } = calculateBooking(
+      checkIn,
+      checkOut,
+      property.pricePerNight,
+    );
 
     const validation = validateCard({
       cardNumber,
@@ -86,61 +102,43 @@ export const actions: Actions = {
     });
 
     if (!validation.cardNumber || !validation.expiry || !validation.cvc) {
-      throw redirect(303, paymentRedirect(params.id, checkIn, checkOut));
+      return fail(400, {
+        paymentError:
+          "Invalid card details. Please check your card number, expiry date, and CVC.",
+        cardNumber,
+        expiry,
+        cvc,
+        checkIn,
+        checkOut,
+        nights,
+        totalPrice,
+      });
     }
-
-    const property = await db.propertyRepo.findOneOrFail({
-      where: { id: params.id },
-    });
 
     const checkInDate = new Date(checkIn);
     const checkOutDate = new Date(checkOut);
 
-    if (checkOutDate <= checkInDate) {
-      throw redirect(303, paymentRedirect(params.id, checkIn, checkOut));
+    if (checkOutDate <= checkInDate || nights <= 0) {
+      return fail(400, {
+        paymentError: "Invalid date range.",
+        cardNumber,
+        expiry,
+        cvc,
+        checkIn,
+        checkOut,
+        nights,
+        totalPrice,
+      });
     }
-
-    const msPerDay = 1000 * 60 * 60 * 24;
-    const nights = Math.floor(
-      (checkOutDate.getTime() - checkInDate.getTime()) / msPerDay,
-    );
-
-    const bookingPrice = nights * property.pricePerNight;
 
     await db.bookingRepo.save({
       checkInDate,
       checkOutDate,
-      // customerUserId: userId,
-      customerUserId: "66176b0f-3e12-4450-97aa-e56a276ed96d",
+      customerUserId: user.id,
       propertyId: params.id,
-      bookingPrice,
+      bookingPrice: totalPrice,
     });
 
     throw redirect(303, "/?paid=true");
-  },
-
-  prepare: async ({ request, params }) => {
-    const form = await request.formData();
-    const checkIn = form.get("checkIn");
-    const checkOut = form.get("checkOut");
-
-    if (!params.id || !checkIn || !checkOut) {
-      throw new Error("Missing booking data");
-    }
-
-    const checkInValue = checkIn.toString();
-    const checkOutValue = checkOut.toString();
-
-    const checkInDate = new Date(checkInValue);
-    const checkOutDate = new Date(checkOutValue);
-
-    if (checkOutDate <= checkInDate) {
-      throw error(400, "Invalid date range");
-    }
-
-    throw redirect(
-      303,
-      `/properties/${params.id}/payment?checkIn=${encodeURIComponent(checkInValue)}&checkOut=${encodeURIComponent(checkOutValue)}`,
-    );
   },
 };

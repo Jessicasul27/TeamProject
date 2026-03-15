@@ -2,14 +2,14 @@
   import { resolve } from "$app/paths";
   import { onMount } from "svelte";
 
-  const { data } = $props();
+  const { data, form } = $props();
 
   const property = data.property;
-  const checkIn = data.checkIn;
-  const checkOut = data.checkOut;
-  const nights = data.nights;
-  const totalPrice = data.totalPrice;
-  const paymentError = data.paymentError;
+  const checkIn = form?.checkIn ?? data.checkIn;
+  const checkOut = form?.checkOut ?? data.checkOut;
+  const nights = form?.nights ?? data.nights;
+  const totalPrice = form?.totalPrice ?? data.totalPrice;
+  const paymentError = form?.paymentError ?? null;
 
   onMount(() => {
     if (paymentError) {
@@ -64,7 +64,6 @@
       </div>
 
       <form method="post" action="?/validation">
-        <input type="hidden" name="propertyId" value={property.id} >
         <input type="hidden" name="checkIn" value={checkIn} >
         <input type="hidden" name="checkOut" value={checkOut} >
 
@@ -76,6 +75,7 @@
             placeholder="4242 4242 4242 4242"
             maxlength="19"
             inputmode="numeric"
+            value={form?.cardNumber ?? ""}
             on:input={formatCard}
             required >
         </div>
@@ -89,6 +89,7 @@
               placeholder="MM/YY"
               maxlength="5"
               inputmode="numeric"
+              value={form?.expiry ?? ""}
               on:input={formatExpiry}
               required >
           </div>
@@ -101,6 +102,7 @@
               placeholder="123"
               maxlength="4"
               inputmode="numeric"
+              value={form?.cvc ?? ""}
               on:input={formatCvc}
               required >
           </div>
