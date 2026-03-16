@@ -9,8 +9,11 @@ node_modules/
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# npm
+# package managers
 package-lock.json
+pnpm-lock.yaml
+bun.lock
+deno.lock
 
 # jetbrains
 .idea/
