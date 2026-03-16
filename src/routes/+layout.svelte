@@ -6,8 +6,8 @@
   import { Toaster } from "svelte-sonner";
   import Navbar from "$lib/ui/Navbar.svelte";
 
-  let { children, data } = $props();
-  let { user } = data;
+  const { children, data } = $props();
+  const user = $derived(data.user);
 
   let search = $state("");
   let home = $derived(page.url.pathname === "/");
