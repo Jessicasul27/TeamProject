@@ -2,11 +2,17 @@
   import { superForm } from "sveltekit-superforms";
   import { registerClientAdapter } from "./schema";
   import { resolve } from "$app/paths";
+  import { invalidate } from "$app/navigation";
 
   const { data } = $props();
   const { form, errors, enhance } = superForm(data.form, {
     validators: registerClientAdapter,
     validationMethod: "onblur",
+
+    // this is only needed for register/login
+    onResult: async () => {
+      await invalidate("auth:session");
+    },
   });
 </script>
 
@@ -122,16 +128,16 @@
       </div>
 
       <div class="form-control w-full">
-        <label for="phone" class="label">
+        <label for="phoneNumber" class="label">
           <span class="label-text font-medium">Phone number</span>
         </label>
 
         <input
-          bind:value={$form.email}
-          id="phone"
-          name="phone"
-          type="text"
-          autocomplete="mobile tel"
+          bind:value={$form.phoneNumber}
+          id="phoneNumber"
+          name="phoneNumber"
+          type="tel"
+          autocomplete="tel"
           class="input input-bordered w-full" >
 
         {#if $errors.phoneNumber}

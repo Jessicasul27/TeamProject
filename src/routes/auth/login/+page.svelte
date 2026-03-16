@@ -8,6 +8,8 @@
   const { form, errors, constraints, message } = superForm(data.form, {
     validators: loginClientAdapter,
     validationMethod: "onblur",
+
+    // this is only needed for register/login
     onResult: async () => {
       await invalidate("auth:session");
     },
