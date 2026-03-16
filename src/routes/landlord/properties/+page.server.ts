@@ -9,6 +9,6 @@ export const load: PageServerLoad = async ({ parent }) => {
   });
 
   return {
-    properties: properties.map((property) => structuredClone(property)),
+    properties: structuredClone(properties),
   };
 };

@@ -9,6 +9,6 @@ export const load: PageServerLoad = async () => {
   });
 
   return {
-    customers: customers.map((customer) => structuredClone(customer)),
+    customers: structuredClone(customers),
   };
 };
