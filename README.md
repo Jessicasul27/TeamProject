@@ -1,14 +1,14 @@
-# js-svelte-rewrite
+# Staycraft
 
 ## Extensions for VS Code
 
-![extensions](https://i.imgur.com/Vm9OJt4.png)
+![extensions](https://i.imgur.com/fLGEcO9.png)
 
 ## Run
 
 ```shell
 # install npm dependencies
-npm i --force
+npm i
 
 # run the app; go to http://localhost:5173 on your browser to see it
 npm run dev
@@ -28,4 +28,8 @@ npm run dev
 - click on `app.db` in VS Code to see the contents of the database (needs SQLite Viewer extension)
 
 Currently, the website isn't fully working yet but you can goof around with it.
-Test user - email: `hello@world.com`, password: `password`
+
+Users for testing:
+- Customer: `hello@world.com` `password`
+- Landlord: `landlord@staycraft.ie` `password`
+- Admin: `admin@staycraft.ie` `password`
