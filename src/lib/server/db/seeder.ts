@@ -1,42 +1,51 @@
 import { PropertyStatus, PropertyType } from "$lib/enums";
-import { dataSource, db } from ".";
-import { auth } from "../auth";
+import type { Repository } from "typeorm";
+import { authSeeder } from "../auth";
 import type { Admin } from "./entities/admin";
 import type { Customer } from "./entities/customer";
 import type { Landlord } from "./entities/landlord";
 import type { User } from "./entities/user";
+import { db } from ".";
 
 export async function seed(): Promise<void> {
-  if (!dataSource.isInitialized) {
-    await dataSource.initialize();
-  }
-
   const { userRepo, adminRepo, customerRepo, landlordRepo, propertyRepo } = db;
 
   // default admin
-  const adminUser = await ensureUser(userRepo, {
-    firstName: "Mike",
-    lastName: "Oxmall",
-    email: "admin@staycraft.ie",
-    phoneNumber: "0871111111",
-    password: "password",
-  });
+  const adminUser = await addUser(
+    userRepo,
+    {
+      firstName: "Mike",
+      lastName: "Oxmall",
+      email: "admin@staycraft.ie",
+      phoneNumber: "0871111111",
+    },
+    "password",
+  );
 
-  await ensureAdmin(adminRepo, adminUser.id);
+  await addAdmin(adminRepo, adminUser.id);
 
   // default landlord for seeded properties
-  const landlordUser = await ensureUser(userRepo, {
-    firstName: "Thomas",
-    lastName: "Edison",
-    email: "landlord@staycraft.ie",
-    phoneNumber: "0870000000",
-    password: "password",
-  });
+  const landlordUser = await addUser(
+    userRepo,
+    {
+      firstName: "Thomas",
+      lastName: "Edison",
+      email: "landlord@staycraft.ie",
+      phoneNumber: "0870000000",
+    },
+    "password",
+  );
 
-  await ensureLandlord(landlordRepo, landlordUser.id);
+  await addLandlord(landlordRepo, landlordUser.id);
 
   // customers
   const customers = [
+    {
+      email: "customer@staycraft.ie",
+      phoneNumber: "0870870870",
+      firstName: "Cus",
+      lastName: "Tomer",
+    },
     {
       email: "JohnDoe@email.com",
       phoneNumber: "0894791234",
@@ -76,15 +85,18 @@ export async function seed(): Promise<void> {
   ];
 
   for (const customer of customers) {
-    const user = await ensureUser(userRepo, {
-      firstName: customer.firstName,
-      lastName: customer.lastName,
-      email: customer.email,
-      phoneNumber: customer.phoneNumber,
-      password: "password",
-    });
+    const user = await addUser(
+      userRepo,
+      {
+        firstName: customer.firstName,
+        lastName: customer.lastName,
+        email: customer.email,
+        phoneNumber: customer.phoneNumber,
+      },
+      "password",
+    );
 
-    await ensureCustomer(customerRepo, user.id);
+    await addCustomer(customerRepo, user.id);
   }
 
   // properties
@@ -192,17 +204,21 @@ export async function seed(): Promise<void> {
 }
 
 type UserInput = {
+  email: string;
   firstName: string;
   lastName: string;
-  email: string;
   phoneNumber: string;
-  password: string;
 };
 
-async function ensureUser(
-  userRepo: ReturnType<typeof dataSource.getRepository<User>>,
+async function addUser(
+  userRepo: Repository<User>,
   input: UserInput,
+  password: string,
 ) {
+  // Better Auth stores emails in lowercase, which breaks the
+  // 'where' check if we don't do it ourselves
+  input.email = input.email.toLocaleLowerCase();
+
   const existingUser = await userRepo.findOne({
     where: { email: input.email },
   });
@@ -211,13 +227,14 @@ async function ensureUser(
     return existingUser;
   }
 
-  const result = await auth.api.signUpEmail({
+  const result = await authSeeder.api.signUpEmail({
     body: {
       name: `${input.firstName} ${input.lastName}`,
       email: input.email,
-      password: input.password,
       firstName: input.firstName,
       lastName: input.lastName,
+      phoneNumber: input.phoneNumber,
+      password: password,
     },
   });
 
@@ -226,10 +243,7 @@ async function ensureUser(
   });
 }
 
-async function ensureAdmin(
-  adminRepo: ReturnType<typeof dataSource.getRepository<Admin>>,
-  userId: string,
-) {
+async function addAdmin(adminRepo: Repository<Admin>, userId: string) {
   const existingAdmin = await adminRepo.findOne({
     where: { userId },
   });
@@ -238,17 +252,12 @@ async function ensureAdmin(
     return existingAdmin;
   }
 
-  const admin = adminRepo.create({
+  return await adminRepo.save({
     userId,
   });
-
-  return await adminRepo.save(admin);
 }
 
-async function ensureCustomer(
-  customerRepo: ReturnType<typeof dataSource.getRepository<Customer>>,
-  userId: string,
-) {
+async function addCustomer(customerRepo: Repository<Customer>, userId: string) {
   const existingCustomer = await customerRepo.findOne({
     where: { userId },
   });
@@ -257,17 +266,12 @@ async function ensureCustomer(
     return existingCustomer;
   }
 
-  const customer = customerRepo.create({
+  return await customerRepo.save({
     userId,
   });
-
-  return await customerRepo.save(customer);
 }
 
-async function ensureLandlord(
-  landlordRepo: ReturnType<typeof dataSource.getRepository<Landlord>>,
-  userId: string,
-) {
+async function addLandlord(landlordRepo: Repository<Landlord>, userId: string) {
   const existingLandlord = await landlordRepo.findOne({
     where: { userId },
   });
@@ -276,10 +280,8 @@ async function ensureLandlord(
     return existingLandlord;
   }
 
-  const landlord = landlordRepo.create({
+  return await landlordRepo.save({
     userId,
     incomeShare: 0.7,
   });
-
-  return await landlordRepo.save(landlord);
 }
