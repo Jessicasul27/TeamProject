@@ -1,9 +1,8 @@
-import { schemaRegister } from "./schema";
+import { registerAdapter } from "./schema";
 import { auth } from "$lib/server/auth";
 import { db } from "$lib/server/db";
 import { fail, redirect } from "@sveltejs/kit";
 import { superValidate } from "sveltekit-superforms";
-import { zod4 } from "sveltekit-superforms/adapters";
 import type { Actions, PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async ({ locals }) => {
@@ -12,13 +11,13 @@ export const load: PageServerLoad = async ({ locals }) => {
   }
 
   return {
-    form: await superValidate(zod4(schemaRegister)),
+    form: await superValidate(registerAdapter),
   };
 };
 
 export const actions: Actions = {
   default: async ({ request }) => {
-    const form = await superValidate(request, zod4(schemaRegister));
+    const form = await superValidate(request, registerAdapter);
     if (!form.valid) {
       return fail(400, { form });
     }
@@ -31,6 +30,7 @@ export const actions: Actions = {
         name: `${form.data.firstName} ${form.data.lastName}`,
         firstName: form.data.firstName,
         lastName: form.data.lastName,
+        phoneNumber: form.data.phoneNumber,
       },
     });
 

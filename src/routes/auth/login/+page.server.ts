@@ -1,7 +1,6 @@
-import { schemaLogin } from "./schema";
+import { loginAdapter } from "./schema";
 import { auth } from "$lib/server/auth";
 import { fail, redirect } from "@sveltejs/kit";
-import { zod4 } from "sveltekit-superforms/adapters";
 import { superValidate } from "sveltekit-superforms/server";
 import type { Actions, PageServerLoad } from "./$types";
 
@@ -11,13 +10,13 @@ export const load: PageServerLoad = async ({ locals }) => {
   }
 
   return {
-    form: await superValidate(zod4(schemaLogin)),
+    form: await superValidate(loginAdapter),
   };
 };
 
 export const actions: Actions = {
   default: async ({ request }) => {
-    const form = await superValidate(request, zod4(schemaLogin));
+    const form = await superValidate(request, loginAdapter);
     if (!form.valid) {
       return fail(400, { form });
     }

@@ -1,7 +1,7 @@
 import { z } from "zod";
+import { zod4, zod4Client } from "sveltekit-superforms/adapters";
 
-// prettier-ignore
-export const schemaRegister = z
+export const registerSchema = z
   .object({
     firstName: z
       .string()
@@ -14,6 +14,12 @@ export const schemaRegister = z
       .trim()
       .min(1, "Last name is required.")
       .max(64, "Last name must be at most 64 characters."),
+
+    phoneNumber: z
+      .string()
+      .trim()
+      .min(1, "Phone number is required.")
+      .regex(/^\+?[0-9\s\-()]{7,20}$/, "Enter a valid phone number."),
 
     email: z.email().trim().min(1, "Email is required."),
 
@@ -31,3 +37,6 @@ export const schemaRegister = z
     path: ["confirmPassword"],
     message: "Passwords do not match.",
   });
+
+export const registerAdapter = zod4(registerSchema);
+export const registerClientAdapter = zod4Client(registerSchema);

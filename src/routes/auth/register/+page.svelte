@@ -1,12 +1,11 @@
 <script lang="ts">
   import { superForm } from "sveltekit-superforms";
-  import { zod4Client } from "sveltekit-superforms/adapters";
-  import { schemaRegister } from "./schema";
+  import { registerClientAdapter } from "./schema";
   import { resolve } from "$app/paths";
 
   const { data } = $props();
   const { form, errors, enhance } = superForm(data.form, {
-    validators: zod4Client(schemaRegister),
+    validators: registerClientAdapter,
     validationMethod: "onblur",
   });
 </script>
@@ -84,9 +83,7 @@
           class="input input-bordered w-full" >
 
         {#if $errors.firstName}
-          <p id="firstName-error" class="mt-1 text-sm text-error">
-            {$errors.firstName[0]}
-          </p>
+          <p class="mt-1 text-sm text-error">{$errors.firstName[0]}</p>
         {/if}
       </div>
 
@@ -102,9 +99,7 @@
           class="input input-bordered w-full" >
 
         {#if $errors.lastName}
-          <p id="lastName-error" class="mt-1 text-sm text-error">
-            {$errors.lastName[0]}
-          </p>
+          <p class="mt-1 text-sm text-error">{$errors.lastName[0]}</p>
         {/if}
       </div>
 
@@ -122,9 +117,25 @@
           class="input input-bordered w-full" >
 
         {#if $errors.email}
-          <p id="email-error" class="mt-1 text-sm text-error">
-            {$errors.email[0]}
-          </p>
+          <p class="mt-1 text-sm text-error">{$errors.email[0]}</p>
+        {/if}
+      </div>
+
+      <div class="form-control w-full">
+        <label for="phone" class="label">
+          <span class="label-text font-medium">Phone number</span>
+        </label>
+
+        <input
+          bind:value={$form.email}
+          id="phone"
+          name="phone"
+          type="text"
+          autocomplete="mobile tel"
+          class="input input-bordered w-full" >
+
+        {#if $errors.phoneNumber}
+          <p class="mt-1 text-sm text-error">{$errors.phoneNumber[0]}</p>
         {/if}
       </div>
 
@@ -143,9 +154,7 @@
             class="input input-bordered w-full" >
 
           {#if $errors.password}
-            <p id="password-error" class="mt-1 text-sm text-error">
-              {$errors.password[0]}
-            </p>
+            <p class="mt-1 text-sm text-error">{$errors.password[0]}</p>
           {/if}
         </div>
 
@@ -163,9 +172,7 @@
             class="input input-bordered w-full" >
 
           {#if $errors.confirmPassword}
-            <p id="confirmPassword-error" class="mt-1 text-sm text-error">
-              {$errors.confirmPassword[0]}
-            </p>
+            <p class="mt-1 text-sm text-error">{$errors.confirmPassword[0]}</p>
           {/if}
         </div>
       </div>

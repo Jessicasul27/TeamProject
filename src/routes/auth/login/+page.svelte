@@ -1,13 +1,12 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
-  import { schemaLogin } from "./schema";
-  import { zod4Client } from "sveltekit-superforms/adapters";
+  import { loginClientAdapter } from "./schema";
   import { superForm } from "sveltekit-superforms";
   import { invalidate } from "$app/navigation";
 
   const { data } = $props();
-  const { form, errors, constraints, message, enhance } = superForm(data.form, {
-    validators: zod4Client(schemaLogin),
+  const { form, errors, constraints, message } = superForm(data.form, {
+    validators: loginClientAdapter,
     validationMethod: "onblur",
     onResult: async () => {
       await invalidate("auth:session");
