@@ -7,8 +7,8 @@
 ## Run
 
 ```shell
-# install npm dependencies
-npm i
+# install npm dependencies (--force is required)
+npm i --force
 
 # run the app; go to http://localhost:5173 on your browser to see it
 npm run dev
@@ -30,6 +30,6 @@ npm run dev
 Currently, the website isn't fully working yet but you can goof around with it.
 
 Users for testing:
-- Customer: `hello@world.com` `password`
+- Customer: `customer@staycraft.ie` `password`
 - Landlord: `landlord@staycraft.ie` `password`
 - Admin: `admin@staycraft.ie` `password`
