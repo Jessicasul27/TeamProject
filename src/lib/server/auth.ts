@@ -1,9 +1,9 @@
 import { getRequestEvent } from "$app/server";
-import { betterAuth } from "better-auth";
+import { betterAuth, type BetterAuthOptions } from "better-auth";
 import { sveltekitCookies } from "better-auth/svelte-kit";
 import Database from "better-sqlite3";
 
-export const auth = betterAuth({
+const base = {
   database: new Database("app.db"),
   secret: "p83i04MzbSw1yBI8CRriQlHW4k3AtNPn",
   baseURL: "http://localhost:5173",
@@ -29,6 +29,10 @@ export const auth = betterAuth({
         type: "string",
         required: true,
       },
+      phoneNumber: {
+        type: "string",
+        required: true,
+      },
     },
   },
 
@@ -43,8 +47,16 @@ export const auth = betterAuth({
   verification: {
     modelName: "verifications",
   },
+} satisfies BetterAuthOptions;
 
+export const auth = betterAuth({
+  ...base,
   plugins: [sveltekitCookies(getRequestEvent)],
+});
+
+export const authSeeder = betterAuth({
+  ...base,
+  plugins: [],
 });
 
 export type BetterAuthSession = typeof auth.$Infer.Session;

@@ -13,7 +13,7 @@ export const dataSource = new DataSource({
   database: "app.db",
   synchronize: true,
   logging: false,
-  entities: [User, Admin, Customer, Landlord, Property, PropertyImage, Booking],
+  entities: [Admin, Booking, Customer, Landlord, Property, PropertyImage, User],
 });
 
 export const db = {

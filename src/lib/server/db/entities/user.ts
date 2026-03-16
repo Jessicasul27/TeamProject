@@ -32,6 +32,9 @@ export class User {
   @Column({ type: "text" })
   lastName!: string;
 
+  @Column({ type: "text" })
+  phoneNumber!: string;
+
   @Column({ type: "datetime" })
   createdAt!: Date;
 
