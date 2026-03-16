@@ -7,11 +7,7 @@
   <p class="text-center text-gray-600">How can we assist you?</p>
 
   <div class="flex flex-col gap-4 w-full max-w-md">
-    <a href=# class="btn btn-primary btn-block">
-      View FAQs
-    </a>
-    <a href=# class="btn btn-secondary btn-block">
-      Contact Support
-    </a>
+    <a href="#" class="btn btn-primary btn-block"> View FAQs </a>
+    <a href="#" class="btn btn-secondary btn-block"> Contact Support </a>
   </div>
 </div>

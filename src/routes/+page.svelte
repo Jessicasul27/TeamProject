@@ -34,21 +34,19 @@
 <svelte:head><title>Staycraft</title></svelte:head>
 
 <div class="container mx-auto py-6">
-  {#each groups as [type, properties]}
+  {#each groups as [ type, properties ]}
     <section class="mb-10">
       <h2 class="text-2xl font-bold text-primary mb-4">{type}s</h2>
 
       <div class="grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-6">
         {#each properties as property}
           <article
-            class="card border border-base-300 bg-base-100 shadow-md transition-all duration-200 hover:scale-101 hover:shadow-xl"
-          >
+            class="card border border-base-300 bg-base-100 shadow-md transition-all duration-200 hover:scale-101 hover:shadow-xl">
             <figure class="relative aspect-4/3 overflow-hidden bg-base-200">
               <img
                 class="h-full w-full object-cover"
                 src={property.displayImage}
-                alt={property.title}
-              />
+                alt={property.title} >
 
               <div class="absolute top-3 right-3">
                 <div class="badge badge-info badge-lg font-semibold text-white">
@@ -70,8 +68,7 @@
               <div class="card-actions mt-2">
                 <a
                   href={resolve(`/properties/${property.id}`)}
-                  class="btn btn-neutral btn-sm w-full"
-                >
+                  class="btn btn-neutral btn-sm w-full">
                   View Details
                 </a>
               </div>

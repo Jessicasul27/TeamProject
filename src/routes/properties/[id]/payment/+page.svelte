@@ -76,7 +76,7 @@
             maxlength="19"
             inputmode="numeric"
             value={form?.cardNumber ?? ""}
-            on:input={formatCard}
+            oninput={formatCard}
             required >
         </div>
 
@@ -90,7 +90,7 @@
               maxlength="5"
               inputmode="numeric"
               value={form?.expiry ?? ""}
-              on:input={formatExpiry}
+              oninput={formatExpiry}
               required >
           </div>
 
@@ -103,7 +103,7 @@
               maxlength="4"
               inputmode="numeric"
               value={form?.cvc ?? ""}
-              on:input={formatCvc}
+              oninput={formatCvc}
               required >
           </div>
         </div>
