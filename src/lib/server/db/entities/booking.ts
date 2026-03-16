@@ -23,8 +23,8 @@ export class Booking {
   @Column({ type: "decimal", precision: 18, scale: 2 })
   bookingPrice!: number;
 
-  @Column({ type: "integer" })
-  propertyId!: number;
+  @Column({ type: "text" })
+  propertyId!: string;
 
   @ManyToOne(
     () => Property,
