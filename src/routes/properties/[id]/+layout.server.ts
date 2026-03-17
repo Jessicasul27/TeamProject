@@ -7,7 +7,10 @@ export const load: LayoutServerLoad = async ({ params }) => {
     where: { id: params.id },
     relations: {
       images: true,
-      landlord: true,
+      bookings: true,
+      reviews: {
+        user: true,
+      },
     },
   });
 
@@ -15,7 +18,17 @@ export const load: LayoutServerLoad = async ({ params }) => {
     throw error(404, `Property with id '${params.id}' was not found.`);
   }
 
+  const { bookings, ...rest } = structuredClone(property);
+
   return {
-    property: structuredClone(property),
+    property: {
+      ...rest,
+      bookings: bookings.map(({ checkInDate, checkOutDate }) => {
+        return {
+          checkInDate,
+          checkOutDate,
+        };
+      }),
+    },
   };
 };

@@ -1,63 +1,33 @@
-import { db } from "$lib/server/db";
-import { redirect, fail } from "@sveltejs/kit";
-import type { Actions, PageServerLoad } from "./$types";
-
-async function requireCustomer(user: App.Locals["user"]) {
-  if (!user) {
-    throw redirect(303, "/auth/login");
-  }
-
-  const customer = await db.customerRepo.findOne({
-    where: { userId: user.id },
-  });
-
-  if (!customer) {
-    throw redirect(303, "/auth/login");
-  }
-
-  return user;
-}
-
-export const load: PageServerLoad = async ({ params }) => {
-  const property = await db.propertyRepo.findOneOrFail({
-    where: { id: params.id },
-    relations: {
-      images: true,
-      landlord: true,
-    },
-  });
-
-  return {
-    property: structuredClone(property),
-  };
-};
+import { redirect, error } from "@sveltejs/kit";
+import type { Actions } from "./$types";
 
 export const actions: Actions = {
-  prepare: async ({ request, params, locals }) => {
-    await requireCustomer(locals.user);
+  pay: async ({ request, params, locals }) => {
+    if (!locals.user) {
+      throw error(401, "You must be logged in to do this.");
+    }
 
     const form = await request.formData();
-    const checkIn = form.get("checkIn")?.toString() ?? "";
-    const checkOut = form.get("checkOut")?.toString() ?? "";
+
+    const checkIn = Number(form.get("checkIn") ?? 0);
+    const checkOut = Number(form.get("checkOut") ?? 0);
 
     if (!checkIn || !checkOut) {
-      return fail(400, {
-        bookingError: "Please select both check-in and check-out dates.",
-      });
+      throw error(400, "Both check-in and check-out dates must be selected.");
     }
 
     const checkInDate = new Date(checkIn);
     const checkOutDate = new Date(checkOut);
 
     if (checkOutDate <= checkInDate) {
-      return fail(400, {
-        bookingError: "Check-out date must be after check-in date.",
-      });
+      return error(400, "Check-out date must be after check-in date.");
     }
 
-    throw redirect(
-      303,
-      `/properties/${params.id}/payment?checkIn=${encodeURIComponent(checkIn)}&checkOut=${encodeURIComponent(checkOut)}`,
-    );
+    const search = new URLSearchParams({
+      checkIn: checkIn.toString(),
+      checkOut: checkOut.toString(),
+    });
+
+    throw redirect(303, `/properties/${params.id}/payment?${search}`);
   },
 };

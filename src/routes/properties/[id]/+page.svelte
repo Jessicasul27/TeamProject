@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ChevronLeft, ChevronRight } from "lucide-svelte";
+  import { ChevronLeft, ChevronRight, Star } from "lucide-svelte";
   import { SvelteDate } from "svelte/reactivity";
 
   type BookingDay = {
@@ -8,6 +8,15 @@
     available: boolean;
   };
 
+  function utcDay(date: Date) {
+    return Date.UTC(
+      date.getUTCFullYear(),
+      date.getUTCMonth(),
+      date.getUTCDate(),
+    );
+  }
+
+  const MS_PER_DAY = 86_400_000;
   const DAYS_OF_THE_WEEK = ["M", "T", "W", "T", "F", "S", "S"];
 
   const { data, form } = $props();
@@ -46,15 +55,12 @@
       while (days.length < 7 && day < daysInMonth) {
         day += 1;
 
-        const dayDate = new Date(year, month, day);
+        const dayDate = new Date(Date.UTC(year, month, day));
 
         days.push({
           day,
           date: dayDate,
-          available:
-            dayDate.getTime() < Date.now()
-              ? false
-              : Boolean(Math.round(Math.random())),
+          available: isDateAvailable(dayDate),
         });
       }
 
@@ -94,7 +100,7 @@
       checkOut.getDate(),
     );
 
-    return Math.round((utcCheckOut - utcCheckIn) / 86_400_000);
+    return Math.round((utcCheckOut - utcCheckIn) / MS_PER_DAY);
   });
 
   const galleryImages = $derived.by(() => {
@@ -104,7 +110,7 @@
       images.push({
         id: "",
         imageUrl: `https://loremflickr.com/800/600/house,apartment,hotel?random=${~~(Math.random() * 100000)}`,
-        property,
+        property: null!,
         propertyId: property.id,
       });
     }
@@ -144,6 +150,43 @@
 
     return day.date >= checkIn && day.date <= checkOut;
   }
+
+  function isDateAvailable(date: Date) {
+    const day = utcDay(date);
+    const today = utcDay(new Date());
+
+    function isDateUnbooked(day: number) {
+      return (
+        day > today &&
+        property.bookings.every(({ checkInDate, checkOutDate }) => {
+          return day < utcDay(checkInDate) || day >= utcDay(checkOutDate);
+        })
+      );
+    }
+
+    function canStartBookingOn(day: number) {
+      return isDateUnbooked(day) && isDateUnbooked(day + MS_PER_DAY);
+    }
+
+    if (!checkIn || checkOut) {
+      return canStartBookingOn(day);
+    }
+
+    const checkInDay = utcDay(checkIn);
+
+    if (day <= checkInDay) {
+      return false;
+    }
+
+    // every day from checkIn + 1 up to selected date must be unbooked
+    for (let d = checkInDay + MS_PER_DAY; d <= day; d += MS_PER_DAY) {
+      if (!isDateUnbooked(d)) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 </script>
 
 <div class="flex-1 flex flex-col py-20 mx-40">
@@ -155,31 +198,55 @@
     </span>
   </div>
 
-  <div class="grid grid-cols-2 gap-2">
+  <div class="grid grid-cols-4 grid-rows-2 gap-2 aspect-2/1">
     <img
-      class="rounded-2xl h-120 object-center object-cover"
+      class="h-full w-full row-span-2 col-span-2 rounded-2xl object-center object-cover"
       src={property.displayImage}
       alt={property.title} >
-    <div class="grid grid-cols-2 grid-rows-2 gap-2 items-stretch">
-      {#each galleryImages as image}
-        <img
-          class="rounded-2xl object-cover object-center"
-          src={image.imageUrl}
-          alt={property.title} >
-      {/each}
-    </div>
+
+    {#each galleryImages as image}
+      <img
+        class="h-full w-full rounded-2xl object-cover object-center"
+        src={image.imageUrl}
+        alt={property.title} >
+    {/each}
   </div>
 
   <div class="flex-1 flex justify-between mt-8">
-    <div class="flex flex-col ">
+    <div class="flex-1 flex flex-col">
       <p class="text-2xl font-semibold">
         {property.type}
         in {property.location}
       </p>
-      <p>{property.description}</p>
+      <p class="mb-10">{property.description}</p>
+      <span class="text-2xl font-semibold">
+        {property.reviews.length === 0 ? "No" : property.reviews.length}
+        Reviews
+      </span>
+      <div class="grid grid-cols-2 gap-8 gap-x-12 mt-6 pr-8">
+        {#each property.reviews.slice(0, 10) as review}
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-4">
+              <img
+                class="w-14 h-14 rounded-full"
+                src={review.user.image}
+                alt={review.user.name} >
+              <div class="flex flex-col justify-center mb-1">
+                <span class="font-semibold">{review.user.name}</span>
+                <div class="flex items-center gap-0.5">
+                  {#each Array.from({ length: review.rating }) as _}
+                    <Star class="w-3 h-3 fill-base-content" />
+                  {/each}
+                </div>
+              </div>
+            </div>
+            <p class="text-sm">{review.comment}</p>
+          </div>
+        {/each}
+      </div>
     </div>
     <div
-      class="flex flex-col gap-8 border border-base-300 rounded-2xl bg-base-200/50 select-none py-4 px-6 w-fit shadow-xl">
+      class="flex flex-col gap-8 border border-base-300 rounded-2xl bg-base-200/50 select-none py-4 px-6 h-fit w-fit shadow-xl">
       <div class="flex flex-col gap-1">
         {#if !checkIn || !checkOut}
           <span class="text-2xl font-semibold">Select dates</span>
@@ -220,6 +287,7 @@
           <ChevronRight class="rounded-full hover:bg-base-300" />
         </button>
       </div>
+
       <div class="grid grid-cols-7 text-sm gap-y-0.5">
         {#each DAYS_OF_THE_WEEK as weekday}
           <div class="flex items-center justify-center w-10 h-10">
@@ -247,7 +315,7 @@
                 type="button"
                 class={`w-[95%] h-[95%] rounded-full ${
                   bookingDay === null ? "" : 
-                  bookingDay.available ? "cursor-pointer hover:border" : "text-base-content/50 border-base-content/50"
+                  bookingDay.available ? "cursor-pointer hover:border" : "text-base-content/30 border-base-content/50"
                 }`}
                 class:bg-black={bookingDay 
                 && ((checkIn && checkIn.getTime() === bookingDay.date.getTime()) 
@@ -272,11 +340,25 @@
           {/each}
         {/each}
       </div>
-      <div>
-        <form class="contents">
-          <button type="submit" class="btn btn-success w-full">Book now</button>
-        </form>
-      </div>
+
+      <form method="POST" action="?/pay" class="contents">
+        <input
+          type="hidden"
+          name="checkIn"
+          value={checkIn ? checkIn.getTime() : 0} >
+
+        <input
+          type="hidden"
+          name="checkOut"
+          value={checkOut ? checkOut.getTime() : 0} >
+
+        <button
+          type="submit"
+          class="btn btn-success w-full"
+          disabled={!checkIn || !checkOut}>
+          Book now
+        </button>
+      </form>
     </div>
   </div>
 </div>
