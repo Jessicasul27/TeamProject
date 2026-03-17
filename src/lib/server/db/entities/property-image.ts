@@ -19,6 +19,7 @@ export class PropertyImage {
   @Column({ type: "text" })
   propertyId!: string;
 
+  // many images may belong to one property
   @ManyToOne(
     () => Property,
     (property) => property.images,

@@ -11,6 +11,7 @@ import {
 import { Booking } from "./booking";
 import { Landlord } from "./landlord";
 import { PropertyImage } from "./property-image";
+import { Review } from "./review";
 
 @Entity({ name: "properties" })
 export class Property {
@@ -47,6 +48,7 @@ export class Property {
   @Column({ type: "text" })
   landlordUserId!: string;
 
+  // many properties may belong to one landlord
   @ManyToOne(
     () => Landlord,
     (landlord) => landlord.properties,
@@ -55,15 +57,24 @@ export class Property {
   @JoinColumn({ name: "landlordUserId" })
   landlord!: Relation<Landlord>;
 
+  // one property may have many images
   @OneToMany(
     () => PropertyImage,
     (image) => image.property,
   )
   images!: Relation<PropertyImage[]>;
 
+  // one property may have many bookings
   @OneToMany(
     () => Booking,
     (booking) => booking.property,
   )
   bookings!: Relation<Booking[]>;
+
+  // one property may have many reviews
+  @OneToMany(
+    () => Review,
+    (review) => review.property,
+  )
+  reviews!: Relation<Review[]>;
 }

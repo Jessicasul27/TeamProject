@@ -15,6 +15,10 @@ export class Landlord {
   @PrimaryColumn("text")
   userId!: string;
 
+  @Column({ type: "decimal", precision: 18, scale: 2 })
+  incomeShare!: number;
+
+  // one landlord belongs to one user
   @OneToOne(
     () => User,
     (user) => user.landlord,
@@ -23,9 +27,7 @@ export class Landlord {
   @JoinColumn({ name: "userId" })
   user!: Relation<User>;
 
-  @Column({ type: "decimal", precision: 18, scale: 2 })
-  incomeShare!: number;
-
+  // one landlord may have many properties
   @OneToMany(
     () => Property,
     (property) => property.landlord,

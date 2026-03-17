@@ -1,18 +1,24 @@
 import {
   Column,
+  CreateDateColumn,
   Entity,
   JoinColumn,
   ManyToOne,
+  OneToOne,
   PrimaryGeneratedColumn,
   type Relation,
 } from "typeorm";
 import { Customer } from "./customer";
 import { Property } from "./property";
+import { Review } from "./review";
 
 @Entity({ name: "bookings" })
 export class Booking {
   @PrimaryGeneratedColumn("uuid")
   id!: string;
+
+  @CreateDateColumn()
+  bookedAt!: Date;
 
   @Column({ type: "datetime" })
   checkInDate!: Date;
@@ -26,6 +32,10 @@ export class Booking {
   @Column({ type: "text" })
   propertyId!: string;
 
+  @Column({ type: "text" })
+  customerUserId!: string;
+
+  // many bookings may belong to one property
   @ManyToOne(
     () => Property,
     (property) => property.bookings,
@@ -34,9 +44,7 @@ export class Booking {
   @JoinColumn({ name: "propertyId", referencedColumnName: "id" })
   property!: Relation<Property>;
 
-  @Column({ type: "text" })
-  customerUserId!: string;
-
+  // many bookings may belong to one customer
   @ManyToOne(
     () => Customer,
     (customer) => customer.bookings,
@@ -44,4 +52,11 @@ export class Booking {
   )
   @JoinColumn({ name: "customerUserId", referencedColumnName: "userId" })
   customer!: Relation<Customer>;
+
+  // one booking may have one review
+  @OneToOne(
+    () => Review,
+    (review) => review.booking,
+  )
+  review!: Relation<Review>;
 }

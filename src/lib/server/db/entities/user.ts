@@ -1,8 +1,10 @@
 import {
   Column,
+  CreateDateColumn,
   Entity,
   OneToOne,
   PrimaryColumn,
+  UpdateDateColumn,
   type Relation,
 } from "typeorm";
 import { Admin } from "./admin";
@@ -35,24 +37,27 @@ export class User {
   @Column({ type: "text" })
   phoneNumber!: string;
 
-  @Column({ type: "datetime" })
+  @CreateDateColumn()
   createdAt!: Date;
 
-  @Column({ type: "datetime" })
+  @UpdateDateColumn()
   updatedAt!: Date;
 
+  // one user may have one customer profile
   @OneToOne(
     () => Customer,
     (customer) => customer.user,
   )
   customer!: Relation<Customer> | null;
 
+  // one user may have one landlord profile
   @OneToOne(
     () => Landlord,
     (landlord) => landlord.user,
   )
   landlord!: Relation<Landlord> | null;
 
+  // one user may have one admin profile
   @OneToOne(
     () => Admin,
     (admin) => admin.user,

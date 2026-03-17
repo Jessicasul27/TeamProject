@@ -12,6 +12,7 @@ export class Admin {
   @PrimaryColumn("text")
   userId!: string;
 
+  // one admin belongs to one user
   @OneToOne(
     () => User,
     (user) => user.admin,
