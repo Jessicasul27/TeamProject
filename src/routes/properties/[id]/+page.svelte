@@ -147,7 +147,14 @@
 </script>
 
 <div class="flex-1 flex flex-col py-20 mx-40">
-  <div class="font-bold text-4xl mb-4">{property.title}</div>
+  <div class="flex items-center justify-between mb-4">
+    <span class="font-bold text-4xl text-primary">{property.title}</span>
+    <span class="font-bold text-3xl text-primary/80">
+      &euro;{property.pricePerNight}
+      per night
+    </span>
+  </div>
+
   <div class="grid grid-cols-2 gap-2">
     <img
       class="rounded-2xl h-120 object-center object-cover"
@@ -163,7 +170,7 @@
     </div>
   </div>
 
-  <div class="flex-1 flex justify-between mt-4">
+  <div class="flex-1 flex justify-between mt-8">
     <div class="flex flex-col ">
       <p class="text-2xl font-semibold">
         {property.type}
@@ -172,7 +179,7 @@
       <p>{property.description}</p>
     </div>
     <div
-      class="flex flex-col gap-8 border rounded-2xl bg-base-200/50 select-none py-4 px-6 w-fit shadow-xl">
+      class="flex flex-col gap-8 border border-base-300 rounded-2xl bg-base-200/50 select-none py-4 px-6 w-fit shadow-xl">
       <div class="flex flex-col gap-1">
         {#if !checkIn || !checkOut}
           <span class="text-2xl font-semibold">Select dates</span>
