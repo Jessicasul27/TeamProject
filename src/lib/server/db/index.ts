@@ -7,13 +7,23 @@ import { Landlord } from "./entities/landlord";
 import { Property } from "./entities/property";
 import { PropertyImage } from "./entities/property-image";
 import { User } from "./entities/user";
+import { Review } from "./entities/review";
 
 export const dataSource = new DataSource({
   type: "better-sqlite3",
   database: "app.db",
   synchronize: true,
   logging: false,
-  entities: [Admin, Booking, Customer, Landlord, Property, PropertyImage, User],
+  entities: [
+    Admin,
+    Booking,
+    Customer,
+    Landlord,
+    Property,
+    PropertyImage,
+    Review,
+    User,
+  ],
 });
 
 export const db = {
@@ -39,6 +49,10 @@ export const db = {
 
   get propertyRepo(): Repository<Property> {
     return dataSource.getRepository(Property);
+  },
+
+  get reviewRepo(): Repository<Review> {
+    return dataSource.getRepository(Review);
   },
 
   get userRepo(): Repository<User> {
