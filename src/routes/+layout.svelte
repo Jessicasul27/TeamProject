@@ -20,7 +20,7 @@
 <div class="flex flex-col min-h-screen">
   <Navbar bind:search {user} {home} />
 
-  <main class="flex flex-1 items-center justify-center">
+  <main class="flex flex-1 items-center justify-center mx-[12vmax]">
     {@render children()}
   </main>
 
