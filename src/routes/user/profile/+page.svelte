@@ -142,10 +142,7 @@
       <div class="avatar justify-center">
         <div class="w-80 rounded-full">
           <img
-            src={"https://placehold.co/100x100?text={}".replace(
-              "{}",
-              user.firstName.charAt(0) + user.lastName.charAt(0),
-            )}
+            src={user.image ?? `https://placehold.co/100x100?text=${user.firstName.charAt(0)}${user.lastName.charAt(0)}`}
             alt="User Avatar" >
         </div>
       </div>
