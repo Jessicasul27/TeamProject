@@ -50,42 +50,49 @@ const CUSTOMERS: UserInput[] = [
     phoneNumber: "0870870870",
     firstName: "Cus",
     lastName: "Tomer",
+    image: "/images/avatars/avatar-01.png",
   },
   {
     email: "JohnDoe@email.com",
     phoneNumber: "0894791234",
     firstName: "John",
     lastName: "Doe",
+    image: "/images/avatars/avatar-02.png",
   },
   {
     email: "JoshBigWilly@email.com",
     phoneNumber: "0877778990",
     firstName: "Josh",
     lastName: "Wilis",
+    image: "/images/avatars/avatar-03.png",
   },
   {
     email: "Charlton.United@email.com",
     phoneNumber: "0871234567",
     firstName: "Booby",
     lastName: "Charlton",
+    image: "/images/avatars/avatar-04.png",
   },
   {
     email: "Sam_S2005@email.com",
     phoneNumber: "0870976543",
     firstName: "Sam",
     lastName: "Smith",
+    image: "/images/avatars/avatar-05.png",
   },
   {
     email: "MarkoPolo@email.com",
     phoneNumber: "0870998754",
     firstName: "Marko",
     lastName: "Butler",
+    image: "/images/avatars/avatar-06.png",
   },
   {
     email: "Bobby_D@email.com",
     phoneNumber: "0898008420",
     firstName: "Bob",
     lastName: "Dillion",
+    image: "/images/avatars/avatar-07.png",
   },
 ];
 
@@ -188,6 +195,7 @@ export async function seed(): Promise<void> {
       lastName: "Oxmall",
       email: "admin@staycraft.ie",
       phoneNumber: "0871111111",
+      image: "/images/avatars/avatar-09.png",
     },
     "password",
   );
@@ -201,6 +209,7 @@ export async function seed(): Promise<void> {
       lastName: "Edison",
       email: "landlord@staycraft.ie",
       phoneNumber: "0870000000",
+      image: "/images/avatars/avatar-08.png",
     },
     "password",
   );
@@ -230,6 +239,7 @@ type UserInput = {
   firstName: string;
   lastName: string;
   phoneNumber: string;
+  image: string;
 };
 
 async function addUser(input: UserInput, password: string) {
@@ -248,11 +258,8 @@ async function addUser(input: UserInput, password: string) {
   const result = await authSeeder.api.signUpEmail({
     body: {
       name: `${input.firstName} ${input.lastName}`,
-      email: input.email,
-      firstName: input.firstName,
-      lastName: input.lastName,
-      phoneNumber: input.phoneNumber,
       password: password,
+      ...input,
     },
   });
 
