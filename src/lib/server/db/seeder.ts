@@ -365,15 +365,38 @@ async function addBooking(propertyId: string, customerUserId: string) {
   });
 
   const nights = 2 + (existingBookingCountForProperty % 4);
+  const gapDays = 1 + (existingBookingCountForProperty % 3);
 
-  let checkInDate: Date;
+  const now = new Date();
+
+  const earliestCheckIn = new Date(
+    Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate(),
+      15,
+      0,
+      0,
+      0,
+    ),
+  );
+
+  if (now.getTime() >= earliestCheckIn.getTime()) {
+    earliestCheckIn.setUTCDate(earliestCheckIn.getUTCDate() + 1);
+  }
+
+  let checkInDate = new Date(earliestCheckIn);
 
   if (lastBookingForProperty) {
-    checkInDate = new Date(lastBookingForProperty.checkOutDate);
-    checkInDate.setUTCDate(checkInDate.getUTCDate() + 1); // 1 day gap
-    checkInDate.setUTCHours(15, 0, 0, 0);
-  } else {
-    checkInDate = new Date(Date.UTC(2026, 0, 31, 15, 0, 0, 0));
+    const nextAfterLastBooking = new Date(lastBookingForProperty.checkOutDate);
+    nextAfterLastBooking.setUTCDate(
+      nextAfterLastBooking.getUTCDate() + gapDays,
+    );
+    nextAfterLastBooking.setUTCHours(15, 0, 0, 0);
+
+    if (nextAfterLastBooking.getTime() > checkInDate.getTime()) {
+      checkInDate = nextAfterLastBooking;
+    }
   }
 
   const checkOutDate = new Date(checkInDate);
@@ -381,7 +404,9 @@ async function addBooking(propertyId: string, customerUserId: string) {
   checkOutDate.setUTCHours(11, 0, 0, 0);
 
   const bookedAt = new Date(checkInDate);
-  bookedAt.setUTCDate(bookedAt.getUTCDate() - 14);
+  bookedAt.setUTCDate(
+    bookedAt.getUTCDate() - (7 + (existingBookingCountForProperty % 8)),
+  );
   bookedAt.setUTCHours(10, 0, 0, 0);
 
   return await db.bookingRepo.save({
