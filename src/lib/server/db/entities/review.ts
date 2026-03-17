@@ -12,6 +12,7 @@ import {
 import { Booking } from "./booking";
 import { Customer } from "./customer";
 import { Property } from "./property";
+import { User } from "./user";
 
 @Entity({ name: "reviews" })
 @Unique(["bookingId"])
@@ -45,6 +46,14 @@ export class Review {
   )
   @JoinColumn({ name: "customerUserId" })
   customer!: Relation<Customer>;
+
+  // one user may have many reviews
+  @ManyToOne(() => User, {
+    onDelete: "CASCADE",
+    createForeignKeyConstraints: false,
+  })
+  @JoinColumn({ name: "customerUserId", referencedColumnName: "id" })
+  user!: Relation<User>;
 
   // one property may have many reviews
   @ManyToOne(
