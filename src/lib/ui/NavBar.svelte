@@ -17,9 +17,11 @@
 
 <nav
   class={`grid grid-cols-[1fr_auto_1fr] px-16 py-4 items-center text-sm text-base-content shadow-md ${home ? "h-32" : "h-20"}`}>
-  <a href={resolve("/")} class="text-3xl font-bold uppercase no-underline">
-    Staycraft
-  </a>
+  <div>
+    <a href={resolve("/")} class="text-3xl font-bold uppercase no-underline">
+      Staycraft
+    </a>
+  </div>
 
   {#if home}
     <div
