@@ -3,6 +3,7 @@
   import type { User } from "$lib/server/db/entities/user";
   import { Search } from "lucide-svelte";
   import NavDropdown from "./NavDropdown.svelte";
+  import SearchGuests from "./SearchGuests.svelte";
 
   let {
     home,
@@ -13,6 +14,8 @@
     user: User | null;
     search: string;
   } = $props();
+
+  let guestsOpen = $state(false);
 </script>
 
 <nav
@@ -46,8 +49,11 @@
 
       <div class="w-px self-stretch bg-base-300"></div>
 
+      <!-- svelte-ignore a11y_no_static_element_interactions -->
+      <!-- svelte-ignore a11y_click_events_have_key_events -->
       <div
-        class="flex w-70 cursor-pointer items-center justify-between rounded-r-full pl-8 [&:hover:not(:has(button:hover))]:bg-base-200">
+        class="relative flex w-70 cursor-pointer items-center justify-between rounded-r-full pl-8 [&:hover:not(:has(button:hover))]:bg-base-200"
+        onclick={() => guestsOpen = !guestsOpen}>
         <div class="flex flex-col py-4">
           <span class="font-semibold">Who</span>
           <span class="text-base-content/50">Add guests</span>
@@ -59,6 +65,10 @@
           aria-label="Search">
           <Search class="h-5 w-5" />
         </button>
+
+        {#if guestsOpen}
+          <SearchGuests />
+        {/if}
       </div>
     </div>
 
