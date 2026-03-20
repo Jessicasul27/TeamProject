@@ -46,7 +46,7 @@
           <img
             class="h-full w-full object-cover"
             src={property.displayImage}
-            alt={property.title}>
+            alt={property.title} >
 
           <div class="absolute top-3 right-3">
             <div class="badge badge-info badge-lg font-semibold text-white">

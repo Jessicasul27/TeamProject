@@ -22,7 +22,7 @@
 </div>
 
 <label for="a">Search by name:</label>
-<input id="a" type="text" bind:value={search}>
+<input id="a" type="text" bind:value={search} >
 
 <div class="flex flex-col gap-2">
   {#each filteredCustomers as customer}

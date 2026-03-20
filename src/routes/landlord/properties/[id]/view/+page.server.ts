@@ -8,7 +8,10 @@ export const load: PageServerLoad = async ({ locals, params }) => {
 
   const property = await db.propertyRepo.findOne({
     where: { id: params.id, landlordUserId: user.id },
-    relations: { bookings: { customer: { user: true } } }, //Bookings -> customer -> user -> firstName, lastName, email etc
+    relations: {
+      bookings: { customer: { user: true } }, //Bookings -> customer -> user -> firstName, lastName, email etc
+      reviews: { customer: { user: true } }, //Reviews -> customer -> user -> firstName, lastName, email etc
+    },
   });
 
   if (!property) throw error(404, "Property not found");
