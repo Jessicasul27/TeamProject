@@ -65,9 +65,9 @@
       <div class="card-body">
         <div class="flex items-center justify-between">
           <h2 class="card-title text-xl">Bookings</h2>
-          <span class="badge badge-outline"
-            >{property.bookings?.length ?? 0}</span
-          >
+          <span class="badge badge-outline">
+            {property.bookings?.length ?? 0}
+          </span>
         </div>
 
         {#if property.bookings?.length}
@@ -83,6 +83,7 @@
                           alt={b.customer?.user?.name ?? "Customer"} >
                       </div>
                     </div>
+
                     <div>
                       <h3 class="font-semibold">
                         {b.customer?.user?.name ?? "Unknown Name"}
@@ -90,13 +91,6 @@
                       <p class="text-sm opacity-70">
                         {b.customer?.user?.email ?? "-"}
                         | {b.customer?.user?.phoneNumber ?? "-"}
-                      </p>
-                    </div>
-
-                    <div class="text-right">
-                      <div class="badge badge-outline">€{b.bookingPrice}</div>
-                      <p class="text-xs opacity-70 mt-1">
-                        Booked {new Date(b.bookedAt).toLocaleDateString()}
                       </p>
                     </div>
                   </div>
@@ -115,10 +109,6 @@
                         {new Date(b.checkOutDate).toLocaleDateString()}
                       </div>
                     </div>
-                  </div>
-
-                  <div class="card-actions justify-end mt-3">
-                    <span class="text-xs opacity-70">Booking ID: {b.id}</span>
                   </div>
                 </div>
               </div>
