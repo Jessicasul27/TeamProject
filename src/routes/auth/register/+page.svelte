@@ -38,7 +38,7 @@
               name="role"
               type="radio"
               value="customer"
-              class="peer sr-only" >
+              class="peer sr-only">
 
             <label
               for="role-customer"
@@ -58,7 +58,7 @@
               name="role"
               type="radio"
               value="landlord"
-              class="peer sr-only" >
+              class="peer sr-only">
 
             <label
               for="role-landlord"
@@ -86,7 +86,7 @@
           bind:value={$form.firstName}
           id="firstName"
           name="firstName"
-          class="input input-bordered w-full" >
+          class="input input-bordered w-full">
 
         {#if $errors.firstName}
           <p class="mt-1 text-sm text-error">{$errors.firstName[0]}</p>
@@ -102,7 +102,7 @@
           bind:value={$form.lastName}
           id="lastName"
           name="lastName"
-          class="input input-bordered w-full" >
+          class="input input-bordered w-full">
 
         {#if $errors.lastName}
           <p class="mt-1 text-sm text-error">{$errors.lastName[0]}</p>
@@ -120,7 +120,7 @@
           name="email"
           type="email"
           autocomplete="username"
-          class="input input-bordered w-full" >
+          class="input input-bordered w-full">
 
         {#if $errors.email}
           <p class="mt-1 text-sm text-error">{$errors.email[0]}</p>
@@ -138,7 +138,7 @@
           name="phoneNumber"
           type="tel"
           autocomplete="tel"
-          class="input input-bordered w-full" >
+          class="input input-bordered w-full">
 
         {#if $errors.phoneNumber}
           <p class="mt-1 text-sm text-error">{$errors.phoneNumber[0]}</p>
@@ -157,7 +157,7 @@
             name="password"
             type="password"
             autocomplete="new-password"
-            class="input input-bordered w-full" >
+            class="input input-bordered w-full">
 
           {#if $errors.password}
             <p class="mt-1 text-sm text-error">{$errors.password[0]}</p>
@@ -175,7 +175,7 @@
             name="confirmPassword"
             type="password"
             autocomplete="new-password"
-            class="input input-bordered w-full" >
+            class="input input-bordered w-full">
 
           {#if $errors.confirmPassword}
             <p class="mt-1 text-sm text-error">{$errors.confirmPassword[0]}</p>

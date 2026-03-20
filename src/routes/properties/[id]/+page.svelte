@@ -202,13 +202,13 @@
     <img
       class="h-full w-full row-span-2 col-span-2 rounded-2xl object-center object-cover"
       src={property.displayImage}
-      alt={property.title} >
+      alt={property.title}>
 
     {#each galleryImages as image}
       <img
         class="h-full w-full rounded-2xl object-cover object-center"
         src={image.imageUrl}
-        alt={property.title} >
+        alt={property.title}>
     {/each}
   </div>
 
@@ -230,7 +230,7 @@
               <img
                 class="w-14 h-14 rounded-full"
                 src={review.user.image}
-                alt={review.user.name} >
+                alt={review.user.name}>
               <div class="flex flex-col justify-center mb-1">
                 <span class="font-semibold">{review.user.name}</span>
                 <div class="flex items-center gap-0.5">
@@ -345,12 +345,12 @@
         <input
           type="hidden"
           name="checkIn"
-          value={checkIn ? checkIn.getTime() : 0} >
+          value={checkIn ? checkIn.getTime() : 0}>
 
         <input
           type="hidden"
           name="checkOut"
-          value={checkOut ? checkOut.getTime() : 0} >
+          value={checkOut ? checkOut.getTime() : 0}>
 
         <button
           type="submit"

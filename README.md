@@ -11,9 +11,9 @@ You should remove the `app.db` file from time to time, as the seeder will not tr
 ## Run
 
 ```shell
-# install npm dependencies (--force is required)
+# install npm dependencies
 # note: you may also use Bun or other package managers to do this
-npm i --force
+npm i
 
 # run the app; go to http://localhost:5173 on your browser to see it
 npm run dev

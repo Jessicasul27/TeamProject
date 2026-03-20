@@ -42,7 +42,7 @@
           type="email"
           class="input input-bordered w-full"
           autocomplete="username"
-          {...$constraints.email} >
+          {...$constraints.email}>
 
         {#if $errors.email}
           <p id="email-error" class="label text-error text-sm">
@@ -63,7 +63,7 @@
           type="password"
           class="input input-bordered w-full"
           autocomplete="current-password"
-          {...$constraints.password} >
+          {...$constraints.password}>
 
         {#if $errors.password}
           <p id="password-error" class="label text-error text-sm">
@@ -78,7 +78,7 @@
           id="rememberMe"
           name="rememberMe"
           type="checkbox"
-          class="checkbox checkbox-sm" >
+          class="checkbox checkbox-sm">
         <span class="label-text">Remember me</span>
       </label>
 
