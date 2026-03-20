@@ -6,7 +6,7 @@
 </script>
 
 <div class="drawer lg:drawer-open">
-  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" >
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
 
   <div class="drawer-content flex flex-col py-10 px-4">
     {#if user.customer}
@@ -41,7 +41,7 @@
                 <img
                   src={booking.property.displayImage}
                   class="w-full justify-center object-cover object-center"
-                  alt="Property" >
+                  alt="Property">
                 <div
                   class="absolute flex flex-col justify-end items-start transform bg-black/50 w-full px-4 py-3 bottom-0">
                   <h2 class="text-2xl font-bold text-white">
@@ -93,7 +93,7 @@
                   <img
                     class="h-full w-full object-cover"
                     src={property.displayImage}
-                    alt={property.title} >
+                    alt={property.title}>
 
                   <div class="absolute top-3 right-3">
                     <div
@@ -157,7 +157,7 @@
         <div class="w-80 rounded-full">
           <img
             src={user.image ?? `https://placehold.co/100x100?text=${user.firstName.charAt(0)}${user.lastName.charAt(0)}`}
-            alt="User Avatar" >
+            alt="User Avatar">
         </div>
       </div>
       <div class="divider my-0"></div>
