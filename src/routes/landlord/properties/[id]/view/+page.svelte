@@ -75,23 +75,28 @@
             {#each property.bookings as b}
               <div class="card bg-base-100 shadow-sm border">
                 <div class="card-body p-4">
-                  <div class="flex items-start gap-3">
-                    <div class="avatar">
-                      <div class="w-10 rounded-full">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                      <div class="avatar rounded-full h-10">
                         <img
                           src={b.customer?.user?.image}
                           alt={b.customer?.user?.name ?? "Customer"} >
                       </div>
+
+                      <div>
+                        <h3 class="font-semibold">{b.customer.user.name}</h3>
+                        <p class="text-sm opacity-70">
+                          {b.customer?.user?.email ?? "-"}
+                          | {b.customer?.user?.phoneNumber ?? "-"}
+                        </p>
+                      </div>
                     </div>
 
-                    <div>
-                      <h3 class="font-semibold">
-                        {b.customer?.user?.name ?? "Unknown Name"}
-                      </h3>
-                      <p class="text-sm opacity-70">
-                        {b.customer?.user?.email ?? "-"}
-                        | {b.customer?.user?.phoneNumber ?? "-"}
-                      </p>
+                    <div class="text-right">
+                      <div class="badge badge-outline">€{b.bookingPrice}</div>
+                      <!-- <p class="text-xs opacity-70 mt-1">
+                        Booked {new Date(b.bookedAt).toLocaleDateString()}
+                      </p> -->
                     </div>
                   </div>
 
@@ -110,6 +115,10 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- <div class="card-actions justify-end mt-3">
+                    <span class="text-xs opacity-70">Booking ID: {b.id}</span>
+                  </div> -->
                 </div>
               </div>
             {/each}
