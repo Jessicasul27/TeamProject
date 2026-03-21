@@ -2,11 +2,11 @@
   import { ChevronLeft, ChevronRight } from "lucide-svelte";
 
   let { data } = $props();
-  let { user, bookings, properties } = data;
+  let { user, bookings, properties, reviews } = data;
 </script>
 
 <div class="drawer lg:drawer-open">
-  <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" >
 
   <div class="drawer-content flex flex-col py-10 px-4">
     {#if user.customer}
@@ -32,42 +32,48 @@
           <p class="text-center text-gray-600 mb-10">
             Here you can manage your account details and view your bookings.
           </p>
-
+          <div class="divider my-0"></div>
           <h3 class="text-2xl font-semibold">Your Bookings</h3>
-
-          <div class="carousel w-full h-140 rounded-2xl shadow-2xl">
-            {#each bookings as booking, index}
-              <div id="slide{index}" class="carousel-item relative w-full">
-                <img
-                  src={booking.property.displayImage}
-                  class="w-full justify-center object-cover object-center"
-                  alt="Property">
-                <div
-                  class="absolute flex flex-col justify-end items-start transform bg-black/50 w-full px-4 py-3 bottom-0">
-                  <h2 class="text-2xl font-bold text-white">
-                    {booking.property.title}
-                  </h2>
-                  <p class="text-white">
-                    {booking.checkInDate.toLocaleDateString()}
-                    -{" "}
-                    {booking.checkOutDate.toLocaleDateString()}
-                  </p>
+          <div class="flex items-center gap-2">
+            <div class="carousel w-full h-140 rounded-2xl shadow-2xl">
+              {#each bookings as booking, index}
+                <div id="slide{index}" class="carousel-item relative w-full">
+                  <img
+                    src={booking.property.displayImage}
+                    class="w-full justify-center object-cover object-center"
+                    alt="Property" >
+                  <div
+                    class="absolute flex flex-col justify-end items-start transform bg-black/50 w-full px-4 py-3 bottom-0">
+                    <h2 class="text-2xl font-bold text-white">
+                      {booking.property.title}
+                    </h2>
+                    <button
+                      onclick={() => {location.href = `/properties/${booking.property.id}`}}
+                      class="badge badge-primary badge-lg mt-2 font-semibold mb-2">
+                      View Details
+                    </button>
+                    <p class="text-white">
+                      {booking.checkInDate.toLocaleDateString()}
+                      -{" "}
+                      {booking.checkOutDate.toLocaleDateString()}
+                    </p>
+                  </div>
+                  <div
+                    class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a
+                      href="#slide{index == 0 ? bookings.length - 1 : index - 1}"
+                      class="btn btn-circle">
+                      <ChevronLeft />
+                    </a>
+                    <a
+                      href="#slide{index == bookings.length - 1 ? 0 : index + 1}"
+                      class="btn btn-circle">
+                      <ChevronRight />
+                    </a>
+                  </div>
                 </div>
-                <div
-                  class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a
-                    href="#slide{index == 0 ? bookings.length - 1 : index - 1}"
-                    class="btn btn-circle">
-                    <ChevronLeft />
-                  </a>
-                  <a
-                    href="#slide{index == bookings.length - 1 ? 0 : index + 1}"
-                    class="btn btn-circle">
-                    <ChevronRight />
-                  </a>
-                </div>
-              </div>
-            {/each}
+              {/each}
+            </div>
           </div>
         </div>
       {/if}
@@ -93,7 +99,7 @@
                   <img
                     class="h-full w-full object-cover"
                     src={property.displayImage}
-                    alt={property.title}>
+                    alt={property.title} >
 
                   <div class="absolute top-3 right-3">
                     <div
@@ -136,7 +142,7 @@
               </p>
 
               <div class="flex flex-col gap-4 w-full max-w-md">
-                <a href="#" class="btn btn-primary btn-block">
+                <a href="/properties/new" class="btn btn-primary btn-block">
                   List Your Property!
                 </a>
               </div>
@@ -147,17 +153,17 @@
     {/if}
   </div>
 
-  <div class="drawer-side">
+  <div class="drawer-side ">
     <label
       for="my-drawer-3"
       aria-label="close sidebar"
       class="drawer-overlay"></label>
-    <ul class="menu min-h-full w-100 p-4">
+    <ul class="menu min-h-full w-100 p-10">
       <div class="avatar justify-center">
         <div class="w-80 rounded-full">
           <img
             src={user.image ?? `https://placehold.co/100x100?text=${user.firstName.charAt(0)}${user.lastName.charAt(0)}`}
-            alt="User Avatar">
+            alt="User Avatar" >
         </div>
       </div>
       <div class="divider my-0"></div>
@@ -165,6 +171,27 @@
         <h1 class="text-xl font-bold mt-4 justify-center">
           Welcome, {data.user?.name}
         </h1>
+        <div class="divider my-5"></div>
+        <div class="flex flex-col">
+          {#if reviews && reviews.length == 0}
+            <p class="text-gray-600">You haven't written any reviews yet.</p>
+          {:else if reviews && reviews.length > 0}
+            <h1 class="text-xl font-bold mt-4 justify-center">Your Reviews</h1>
+            {#each reviews as review}
+              <div class="card bg-base-100 shadow-md mb-4">
+                <div class="card-body">
+                  <h4 class="card-title">{review.property.title}</h4>
+                  <p>{review.comment}</p>
+                  <div class="card-actions justify-end">
+                    <span class="badge badge-primary"
+                      >Rating: {review.rating}/5</span
+                    >
+                  </div>
+                </div>
+              </div>
+            {/each}
+          {/if}
+        </div>
       </div>
     </ul>
   </div>
