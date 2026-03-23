@@ -28,7 +28,7 @@
             <input
               name="title"
               class="input input-bordered w-full"
-              value={property.title}>
+              value={property.title} >
           </label>
 
           <label class="form-control w-full">
@@ -50,7 +50,7 @@
                 type="number"
                 min="1"
                 class="input input-bordered w-full"
-                value={property.maxGuests}>
+                value={property.maxGuests} >
             </label>
 
             <label class="form-control w-full">
@@ -63,7 +63,7 @@
                 step="0.01"
                 min="0"
                 class="input input-bordered w-full"
-                value={property.pricePerNight}>
+                value={property.pricePerNight} >
             </label>
           </div>
 
@@ -72,7 +72,7 @@
             <input
               name="location"
               class="input input-bordered w-full"
-              value={property.location}>
+              value={property.location} >
           </label>
 
           <label class="form-control w-full">
@@ -94,7 +94,7 @@
               <img
                 src={property.displayImage}
                 alt="Cover"
-                class="h-32 w-32 rounded-xl object-cover border">
+                class="h-32 w-32 rounded-xl object-cover border" >
             </div>
 
             <label class="form-control w-full">
@@ -105,7 +105,7 @@
                 type="file"
                 name="displayImageFile"
                 accept="image/*"
-                class="file-input file-input-bordered w-full">
+                class="file-input file-input-bordered w-full" >
             </label>
           </div>
 
@@ -118,7 +118,7 @@
               name="imageFiles"
               accept="image/*"
               multiple
-              class="file-input file-input-bordered w-full">
+              class="file-input file-input-bordered w-full" >
           </label>
 
           {#if property.images?.length}
@@ -136,14 +136,14 @@
                     <img
                       src={img.imageUrl}
                       alt=""
-                      class="h-24 w-full rounded-lg object-cover">
+                      class="h-24 w-full rounded-lg object-cover" >
                     <div class="mt-2 flex items-center justify-between">
                       <span class="text-xs">Remove</span>
                       <input
                         type="checkbox"
                         class="checkbox checkbox-sm"
                         name="removeImageIds"
-                        value={img.id}>
+                        value={img.id} >
                     </div>
                   </label>
                 {/each}

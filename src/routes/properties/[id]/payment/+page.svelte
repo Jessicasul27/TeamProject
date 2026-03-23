@@ -57,15 +57,15 @@
         <p><strong>Check Out:</strong> {checkOut}</p>
         <p><strong>Nights:</strong> {nights}</p>
 
-        <hr>
+        <hr >
 
         <p>€{property.pricePerNight} × {nights} nights</p>
         <h4 class="text-success">Total Price: €{totalPrice}</h4>
       </div>
 
       <form method="post" action="?/validation">
-        <input type="hidden" name="checkIn" value={checkIn}>
-        <input type="hidden" name="checkOut" value={checkOut}>
+        <input type="hidden" name="checkIn" value={checkIn} >
+        <input type="hidden" name="checkOut" value={checkOut} >
 
         <div class="mb-3">
           <label>Card Number</label>
@@ -77,7 +77,7 @@
             inputmode="numeric"
             value={form?.cardNumber ?? ""}
             oninput={formatCard}
-            required>
+            required >
         </div>
 
         <div class="row">
@@ -91,7 +91,7 @@
               inputmode="numeric"
               value={form?.expiry ?? ""}
               oninput={formatExpiry}
-              required>
+              required >
           </div>
 
           <div class="col-md-6">
@@ -104,7 +104,7 @@
               inputmode="numeric"
               value={form?.cvc ?? ""}
               oninput={formatCvc}
-              required>
+              required >
           </div>
         </div>
 

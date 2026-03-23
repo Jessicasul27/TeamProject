@@ -17,7 +17,7 @@
   action="?/updateProperty"
   enctype="multipart/form-data"
   use:enhance>
-  <input type="hidden" name="id" bind:value={$form.id}>
+  <input type="hidden" name="id" bind:value={$form.id} >
 
   <div class="mt-4 border p-3">
     <div class="row pb-2">
@@ -33,7 +33,7 @@
           id="title"
           name="title"
           class="form-control"
-          {...$constraints.title}>
+          {...$constraints.title} >
         {#if $errors.title}
           <span class="text-danger">{$errors.title}</span>
         {/if}
@@ -47,7 +47,7 @@
           id="location"
           name="location"
           class="form-control"
-          {...$constraints.location}>
+          {...$constraints.location} >
         {#if $errors.location}
           <span class="text-danger">{$errors.location}</span>
         {/if}
@@ -80,7 +80,7 @@
           type="number"
           step="0.01"
           class="form-control"
-          {...$constraints.pricePerNight}>
+          {...$constraints.pricePerNight} >
         {#if $errors.pricePerNight}
           <span class="text-danger">{$errors.pricePerNight}</span>
         {/if}
@@ -138,7 +138,7 @@
           name="maxGuests"
           type="number"
           class="form-control"
-          {...$constraints.maxGuests}>
+          {...$constraints.maxGuests} >
         {#if $errors.maxGuests}
           <span class="text-danger">{$errors.maxGuests}</span>
         {/if}
@@ -146,8 +146,8 @@
 
       <div class="mb-3">
         <span>Current Display Image</span>
-        <br>
-        <img src={data.property.displayImage} width="200" class="mb-2" alt="">
+        <br >
+        <img src={data.property.displayImage} width="200" class="mb-2" alt="" >
       </div>
 
       <div class="mb-3">
@@ -156,17 +156,17 @@
           id="displayFile"
           type="file"
           name="displayFile"
-          class="form-control">
+          class="form-control" >
       </div>
 
       <div class="mb-3">
         <span>Gallery Images</span>
-        <br>
+        <br >
         {#if data.property.images.length}
           {#each data.property.images as image (image.id)}
             <div style="display:inline-block; margin:10px;">
-              <img src={image.imageUrl} width="150" alt="">
-              <br>
+              <img src={image.imageUrl} width="150" alt="" >
+              <br >
               <button
                 type="submit"
                 formaction="?/deleteImage"
@@ -187,7 +187,7 @@
           type="file"
           name="galleryFiles"
           multiple
-          class="form-control">
+          class="form-control" >
       </div>
 
       <div class="mb-3">
