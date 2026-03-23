@@ -14,7 +14,7 @@
         class="mt-4 flex flex-col gap-4">
         <label class="form-control w-full">
           <div class="label"><span class="label-text">Title</span></div>
-          <input name="title" required class="input input-bordered w-full">
+          <input name="title" required class="input input-bordered w-full" >
         </label>
 
         <label class="form-control w-full">
@@ -24,7 +24,7 @@
           <input
             name="shortDescription"
             required
-            class="input input-bordered w-full">
+            class="input input-bordered w-full" >
         </label>
 
         <label class="form-control w-full">
@@ -37,7 +37,7 @@
 
         <label class="form-control w-full">
           <div class="label"><span class="label-text">Location</span></div>
-          <input name="location" required class="input input-bordered w-full">
+          <input name="location" required class="input input-bordered w-full" >
         </label>
 
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -48,7 +48,7 @@
               type="number"
               min="1"
               required
-              class="input input-bordered w-full">
+              class="input input-bordered w-full" >
           </label>
 
           <label class="form-control w-full">
@@ -61,7 +61,7 @@
               step="0.01"
               min="0"
               required
-              class="input input-bordered w-full">
+              class="input input-bordered w-full" >
           </label>
         </div>
 
@@ -80,7 +80,7 @@
             name="displayImageFile"
             accept="image/*"
             required
-            class="file-input file-input-bordered w-full">
+            class="file-input file-input-bordered w-full" >
         </label>
 
         <label class="form-control w-full">
@@ -92,7 +92,7 @@
             name="imageFiles"
             accept="image/*"
             multiple
-            class="file-input file-input-bordered w-full">
+            class="file-input file-input-bordered w-full" >
         </label>
 
         <div class="card-actions justify-end mt-2">

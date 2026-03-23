@@ -34,6 +34,7 @@
           </p>
           <div class="divider my-0"></div>
           <h3 class="text-2xl font-semibold">Your Bookings</h3>
+<<<<<<< HEAD
           <div class="flex items-center gap-2">
             <div class="carousel w-full h-140 rounded-2xl shadow-2xl">
               {#each bookings as booking, index}
@@ -71,6 +72,26 @@
                       <ChevronRight />
                     </a>
                   </div>
+=======
+
+          <div class="carousel w-full h-140 rounded-2xl shadow-2xl">
+            {#each bookings as booking, index}
+              <div id="slide{index}" class="carousel-item relative w-full">
+                <img
+                  src={booking.property.displayImage}
+                  class="w-full justify-center object-cover object-center"
+                  alt="Property" >
+                <div
+                  class="absolute flex flex-col justify-end items-start transform bg-black/50 w-full px-4 py-3 bottom-0">
+                  <h2 class="text-2xl font-bold text-white">
+                    {booking.property.title}
+                  </h2>
+                  <p class="text-white">
+                    {booking.checkInDate.toLocaleDateString()}
+                    -{" "}
+                    {booking.checkOutDate.toLocaleDateString()}
+                  </p>
+>>>>>>> dbcaea5346194b3fb8354544a1d1458a4da71f18
                 </div>
               {/each}
             </div>

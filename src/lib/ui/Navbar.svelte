@@ -36,7 +36,7 @@
           bind:value={search}
           placeholder="Search destinations"
           type="text"
-          class="bg-transparent outline-none placeholder:text-base-content/50">
+          class="bg-transparent outline-none placeholder:text-base-content/50" >
       </div>
 
       <div class="w-px self-stretch bg-base-300"></div>

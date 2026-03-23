@@ -40,7 +40,7 @@
               <img
                 class="h-full w-full object-cover"
                 src={property.displayImage}
-                alt={property.title}>
+                alt={property.title} >
             </figure>
 
             <div class="card-body">
@@ -85,7 +85,7 @@
               <img
                 class="h-full w-full object-cover"
                 src={property.displayImage}
-                alt={property.title}>
+                alt={property.title} >
             </figure>
 
             <div class="card-body">
