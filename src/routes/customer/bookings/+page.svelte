@@ -1,11 +1,17 @@
 <script lang="ts">
   let { data } = $props();
   let { bookings } = data;
+
+  function datediff(first: Date, second: Date) {
+    return Math.round(
+      (second.getTime() - first.getTime()) / (1000 * 3600 * 24),
+    );
+  }
 </script>
 
-<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-4 mt-10">
   {#if bookings && bookings.length > 0}
-    <h1 class="text-2xl font-semibold text-center">Your Bookings</h1>
+    <h1 class="text-2xl font-semibold text-center ">Your Bookings</h1>
     <p class="text-center text-gray-600 mb-10">
       View all previous and upcoming bookings you've made. Click on any booking
       to see more details about your stay!
@@ -27,9 +33,19 @@
             <div class="card-body">
               <h2 class="card-title">{booking.property.title}</h2>
               <p>{booking.property?.description}</p>
-
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">View Property</button>
+              <p class="font-semibold text-gray-600">
+                Check-in: {booking.checkInDate.toLocaleDateString()} <br >
+                Check-out: {booking.checkOutDate.toLocaleDateString()} <br >
+                <br >
+                Total Price: ${(booking.bookingPrice * datediff(booking.checkInDate, booking.checkOutDate)).toFixed(2)}
+              </p>
+              <div class="divider my-0"></div>
+              <div class="card-actions justify-center">
+                <a
+                  class="btn btn-primary"
+                  href={`/properties/${booking.property.id}`}
+                  >View Property</a
+                >
               </div>
             </div>
           </div>
