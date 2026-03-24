@@ -16,7 +16,7 @@
           <img
             src={property.displayImage}
             alt={property.title}
-            class="h-full w-full object-cover" >
+            class="h-full w-full object-cover">
         </figure>
 
         <div class="card-body">
@@ -56,7 +56,7 @@
                 <img
                   src={img.imageUrl}
                   alt=""
-                  class="h-28 w-full rounded-xl object-cover" >
+                  class="h-28 w-full rounded-xl object-cover">
               {/each}
             </div>
           {/if}
@@ -81,7 +81,7 @@
                         <div class="avatar rounded-full h-10">
                           <img
                             src={review.customer.user.image ?? ""}
-                            alt={review.customer.user.name} >
+                            alt={review.customer.user.name}>
                         </div>
                         <div>
                           <h3 class="font-semibold">
@@ -133,7 +133,7 @@
                       <div class="avatar rounded-full h-10">
                         <img
                           src={b.customer?.user?.image}
-                          alt={b.customer.user.name} >
+                          alt={b.customer.user.name}>
                       </div>
 
                       <div>

@@ -22,9 +22,17 @@ export const load: PageServerLoad = async ({ parent }) => {
       })
     : null;
 
+  const reviews = data.user.customer
+    ? await db.reviewRepo.find({
+        where: { customerUserId: data.user.id },
+        relations: { property: true },
+      })
+    : null;
+
   return {
     user: data.user,
     bookings: data.user.customer ? structuredClone(bookings) : null,
     properties: data.user.landlord ? structuredClone(properties) : null,
+    reviews: data.user.customer ? structuredClone(reviews) : null,
   };
 };
