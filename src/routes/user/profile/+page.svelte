@@ -49,7 +49,7 @@
                     </h2>
                     <button
                       onclick={() => {location.href = `/properties/${booking.property.id}`}}
-                      class="badge badge-primary badge-lg mt-2 font-semibold mb-2">
+                      class="badge badge-primary badge-lg mt-2 font-semibold mb-2 cursor-pointer">
                       View Details
                     </button>
                     <p class="text-white">
