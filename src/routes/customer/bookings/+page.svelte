@@ -27,16 +27,16 @@
               <img
                 src={booking.property.displayImage}
                 class="w-100 h-100 object-cover"
-                alt={booking.property.title} >
+                alt={booking.property.title}>
             </figure>
 
             <div class="card-body">
               <h2 class="card-title">{booking.property.title}</h2>
               <p>{booking.property?.description}</p>
               <p class="font-semibold text-gray-600">
-                Check-in: {booking.checkInDate.toLocaleDateString()} <br >
-                Check-out: {booking.checkOutDate.toLocaleDateString()} <br >
-                <br >
+                Check-in: {booking.checkInDate.toLocaleDateString()} <br>
+                Check-out: {booking.checkOutDate.toLocaleDateString()} <br>
+                <br>
                 Total Price: ${(booking.bookingPrice * datediff(booking.checkInDate, booking.checkOutDate)).toFixed(2)}
               </p>
               <div class="divider my-0"></div>
