@@ -207,17 +207,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     shortDescription: "Unique and unforgettable stay.",
     displayImage: "/images/properties/rusticCastleOther.jpg",
   },
-  {
-    title: "Modern Loft Apartment",
-    location: "Galway",
-    type: PropertyType.Loft,
-    pricePerNight: 160,
-    maxGuests: 4,
-    status: PropertyStatus.Active,
-    description: "Contemporary loft apartment in the heart of Galway.",
-    shortDescription: "Spacious and well-designed space.",
-    displayImage: "/images/properties/smallLoft.jpg",
-  },
+
   {
     title: "Charming Studio Flat",
     location: "Cork",
@@ -490,18 +480,6 @@ const PROPERTIES: DeepPartial<Property>[] = [
       "Luxurious and contemporary studio apartment with opulent decor, perfect for a stylish and indulgent stay in Dublin.",
     shortDescription: "A chic and lavish urban retreat.",
     displayImage: "/images/properties/cozyStudio.jpg",
-  },
-  {
-    title: "Peaceful Charming Townhouse",
-    location: "Galway",
-    type: PropertyType.Townhouse,
-    pricePerNight: 160,
-    maxGuests: 5,
-    status: PropertyStatus.Active,
-    description:
-      "Charming townhouse in a peaceful neighborhood, ideal for a relaxing stay while exploring Galway.",
-    shortDescription: "A cozy and inviting home away from home.",
-    displayImage: "/images/properties/cozyTownHouse.jpg",
   },
   {
     title: "Newly Renovated Modern Duplex",
@@ -777,18 +755,6 @@ const PROPERTIES: DeepPartial<Property>[] = [
     displayImage: "/images/properties/minecraftCastleOther.jpg",
   },
   {
-    title: "Modern Sleek Loft",
-    location: "Cavan",
-    type: PropertyType.Loft,
-    pricePerNight: 150,
-    maxGuests: 4,
-    status: PropertyStatus.Active,
-    description:
-      "Modern sleek loft with a contemporary design and all necessary amenities, perfect for a comfortable and stylish stay in Cavan.",
-    shortDescription: "A modern and stylish retreat in the heart of Cavan.",
-    displayImage: "/images/properties/moderLoft.jpg",
-  },
-  {
     title: "Lavish Contemporary Bungalow",
     location: "Donegal",
     type: PropertyType.Bungalow,
@@ -886,18 +852,6 @@ const PROPERTIES: DeepPartial<Property>[] = [
     displayImage: "/images/properties/prettyLittleLiarsCottage.jpg",
   },
   {
-    title: "Private Secluded Forest Garden Townhouse",
-    location: "Galway",
-    type: PropertyType.Townhouse,
-    pricePerNight: 200,
-    maxGuests: 6,
-    status: PropertyStatus.Active,
-    description:
-      "Private and secluded townhouse with a beautiful forest garden, perfect for a peaceful and romantic getaway surrounded by nature.",
-    shortDescription: "A tranquil retreat with stunning garden views.",
-    displayImage: "/images/properties/privateGardenTownHouse.jpg",
-  },
-  {
     title: "Relaxing Lakeside Cabin",
     location: "Donegal",
     type: PropertyType.Cabin,
@@ -983,18 +937,6 @@ const PROPERTIES: DeepPartial<Property>[] = [
     displayImage: "/images/properties/skinnyVillaWithCars.jpg",
   },
   {
-    title: "Unique Skyscraper Apartment",
-    location: "Monaghan",
-    type: PropertyType.Apartment,
-    pricePerNight: 200,
-    maxGuests: 4,
-    status: PropertyStatus.Active,
-    description:
-      "Unique skyscraper apartment with modern design and stunning city views, perfect for a luxurious and memorable stay in Monaghan.",
-    shortDescription: "A modern and elegant retreat in the heart of the city.",
-    displayImage: "/images/properties/skyscraperApartement.jpg",
-  },
-  {
     title: "Petite Well-furnished Warm Loft",
     location: "Sligo",
     type: PropertyType.Loft,
@@ -1029,18 +971,6 @@ const PROPERTIES: DeepPartial<Property>[] = [
       "Family-friendly spacious house with modern amenities and a welcoming atmosphere, perfect for a comfortable and memorable stay in Cork.",
     shortDescription: "A spacious and inviting retreat for families.",
     displayImage: "/images/properties/softcoreHouse.jpg",
-  },
-  {
-    title: "Futuristic Funky Bubble Dome",
-    location: "Donegal",
-    type: PropertyType.Other,
-    pricePerNight: 300,
-    maxGuests: 4,
-    status: PropertyStatus.Active,
-    description:
-      "Futuristic and funky bubble dome with modern design and stunning views, perfect for a unique and memorable stay in Donegal.",
-    shortDescription: "A futuristic and unique retreat with modern amenities.",
-    displayImage: "/images/properties/spaceBubbleHouseOther.jpg",
   },
   {
     title: "Charming Scenic Bungalow",
