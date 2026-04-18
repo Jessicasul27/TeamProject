@@ -273,7 +273,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     description:
       "Sustainable loft apartment with modern amenities in Dublin city centre.",
     shortDescription: "Eco-conscious stay without sacrificing comfort.",
-    displayImage: "/images/properties/architectLoft.jpg",
+    displayImage: "/images/properties/archictectLoft.jpg",
   },
   {
     title: "Rustic Countryside Studio",
@@ -501,7 +501,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     description:
       "Charming townhouse in a peaceful neighborhood, ideal for a relaxing stay while exploring Galway.",
     shortDescription: "A cozy and inviting home away from home.",
-    displayImage: "/images/properties/cozyTownhouse.jpg",
+    displayImage: "/images/properties/cozyTownHouse.jpg",
   },
   {
     title: "Newly Renovated Modern Duplex",
@@ -786,7 +786,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     description:
       "Modern sleek loft with a contemporary design and all necessary amenities, perfect for a comfortable and stylish stay in Cavan.",
     shortDescription: "A modern and stylish retreat in the heart of Cavan.",
-    displayImage: "/images/properties/modernLoft.jpg",
+    displayImage: "/images/properties/moderLoft.jpg",
   },
   {
     title: "Lavish Contemporary Bungalow",
@@ -895,7 +895,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     description:
       "Private and secluded townhouse with a beautiful forest garden, perfect for a peaceful and romantic getaway surrounded by nature.",
     shortDescription: "A tranquil retreat with stunning garden views.",
-    displayImage: "/images/properties/privateGardenTownhouse.jpg",
+    displayImage: "/images/properties/privateGardenTownHouse.jpg",
   },
   {
     title: "Relaxing Lakeside Cabin",
@@ -992,7 +992,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     description:
       "Unique skyscraper apartment with modern design and stunning city views, perfect for a luxurious and memorable stay in Monaghan.",
     shortDescription: "A modern and elegant retreat in the heart of the city.",
-    displayImage: "/images/properties/skyscraperApartment.jpg",
+    displayImage: "/images/properties/skyscraperApartement.jpg",
   },
   {
     title: "Petite Well-furnished Warm Loft",
@@ -1040,7 +1040,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     description:
       "Futuristic and funky bubble dome with modern design and stunning views, perfect for a unique and memorable stay in Donegal.",
     shortDescription: "A futuristic and unique retreat with modern amenities.",
-    displayImage: "/images/properties/futuristicDome.jpg",
+    displayImage: "/images/properties/spaceBubbleHouseOther.jpg",
   },
   {
     title: "Charming Scenic Bungalow",
