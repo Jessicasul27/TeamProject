@@ -43,6 +43,13 @@
           </a>
         {/if}
 
+        {#if user.landlord}
+          <div class="divider my-0"></div>
+          <a href={resolve("/landlord/share")} class="btn btn-ghost">
+            Income Share <House />
+          </a>
+        {/if}
+
         <div class="divider my-0"></div>
         <a href={resolve("/user/help")} class="btn btn-ghost">
           Help Center <CircleQuestionMark />
