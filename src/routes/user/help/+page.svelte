@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { ChevronDown, ChevronUp } from "lucide-svelte";
   let activeCategory = $state("general");
 </script>
 
@@ -82,8 +83,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>What is StayCraft?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -97,8 +98,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Is the website free to use?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -112,8 +113,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I browse listings without logging in?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -126,8 +127,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Is StayCraft available on mobile?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -141,8 +142,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I save properties for later?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -156,8 +157,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How often are listings updated?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -171,8 +172,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I contact a host before booking?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -190,8 +191,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I create an account?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -205,8 +206,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I reset my password?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -220,8 +221,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I change my email address?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -234,8 +235,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I upload a profile picture?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -249,8 +250,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I delete my account?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -264,8 +265,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I have both guest and host accounts?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -279,8 +280,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Why am I not receiving verification emails?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -298,8 +299,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I book a stay?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -313,8 +314,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I cancel a booking?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -327,8 +328,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I change my booking dates?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -342,8 +343,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I know if my booking is confirmed?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -357,8 +358,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I book for someone else?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -372,8 +373,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>What happens if a host cancels my booking?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -387,8 +388,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I book long-term stays?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -406,8 +407,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>What payment methods are accepted?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -420,8 +421,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>When will I be charged?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -434,8 +435,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I pay in instalments?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -449,8 +450,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Do you charge any service fees?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -464,8 +465,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I get a refund?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -479,8 +480,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Is my payment information secure?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -494,8 +495,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I use a discount code?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -513,8 +514,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I become a host?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -528,8 +529,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I add photos to my listing?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -543,8 +544,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I set my own nightly price?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -558,8 +559,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I block unavailable dates?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -572,8 +573,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I message guests?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -587,8 +588,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>When do hosts receive payouts?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -601,8 +602,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I pause my listing temporarily?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -620,8 +621,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How do I report suspicious activity?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -635,8 +636,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Are hosts verified?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -650,8 +651,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>What should I do in an emergency during a stay?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -665,8 +666,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I block another user?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -679,8 +680,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>How is my personal information protected?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -694,8 +695,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>Can I report a listing?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
@@ -709,8 +710,8 @@
               class="flex cursor-pointer items-center justify-between px-4 py-4 font-semibold list-none">
               <span>What happens after I submit a safety report?</span>
               <span class="text-lg">
-                <span class="group-open:hidden">⌄</span>
-                <span class="hidden group-open:inline">^</span>
+                <span class="group-open:hidden"><ChevronDown /></span>
+                <span class="hidden group-open:inline"><ChevronUp /></span>
               </span>
             </summary>
             <div class="px-4 pb-4 text-sm">
