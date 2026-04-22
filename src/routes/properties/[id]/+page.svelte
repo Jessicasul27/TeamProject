@@ -1,6 +1,8 @@
 <script lang="ts">
   import { ChevronLeft, ChevronRight, Star } from "lucide-svelte";
   import { SvelteDate } from "svelte/reactivity";
+  import { enhance } from "$app/forms";
+  
    let showReviewModel = $state(false);
   let rating = $state(5);
   let comment = $state("");
@@ -387,16 +389,17 @@
       >
         ✕
       </button>
-      <form method="POST" action="?/review" class="flex flex-col gap-4">
+      <form method="POST" action="?/review" use:enhance class="flex flex-col gap-4">
         <fieldset class="flex flex-col gap-2">
           <legend class="font-semibold text-lg">Review</legend>
-
+          <input type="hidden" name="propertyId" value={property.id} />
           <label class="text-sm">Comment</label>
           <textarea
-            class="textarea textarea-bordered"
-            placeholder="Your review"
-            bind:value={comment}
-            required
+              class="textarea textarea-bordered"
+              name="comment"
+              bind:value={comment}
+              placeholder="Your review"
+              required
           ></textarea>
 
           <label class="text-sm">Rating</label>
