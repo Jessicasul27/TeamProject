@@ -1,6 +1,9 @@
 <script lang="ts">
   import { ChevronLeft, ChevronRight, Star } from "lucide-svelte";
   import { SvelteDate } from "svelte/reactivity";
+   let showReviewModel = $state(false);
+  let rating = $state(5);
+  let comment = $state("");
 
   type BookingDay = {
     day: number;
@@ -361,4 +364,67 @@
       </form>
     </div>
   </div>
+  <div class="flex flex-col items-center gap-4 mt-20">
+    <h1 class="text-2xl font-bold">Would you like to leave a review?</h1>
+    <p class="text-center text-gray-600 mb-10">
+      Sharing your experience helps other travelers make informed decisions and helps
+      us improve our services. If you've stayed at this property, we'd love to hear
+      your feedback!
+    </p>
+   <button
+       onclick={() => (showReviewModel = true, console.log("Opening review model"))}
+      class="btn btn-primary w-fit">
+      Leave a review
+      
+  </button>
+  {#if showReviewModel == true}
+  <div class="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+    <div class="bg-base-100 rounded-xl p-6 w-87.5px shadow-xl relative">
+
+      <button
+        class="absolute top-2 right-2 text-lg"
+        onclick={() => (showReviewModel = false)}
+      >
+        ✕
+      </button>
+      <form method="POST" action="?/review" class="flex flex-col gap-4">
+        <fieldset class="flex flex-col gap-2">
+          <legend class="font-semibold text-lg">Review</legend>
+
+          <label class="text-sm">Comment</label>
+          <textarea
+            class="textarea textarea-bordered"
+            placeholder="Your review"
+            bind:value={comment}
+            required
+          ></textarea>
+
+          <label class="text-sm">Rating</label>
+          <div class="flex items-center gap-2">
+            {#each [1,2,3,4,5] as star}
+              <button
+                type="button"
+                onclick={() => (rating = star)}
+                class="text-xl"
+              >
+                <Star
+                  class={star <= rating ? "text-yellow-500 fill-yellow-500" : "text-gray-300"}
+                />
+              </button>
+            {/each}
+            <span class="ml-2 font-semibold">{rating} / 5</span>
+          </div>
+
+          <input type="hidden" name="rating" value={rating} />
+
+          <button class="btn btn-neutral mt-2" type="submit">
+            Submit Review
+          </button>
+        </fieldset>
+
+      </form>
+    </div>
+  </div>
+{/if}
+  </div>  
 </div>
