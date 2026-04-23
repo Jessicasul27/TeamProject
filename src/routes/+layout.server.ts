@@ -18,11 +18,25 @@ export const load: LayoutServerLoad = async ({ depends, locals }) => {
     });
   }
 
-  if (!user) {
-    return { user: null };
-  }
+  const properties = await db.propertyRepo.find({
+    select: {
+      location: true,
+    },
+    order: {
+      location: "ASC",
+    },
+  });
+
+  const counties = [
+    ...new Set(
+      properties
+        .map((property) => property.location.trim())
+        .filter((location) => location.length > 0),
+    ),
+  ];
 
   return {
-    user: structuredClone(user),
+    counties,
+    user: user ? structuredClone(user) : null,
   };
 };

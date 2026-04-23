@@ -4,7 +4,7 @@ import type { Actions } from "./$types";
 export const actions: Actions = {
   pay: async ({ request, params, locals }) => {
     if (!locals.user) {
-      throw error(401, "You must be logged in to do this.");
+      throw redirect(307, "/auth/login");
     }
 
     const form = await request.formData();
