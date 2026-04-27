@@ -49,6 +49,12 @@
             Income Share <House />
           </a>
         {/if}
+        {#if user.admin}
+          <div class="divider my-0"></div>
+          <a href={resolve("/admin/properties")} class="btn btn-ghost">
+            Admin Properties <House />
+          </a>
+        {/if}
 
         <div class="divider my-0"></div>
         <a href={resolve("/user/help")} class="btn btn-ghost">
