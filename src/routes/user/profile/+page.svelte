@@ -191,6 +191,13 @@
               </div>
             {/each}
           {/if}
+          {#if user.admin}
+            <a href="/admin/properties" class="btn btn-primary w-full">
+              Admin Properties
+            </a>
+
+            <div class="divider my-5"></div>
+          {/if}
         </div>
       </div>
     </ul>

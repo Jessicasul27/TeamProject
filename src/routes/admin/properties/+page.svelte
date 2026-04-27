@@ -1,57 +1,55 @@
 <script lang="ts">
-  import { resolve } from "$app/paths";
-
-  const { data } = $props();
+  let { data } = $props();
 </script>
 
-<div class="container p-3">
-  <div class="row mb-3 pt-4">
-    <div class="col-6">
-      <h3 class="text-primary">Property</h3>
-    </div>
-
-    <div class="col-6 text-end">
-      <a href={resolve("/properties/create")} class="btn btn-primary">
-        Create New Property
-      </a>
-    </div>
+<div class="p-6">
+  <div class="flex items-center justify-between">
+    <h1 class="text-2xl font-bold">Pending Properties</h1>
+    <span class="badge badge-outline">{data.properties.length}</span>
   </div>
 
-  <table class="table-bordered table-striped table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Location</th>
-        <th>Property Type</th>
-        <th>Price Per Night</th>
-        <th>Max Guests</th>
-        <th>Status</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      {#each data.properties as property (property.id)}
-        <tr>
-          <td>{property.title}</td>
-          <td>{property.location}</td>
-          <td>{property.type}</td>
-          <td>€{property.pricePerNight}</td>
-          <td>{property.maxGuests}</td>
-          <td>{property.status}</td>
-          <td>
-            <a
-              href={resolve(`/admin/properties/${property.id}/edit`)}
-              class="btn btn-success btn-sm mx-1"
-              >Edit</a
-            >
-            <a
-              href={resolve(`/admin/properties/${property.id}/delete`)}
-              class="btn btn-danger btn-sm mx-1"
-              >Delete</a
-            >
-          </td>
-        </tr>
-      {/each}
-    </tbody>
-  </table>
+  <section class="mt-10">
+    {#if data.properties.length === 0}
+      <p class="mt-3 text-sm opacity-70">No properties waiting for review.</p>
+    {:else}
+      <div class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {#each data.properties as property}
+          <div class="card bg-base-100 shadow-sm hover:shadow-md transition">
+            <figure class="h-70">
+              <img
+                class="h-full w-full object-cover"
+                src={property.displayImage}
+                alt={property.title}>
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">
+                {property.title}
+                <span class="badge badge-warning">{property.status}</span>
+              </h3>
+
+              <p class="text-sm opacity-80">{property.location}</p>
+
+              <p class="text-sm opacity-80">
+                Max guests: {property.maxGuests} | {property.type}
+              </p>
+
+              <p class="text-sm font-semibold">
+                €{property.pricePerNight}
+                <span class="font-normal opacity-70">/ night</span>
+              </p>
+
+              <div class="card-actions justify-end">
+                <a
+                  href={`/admin/properties/${property.id}`}
+                  class="btn btn-sm btn-primary">
+                  Review
+                </a>
+              </div>
+            </div>
+          </div>
+        {/each}
+      </div>
+    {/if}
+  </section>
 </div>
