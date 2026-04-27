@@ -785,7 +785,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     type: PropertyType.Cottage,
     pricePerNight: 110,
     maxGuests: 4,
-    status: PropertyStatus.Active,
+    status: PropertyStatus.Pending,
     description:
       "Peaceful and breathtaking countryside cottage surrounded by stunning natural beauty, perfect for a tranquil and rejuvenating escape.",
     shortDescription: "A serene retreat for nature lovers.",
@@ -881,7 +881,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     type: PropertyType.Villa,
     pricePerNight: 450,
     maxGuests: 8,
-    status: PropertyStatus.Active,
+    status: PropertyStatus.Pending,
     description:
       "Royalty inspired villa with opulent decor and luxurious amenities, perfect for a lavish and unforgettable stay in Dublin.",
     shortDescription:
@@ -1002,7 +1002,7 @@ const PROPERTIES: DeepPartial<Property>[] = [
     type: PropertyType.House,
     pricePerNight: 250,
     maxGuests: 5,
-    status: PropertyStatus.Active,
+    status: PropertyStatus.Pending,
     description:
       "Stunning and stylish house with modern design and high-end amenities, perfect for a luxurious and memorable stay in Louth.",
     shortDescription: "A modern and elegant retreat in a scenic setting.",
