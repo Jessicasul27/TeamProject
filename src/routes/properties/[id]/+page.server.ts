@@ -44,7 +44,6 @@ export const actions: Actions = {
     const rating = Number(formData.get("rating"));
     const comment = String(formData.get("comment"));
     const propertyId = String(formData.get("propertyId"));
-    
 
     console.log("Received review:", { rating, comment, propertyId });
 
@@ -52,16 +51,16 @@ export const actions: Actions = {
       return fail(400, { message: "Invalid input" });
     }
     const bookingid = await db.bookingRepo.findOne({
-          where: {
-            customerUserId: user.id,
-            propertyId
-          }
-        })
+      where: {
+        customerUserId: user.id,
+        propertyId,
+      },
+    });
     const hasBooking = await db.bookingRepo.findOne({
       where: {
         customerUserId: user.id,
         propertyId,
-        id: bookingid?.id,  
+        id: bookingid?.id,
       },
     });
 
@@ -77,7 +76,7 @@ export const actions: Actions = {
         comment,
         customerUserId: user.id,
         propertyId,
-        bookingId: bookingid?.id,
+        bookingId: hasBooking.id,
       });
     } catch (err) {
       console.error(err);
