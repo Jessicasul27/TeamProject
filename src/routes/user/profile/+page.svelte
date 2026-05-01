@@ -11,7 +11,7 @@
   <div class="drawer-content flex flex-col py-10 px-4">
     {#if user.customer}
       {#if !bookings || bookings.length === 0}
-        <div class="flex flex-col te gap-4">
+       <div class="flex flex-col te gap-4 items-center mt-20">
           <h1 class="text-2xl font-semibold">No Bookings?</h1>
           <p class="text-center text-gray-600">
             It looks like you haven't made any bookings yet. Start exploring our
