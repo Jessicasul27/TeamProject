@@ -205,13 +205,13 @@
 
   <div class="grid grid-cols-4 grid-rows-2 gap-2 aspect-2/1">
     <img
-      class="h-full w-full row-span-2 col-span-2 rounded-2xl object-center object-cover"
+      class="h-full w-full row-span-2 col-span-2 rounded-2xl object-center object-cover aspect-square"
       src={property.displayImage}
       alt={property.title} >
 
     {#each galleryImages as image}
       <img
-        class="h-full w-full rounded-2xl object-cover object-center"
+        class="h-full w-full rounded-2xl object-cover object-center aspect-square"
         src={image.imageUrl}
         alt={property.title} >
     {/each}
@@ -361,7 +361,7 @@
           type="submit"
           class="btn btn-success w-full"
           disabled={!checkIn || !checkOut}>
-          Book now
+          Book with Stripe
         </button>
       </form>
     </div>
