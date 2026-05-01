@@ -90,16 +90,8 @@ export const actions: Actions = {
     const checkInDate = new Date(Number(checkIn));
     const checkOutDate = new Date(Number(checkOut));
 
-    if (
-      Number.isNaN(checkInDate.getTime()) ||
-      Number.isNaN(checkOutDate.getTime()) ||
-      checkOutDate <= checkInDate
-    ) {
-      return fail(400, {
-        paymentError: "Check-out date must be after check-in date.",
-        checkIn,
-        checkOut,
-      });
+    if (checkOutDate <= checkInDate) {
+      throw error(400, "Check-out date must be after check-in date.");
     }
 
     const property = await db.propertyRepo.findOneOrFail({
@@ -170,5 +162,59 @@ export const actions: Actions = {
     });
 
     throw redirect(303, session.url!);
+  },
+
+  review: async ({ request, locals }) => {
+    const user = locals.user;
+
+    if (!user) {
+      return fail(401, { message: "Not logged in" });
+    }
+
+    const formData = await request.formData();
+
+    const rating = Number(formData.get("rating"));
+    const comment = String(formData.get("comment"));
+    const propertyId = String(formData.get("propertyId"));
+
+    console.log("Received review:", { rating, comment, propertyId });
+
+    if (!rating || rating < 1 || rating > 5 || !comment) {
+      return fail(400, { message: "Invalid input" });
+    }
+    const bookingid = await db.bookingRepo.findOne({
+      where: {
+        customerUserId: user.id,
+        propertyId,
+      },
+    });
+    const hasBooking = await db.bookingRepo.findOne({
+      where: {
+        customerUserId: user.id,
+        propertyId,
+        id: bookingid?.id,
+      },
+    });
+
+    if (!hasBooking) {
+      return fail(403, {
+        message: "You must stay at this property to review it",
+      });
+    }
+
+    try {
+      await db.reviewRepo.save({
+        rating,
+        comment,
+        customerUserId: user.id,
+        propertyId,
+        bookingId: hasBooking.id,
+      });
+    } catch (err) {
+      console.error(err);
+      return fail(500, { message: "Failed to save review" });
+    }
+
+    return { success: true };
   },
 };
